@@ -119,7 +119,7 @@ class Formio {
       path = this.base + path;
     }
 
-    const hostparts = this.getUrlParts(path);
+    const hostparts = this.getUrlParts(path) || [];
     let parts = [];
     const hostName = hostparts[1] + hostparts[2];
     path = hostparts.length > 3 ? hostparts[3] : '';
