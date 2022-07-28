@@ -1667,3 +1667,70 @@ span[role=link] {
 .hide {
   display: none;
 }
+
+.containerNavbar {
+  width: 375px;
+  height: 96px;
+}
+
+.containerSlider {
+  width: 375px;
+  height: 370px;
+}
+
+.serviceSections {
+  margin: 0 -2px -2px -2px;
+  width: auto;
+  top: 359px;
+  background: #FFFFFF;
+  border-radius: 14px 14px 0px 0px;
+  min-height: 120px;
+  max-height: max-content;
+}
+
+.container {
+  width: max-content;
+  min-height: 375px;
+  max-height: 700px;
+  padding: 0;
+  background-color: #1f5c99;
+  border: 0px;
+  padding: 0;
+  overflow-y: auto;
+}
+
+.serviceIcon {
+  width: 100px;
+  height: 20px;
+}
+
+.serviceName {
+  width: 375px;
+  display: flex;
+  justify-content: center;
+  margin-top: 57px;
+  position: absolute;
+}
+
+.backIcon {
+  margin-left: 18px;
+  position: absolute;
+  margin-top: 60px;
+}
+
+.marginNone {
+  margin: 0;
+}
+
+.paddingNone {
+  padding: 0;
+}
+
+.borderNone {
+  border: 0;
+}
+
+.cover {
+  position: absolute;
+  z-index: 1;
+}

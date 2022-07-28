@@ -46,6 +46,9 @@ import UnknownComponent from './unknown/Unknown';
 import UrlComponent from './url/Url';
 import WellComponent from './well/Well';
 import SectionContainer from './custom/Section/SectionContainer';
+import ServiceContainer from './custom/serviceContainer/ServiceContainer';
+import slider from './custom/serviceContainer/Slider';
+import sections from './custom/serviceContainer/Sections';
 
 export default {
   address: AddressComponent,
@@ -97,4 +100,7 @@ export default {
   url: UrlComponent,
   well: WellComponent,
   SectionContainer: SectionContainer,
+  ServiceContainer: ServiceContainer,
+  slider: slider,
+  sections: sections,
 };
