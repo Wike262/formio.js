@@ -45,6 +45,7 @@ import TreeComponent from './tree/Tree';
 import UnknownComponent from './unknown/Unknown';
 import UrlComponent from './url/Url';
 import WellComponent from './well/Well';
+import SectionContainer from './custom/Section/SectionContainer';
 
 export default {
   address: AddressComponent,
@@ -95,4 +96,5 @@ export default {
   unknown: UnknownComponent,
   url: UrlComponent,
   well: WellComponent,
+  SectionContainer: SectionContainer,
 };
