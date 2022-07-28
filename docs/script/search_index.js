@@ -438,6 +438,18 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
+    "formiojs/src/components/custom/section/sectioncontainer.form.js~sectioncontainer",
+    "function/index.html#static-function-SectionContainer",
+    "<span>SectionContainer</span> <span class=\"search-result-import-path\">formiojs/src/components/custom/Section/SectionContainer.form.js</span>",
+    "function"
+  ],
+  [
+    "formiojs/src/components/custom/section/sectioncontainer.js~sectioncontainer",
+    "class/src/components/custom/Section/SectionContainer.js~SectionContainer.html",
+    "<span>SectionContainer</span> <span class=\"search-result-import-path\">formiojs/src/components/custom/Section/SectionContainer.js</span>",
+    "class"
+  ],
+  [
     "formiojs/src/components/select/select.form.js~select",
     "function/index.html#static-function-Select",
     "<span>Select</span> <span class=\"search-result-import-path\">formiojs/src/components/select/Select.form.js</span>",
@@ -2028,6 +2040,12 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
+    "src/formio.js~formio.usesessiontoken",
+    "class/src/Formio.js~Formio.html#static-method-useSessionToken",
+    "src/Formio.js~Formio.useSessionToken",
+    "method"
+  ],
+  [
     "src/formio.unit.js",
     "file/src/Formio.unit.js.html",
     "src/Formio.unit.js",
@@ -3388,6 +3406,66 @@ window.esdocSearchIndex = [
     "file/src/components/currency/fixtures/values.js.html",
     "src/components/currency/fixtures/values.js",
     "file"
+  ],
+  [
+    "src/components/custom/section/sectioncontainer.edit.display.js",
+    "file/src/components/custom/Section/SectionContainer.edit.display.js.html",
+    "src/components/custom/Section/SectionContainer.edit.display.js",
+    "file"
+  ],
+  [
+    "src/components/custom/section/sectioncontainer.form.js",
+    "file/src/components/custom/Section/SectionContainer.form.js.html",
+    "src/components/custom/Section/SectionContainer.form.js",
+    "file"
+  ],
+  [
+    "src/components/custom/section/sectioncontainer.js",
+    "file/src/components/custom/Section/SectionContainer.js.html",
+    "src/components/custom/Section/SectionContainer.js",
+    "file"
+  ],
+  [
+    "src/components/custom/section/sectioncontainer.js~sectioncontainer#attach",
+    "class/src/components/custom/Section/SectionContainer.js~SectionContainer.html#instance-method-attach",
+    "src/components/custom/Section/SectionContainer.js~SectionContainer#attach",
+    "method"
+  ],
+  [
+    "src/components/custom/section/sectioncontainer.js~sectioncontainer#collapsed",
+    "class/src/components/custom/Section/SectionContainer.js~SectionContainer.html#instance-member-collapsed",
+    "src/components/custom/Section/SectionContainer.js~SectionContainer#collapsed",
+    "member"
+  ],
+  [
+    "src/components/custom/section/sectioncontainer.js~sectioncontainer#constructor",
+    "class/src/components/custom/Section/SectionContainer.js~SectionContainer.html#instance-constructor-constructor",
+    "src/components/custom/Section/SectionContainer.js~SectionContainer#constructor",
+    "method"
+  ],
+  [
+    "src/components/custom/section/sectioncontainer.js~sectioncontainer#templatename",
+    "class/src/components/custom/Section/SectionContainer.js~SectionContainer.html#instance-get-templateName",
+    "src/components/custom/Section/SectionContainer.js~SectionContainer#templateName",
+    "member"
+  ],
+  [
+    "src/components/custom/section/sectioncontainer.js~sectioncontainer.builderinfo",
+    "class/src/components/custom/Section/SectionContainer.js~SectionContainer.html#static-get-builderInfo",
+    "src/components/custom/Section/SectionContainer.js~SectionContainer.builderInfo",
+    "member"
+  ],
+  [
+    "src/components/custom/section/sectioncontainer.js~sectioncontainer.editform",
+    "class/src/components/custom/Section/SectionContainer.js~SectionContainer.html#static-member-editForm",
+    "src/components/custom/Section/SectionContainer.js~SectionContainer.editForm",
+    "member"
+  ],
+  [
+    "src/components/custom/section/sectioncontainer.js~sectioncontainer.schema",
+    "class/src/components/custom/Section/SectionContainer.js~SectionContainer.html#static-method-schema",
+    "src/components/custom/Section/SectionContainer.js~SectionContainer.schema",
+    "method"
   ],
   [
     "src/components/datagrid/datagrid.form.js",

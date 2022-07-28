@@ -1,6 +1,7 @@
-import { Templates, Components } from 'form-builder';
+import Templates from '../../../templates/Templates';
+import panel from '../../panel/Panel';
+import nested from '../../_classes/nested/NestedComponent';
 import editForm from './SectionContainer.form';
-import './style.css';
 
 function createSectionContainerTemplate(ctx) {
   return `
@@ -22,7 +23,7 @@ function createSectionContainerTemplate(ctx) {
 `;
 }
 
-export default class SectionContainer extends Components.components.panel {
+export default class SectionContainer extends panel {
   static editForm = editForm;
 
   constructor(component, options, data) {
@@ -36,7 +37,7 @@ export default class SectionContainer extends Components.components.panel {
   }
 
   static schema(...extend) {
-    return Components.components.nested.schema(
+    return nested.schema(
       {
         label: 'Контейнер раздела',
         type: 'SectionContainer',
