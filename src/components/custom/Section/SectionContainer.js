@@ -1,6 +1,6 @@
 import { Templates, Components } from 'form-builder';
 import editForm from './SectionContainer.form';
-import './scss/section.scss';
+import './style.css';
 
 function createSectionContainerTemplate(ctx) {
   return `
