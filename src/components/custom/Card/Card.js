@@ -8,7 +8,7 @@ export default class Card extends field {
 
   static schema() {
     return field.schema({
-      type: 'Card',
+      type: 'card',
     });
   }
 

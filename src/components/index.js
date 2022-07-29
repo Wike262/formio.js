@@ -48,8 +48,8 @@ import WellComponent from './well/Well';
 import SectionContainer from './custom/Section/SectionContainer';
 import ServiceContainer from './custom/serviceContainer/ServiceContainer';
 import Sections from './custom/serviceContainer/Sections';
-import PictureWithCaption from './custom/PictureWithDescription/PictureWithDescription';
-import Card from './custom/Card/Card';
+import pictureWithCaption from './custom/PictureWithDescription/PictureWithDescription';
+import card from './custom/Card/Card';
 import Slider from './custom/serviceContainer/Slider';
 
 export default {
@@ -105,6 +105,6 @@ export default {
   ServiceContainer: ServiceContainer,
   Slider: Slider,
   Sections: Sections,
-  PictureWithCaption: PictureWithCaption,
-  Card: Card,
+  pictureWithCaption: pictureWithCaption,
+  card: card,
 };
