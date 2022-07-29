@@ -32,12 +32,12 @@ export default class Sections extends panel {
     });
   }
 
-  constructor(component, options, data) {
-    super(component, options, data);
+  constructor(...args) {
+    super(...args);
     this.collapsed = !!this.component.collapsed;
-    Templates.templates.bootstrap['Section'] = { form: createSectionsTemplate };
-    Templates.addCurrentTemplate('Section', { form: createSectionsTemplate });
-    Templates.addTemplate('Section', { form: createSectionsTemplate });
+    Templates.templates.bootstrap['Sections'] = { form: createSectionsTemplate };
+    Templates.addCurrentTemplate('Sections', { form: createSectionsTemplate });
+    Templates.addTemplate('Sections', { form: createSectionsTemplate });
   }
 }
 
