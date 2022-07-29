@@ -1638,6 +1638,61 @@ span[role=link] {
   cursor: pointer;
 }
 
+@font-face {
+  font-family: "RootUI";
+  src: url("../../fonts/PT-Root-UI_Medium.ttf");
+}
+.card__content {
+  display: flex;
+}
+
+.card__image {
+  width: 120px;
+  height: 120px;
+  border-radius: 10%;
+}
+
+.card__text, .card__text_header {
+  font-family: "RootUI";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25px;
+  color: gray;
+}
+
+.card__text_header {
+  font-size: 20px;
+  color: black;
+}
+
+.card__description {
+  margin: 10px 20px;
+}
+
+@font-face {
+  font-family: "RootUI";
+  src: url("../../fonts/PT-Root-UI_Medium.ttf");
+}
+.picture__image {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  width: 375px;
+  height: 375px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.picture__caption {
+  font-family: "RootUI";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: white;
+  margin: 10px 20px;
+}
+
 .accordion__item {
   padding: 8px 12px 8px 16px;
 }
