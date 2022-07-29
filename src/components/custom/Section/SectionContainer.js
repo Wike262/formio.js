@@ -30,6 +30,8 @@ export default class SectionContainer extends panel {
     super(component, options, data);
     this.collapsed = !!this.component.collapsed;
     Templates.templates.bootstrap['SectionContainer'] = { form: createSectionContainerTemplate };
+    Templates.addCurrentTemplate('SectionContainer', { form: createSectionContainerTemplate });
+    Templates.addTemplate('SectionContainer', { form: createSectionContainerTemplate });
   }
 
   get templateName() {

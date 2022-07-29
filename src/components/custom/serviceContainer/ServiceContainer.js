@@ -48,10 +48,12 @@ export default class ServiceContainer extends panel {
     };
   }
 
-  constructor(component, options, data) {
-    super(component, options, data);
+  constructor(...args) {
+    super(...args);
     this.collapsed = !!this.component.collapsed;
     Templates.templates.bootstrap['ServiceContainer'] = { form: createServiceContainerTemplate };
+    Templates.addCurrentTemplate('ServiceContainer', { form: createServiceContainerTemplate });
+    Templates.addTemplate('ServiceContainer', { form: createServiceContainerTemplate });
   }
 
   attach(element) {
