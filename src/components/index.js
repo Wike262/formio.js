@@ -47,10 +47,10 @@ import UrlComponent from './url/Url';
 import WellComponent from './well/Well';
 import SectionContainer from './custom/Section/SectionContainer';
 import ServiceContainer from './custom/serviceContainer/ServiceContainer';
-import slider from './custom/serviceContainer/Slider';
 import Sections from './custom/serviceContainer/Sections';
 import PictureWithCaption from './custom/PictureWithDescription/PictureWithDescription';
 import Card from './custom/Card/Card';
+import Slider from './custom/serviceContainer/Slider';
 
 export default {
   address: AddressComponent,
@@ -103,8 +103,8 @@ export default {
   well: WellComponent,
   SectionContainer: SectionContainer,
   ServiceContainer: ServiceContainer,
-  slider: slider,
+  Slider: Slider,
   Sections: Sections,
-  pictureWithCaption: PictureWithCaption,
-  card: Card,
+  PictureWithCaption: PictureWithCaption,
+  Card: Card,
 };
