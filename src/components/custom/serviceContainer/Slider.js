@@ -51,8 +51,7 @@ export default class Slider extends panel {
     super(component, options, data);
     this.collapsed = !!this.component.collapsed;
     Templates.addCurrentTemplate('Slider', { form: createSliderTemplate });
-    Templates.templates.current['Slider'] = { form: createSliderTemplate };
-    Templates.templates.bootstrap['Slider'] = { form: createSliderTemplate };
+    Templates.addTemplate('Slider', { form: createSliderTemplate });
   }
 }
 
