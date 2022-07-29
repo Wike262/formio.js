@@ -8,7 +8,7 @@ export default class PictureWithCaption extends field {
 
   static schema() {
     return field.schema({
-      type: 'pictureWithCaption',
+      type: 'PictureWithCaption',
     });
   }
 
