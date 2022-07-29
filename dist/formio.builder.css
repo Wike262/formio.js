@@ -1667,29 +1667,35 @@ span[role=link] {
 }
 .card__content {
   display: flex;
+  max-width: 375px;
 }
 
 .card__image {
-  width: 120px;
-  height: 120px;
+  width: 96px;
+  height: 96px;
+  margin: 0 10px 0 0;
   border-radius: 10%;
 }
 
 .card__text, .card__text_header {
   font-family: "RootUI";
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 25px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
   color: gray;
 }
 
 .card__text_header {
-  font-size: 20px;
+  font-size: 14px;
   color: black;
+  margin-top: 10px;
 }
 
 .card__description {
-  margin: 10px 20px;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @font-face {
@@ -1717,7 +1723,7 @@ span[role=link] {
 }
 
 .accordion__item {
-  padding: 8px 12px 8px 16px;
+  padding: 8px 10px 8px 10px;
 }
 
 .accordion__header {
@@ -1736,7 +1742,6 @@ span[role=link] {
 .accordion__body {
   flex-direction: row;
   align-items: flex-start;
-  padding: 12px 16px;
   gap: 16px;
   width: 100%;
   height: max-content;
