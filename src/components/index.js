@@ -49,6 +49,8 @@ import SectionContainer from './custom/Section/SectionContainer';
 import ServiceContainer from './custom/serviceContainer/ServiceContainer';
 import slider from './custom/serviceContainer/Slider';
 import sections from './custom/serviceContainer/Sections';
+import PictureWithCaption from './custom/PictureWithDescription/PictureWithDescription';
+import Card from './custom/Card/Card';
 
 export default {
   address: AddressComponent,
@@ -103,4 +105,6 @@ export default {
   ServiceContainer: ServiceContainer,
   slider: slider,
   sections: sections,
+  pictureWithCaption: PictureWithCaption,
+  card: Card,
 };
