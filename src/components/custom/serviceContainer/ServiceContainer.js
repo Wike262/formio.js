@@ -10,7 +10,7 @@ function createServiceContainerTemplate(ctx) {
     });
   }
   return `
-  <div class="container" ref="${ctx.nestedKey}">
+  <div class="containerServiceWrapper" ref="${ctx.nestedKey}">
     ${ctx.children}
   </div>
 `;
@@ -28,7 +28,7 @@ export default class ServiceContainer extends panel {
       label: 'Контейнер сервиса',
       type: 'ServiceContainer',
       key: 'ServiceContainer',
-      customClass: 'container',
+      customClass: 'containerServiceWrapper',
       components: [
         { type: 'Slider', components: [] },
         { type: 'Sections', components: [] },

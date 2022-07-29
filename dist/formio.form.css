@@ -1748,7 +1748,7 @@ span[role=link] {
   max-height: max-content;
 }
 
-.container {
+.containerServiceWrapper {
   width: max-content;
   min-height: 375px;
   max-height: 700px;
