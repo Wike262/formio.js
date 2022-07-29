@@ -35,8 +35,9 @@ export default class Sections extends panel {
   constructor(component, options, data) {
     super(component, options, data);
     this.collapsed = !!this.component.collapsed;
-    Templates.addCurrentTemplate('Slider', { form: createSectionsTemplate });
-    Templates.addTemplate('Slider', { form: createSectionsTemplate });
+    Templates.templates.bootstrap['Section'] = { form: createSectionsTemplate };
+    Templates.addCurrentTemplate('Section', { form: createSectionsTemplate });
+    Templates.addTemplate('Section', { form: createSectionsTemplate });
   }
 }
 
