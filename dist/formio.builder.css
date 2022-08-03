@@ -1667,46 +1667,50 @@ span[role=link] {
 }
 .card__content {
   display: flex;
-  max-width: 375px;
+  max-width: 100%;
+  margin: 2px;
+  height: 96px;
 }
 
 .card__image {
   width: 96px;
   height: 96px;
-  margin: 0 10px 0 0;
+  margin: 0 16px 0 0;
   border-radius: 10%;
 }
 
 .card__text, .card__text_header {
-  font-family: "RootUI";
+  word-wrap: break-word;
+  font-family: "PT Root UI";
   font-size: 12px;
   font-weight: 700;
   line-height: 16px;
-  color: gray;
+  color: rgba(27, 44, 78, 0.6);
+  margin: 0;
 }
 
 .card__text_header {
   font-size: 14px;
-  color: black;
-  margin-top: 10px;
+  color: #1B2C4E;
+  margin-bottom: 8px;
+  margin-top: 4px;
 }
 
 .card__description {
-  width: 220px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-@font-face {
-  font-family: "RootUI";
-  src: url("../../dist/fonts/PT-Root-UI_Medium.ttf");
+.link {
+  text-decoration: none;
 }
+
 .picture__image {
   position: relative;
   display: flex;
   align-items: flex-end;
-  width: 375px;
+  width: 100%;
   height: 375px;
   background-position: center;
   background-repeat: no-repeat;
@@ -1722,8 +1726,12 @@ span[role=link] {
   margin: 10px 20px;
 }
 
+.picture__content {
+  text-decoration: none;
+}
+
 .accordion__item {
-  padding: 8px 10px 8px 10px;
+  padding-left: 6px;
 }
 
 .accordion__header {
@@ -1736,7 +1744,10 @@ span[role=link] {
   line-height: 20px;
   color: #495671;
   width: 100%;
-  height: 20px;
+  height: 36px;
+  display: flex;
+  padding-right: 4.25px;
+  align-items: center;
 }
 
 .accordion__body {
@@ -1751,18 +1762,33 @@ span[role=link] {
   display: none;
 }
 
+.button__collapsing {
+  width: 6.5px;
+  height: 11.5px;
+  color: #1B2C4E;
+  margin-right: 4.25px;
+}
+
+.separator {
+  border-top-width: 0.5px;
+  margin: 11px 6px 12px 6px;
+}
+
 .containerNavbar {
-  width: 375px;
+  width: 100%;
   height: 96px;
 }
 
 .containerSlider {
-  width: 375px;
+  width: 100%;
   height: 370px;
 }
 
 .serviceSections {
-  margin: 0 -2px -2px -2px;
+  margin: 0 -1.7px -2px -1.72px;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
   width: auto;
   top: 359px;
   background: #FFFFFF;
@@ -1771,8 +1797,9 @@ span[role=link] {
   max-height: max-content;
 }
 
-.containerServiceWrapper {
-  width: max-content;
+.container {
+  max-height: none;
+  width: unset;
   min-height: 375px;
   max-height: 700px;
   padding: 0;
@@ -1788,7 +1815,7 @@ span[role=link] {
 }
 
 .serviceName {
-  width: 375px;
+  width: 100%;
   display: flex;
   justify-content: center;
   margin-top: 57px;
@@ -1796,9 +1823,10 @@ span[role=link] {
 }
 
 .backIcon {
-  margin-left: 18px;
+  margin-left: 3px;
   position: absolute;
-  margin-top: 60px;
+  margin-top: 45px;
+  padding: 15px;
 }
 
 .marginNone {
@@ -1816,6 +1844,18 @@ span[role=link] {
 .cover {
   position: absolute;
   z-index: 1;
+}
+
+.flex {
+  width: 375px;
+}
+
+.formio-component-Sections {
+  position: relative;
+}
+
+.formio-component-card {
+  margin: 15px 0;
 }
 .formbuilder {
   position: relative;

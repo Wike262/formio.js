@@ -36,6 +36,12 @@ window.esdocSearchIndex = [
     "variable"
   ],
   [
+    "formiojs/src/components/custom/card/card.form.js~card",
+    "function/index.html#static-function-Card",
+    "<span>Card</span> <span class=\"search-result-import-path\">formiojs/src/components/custom/Card/Card.form.js</span>",
+    "function"
+  ],
+  [
     "formiojs/src/components/checkbox/checkbox.js~checkboxcomponent",
     "class/src/components/checkbox/Checkbox.js~CheckBoxComponent.html",
     "<span>CheckBoxComponent</span> <span class=\"search-result-import-path\">formiojs/src/components/checkbox/Checkbox.js</span>",
@@ -390,6 +396,12 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
+    "formiojs/src/components/custom/picturewithdescription/picturewithdescription.form.js~picturewithdescription",
+    "function/index.html#static-function-PictureWithDescription",
+    "<span>PictureWithDescription</span> <span class=\"search-result-import-path\">formiojs/src/components/custom/PictureWithDescription/PictureWithDescription.form.js</span>",
+    "function"
+  ],
+  [
     "formiojs/src/providers/providers.js~providers",
     "class/src/providers/Providers.js~Providers.html",
     "<span>Providers</span> <span class=\"search-result-import-path\">formiojs/src/providers/Providers.js</span>",
@@ -450,6 +462,12 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
+    "formiojs/src/components/custom/servicecontainer/sections.js~sections",
+    "class/src/components/custom/serviceContainer/Sections.js~Sections.html",
+    "<span>Sections</span> <span class=\"search-result-import-path\">formiojs/src/components/custom/serviceContainer/Sections.js</span>",
+    "class"
+  ],
+  [
     "formiojs/src/components/select/select.form.js~select",
     "function/index.html#static-function-Select",
     "<span>Select</span> <span class=\"search-result-import-path\">formiojs/src/components/select/Select.form.js</span>",
@@ -462,10 +480,34 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "formiojs/src/components/custom/separator/separator.form.js~separator",
+    "function/index.html#static-function-Separator",
+    "<span>Separator</span> <span class=\"search-result-import-path\">formiojs/src/components/custom/Separator/Separator.form.js</span>",
+    "function"
+  ],
+  [
+    "formiojs/src/components/custom/separator/separator.js~separator",
+    "class/src/components/custom/Separator/Separator.js~Separator.html",
+    "<span>Separator</span> <span class=\"search-result-import-path\">formiojs/src/components/custom/Separator/Separator.js</span>",
+    "class"
+  ],
+  [
+    "formiojs/src/components/custom/servicecontainer/servicecontainer.form.js~servicecontainer",
+    "function/index.html#static-function-ServiceContainer",
+    "<span>ServiceContainer</span> <span class=\"search-result-import-path\">formiojs/src/components/custom/serviceContainer/ServiceContainer.form.js</span>",
+    "function"
+  ],
+  [
     "formiojs/src/components/signature/signature.form.js~signature",
     "function/index.html#static-function-Signature",
     "<span>Signature</span> <span class=\"search-result-import-path\">formiojs/src/components/signature/Signature.form.js</span>",
     "function"
+  ],
+  [
+    "formiojs/src/components/custom/servicecontainer/slider.js~slider",
+    "class/src/components/custom/serviceContainer/Slider.js~Slider.html",
+    "<span>Slider</span> <span class=\"search-result-import-path\">formiojs/src/components/custom/serviceContainer/Slider.js</span>",
+    "class"
   ],
   [
     "formiojs/src/contrib/stripe/checkout/stripecheckout.js~stripecheckoutcomponent",
@@ -3408,6 +3450,30 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "src/components/custom/card/card.edit.display.js",
+    "file/src/components/custom/Card/Card.edit.display.js.html",
+    "src/components/custom/Card/Card.edit.display.js",
+    "file"
+  ],
+  [
+    "src/components/custom/card/card.form.js",
+    "file/src/components/custom/Card/Card.form.js.html",
+    "src/components/custom/Card/Card.form.js",
+    "file"
+  ],
+  [
+    "src/components/custom/picturewithdescription/picturewithcaption.edit.display.js",
+    "file/src/components/custom/PictureWithDescription/PictureWithCaption.edit.display.js.html",
+    "src/components/custom/PictureWithDescription/PictureWithCaption.edit.display.js",
+    "file"
+  ],
+  [
+    "src/components/custom/picturewithdescription/picturewithdescription.form.js",
+    "file/src/components/custom/PictureWithDescription/PictureWithDescription.form.js.html",
+    "src/components/custom/PictureWithDescription/PictureWithDescription.form.js",
+    "file"
+  ],
+  [
     "src/components/custom/section/sectioncontainer.edit.display.js",
     "file/src/components/custom/Section/SectionContainer.edit.display.js.html",
     "src/components/custom/Section/SectionContainer.edit.display.js",
@@ -3465,6 +3531,144 @@ window.esdocSearchIndex = [
     "src/components/custom/section/sectioncontainer.js~sectioncontainer.schema",
     "class/src/components/custom/Section/SectionContainer.js~SectionContainer.html#static-method-schema",
     "src/components/custom/Section/SectionContainer.js~SectionContainer.schema",
+    "method"
+  ],
+  [
+    "src/components/custom/separator/separator.edit.display.js",
+    "file/src/components/custom/Separator/Separator.edit.display.js.html",
+    "src/components/custom/Separator/Separator.edit.display.js",
+    "file"
+  ],
+  [
+    "src/components/custom/separator/separator.form.js",
+    "file/src/components/custom/Separator/Separator.form.js.html",
+    "src/components/custom/Separator/Separator.form.js",
+    "file"
+  ],
+  [
+    "src/components/custom/separator/separator.js",
+    "file/src/components/custom/Separator/Separator.js.html",
+    "src/components/custom/Separator/Separator.js",
+    "file"
+  ],
+  [
+    "src/components/custom/separator/separator.js~separator#attach",
+    "class/src/components/custom/Separator/Separator.js~Separator.html#instance-method-attach",
+    "src/components/custom/Separator/Separator.js~Separator#attach",
+    "method"
+  ],
+  [
+    "src/components/custom/separator/separator.js~separator#constructor",
+    "class/src/components/custom/Separator/Separator.js~Separator.html#instance-constructor-constructor",
+    "src/components/custom/Separator/Separator.js~Separator#constructor",
+    "method"
+  ],
+  [
+    "src/components/custom/separator/separator.js~separator#render",
+    "class/src/components/custom/Separator/Separator.js~Separator.html#instance-method-render",
+    "src/components/custom/Separator/Separator.js~Separator#render",
+    "method"
+  ],
+  [
+    "src/components/custom/separator/separator.js~separator.builderinfo",
+    "class/src/components/custom/Separator/Separator.js~Separator.html#static-member-builderInfo",
+    "src/components/custom/Separator/Separator.js~Separator.builderInfo",
+    "member"
+  ],
+  [
+    "src/components/custom/separator/separator.js~separator.editform",
+    "class/src/components/custom/Separator/Separator.js~Separator.html#static-member-editForm",
+    "src/components/custom/Separator/Separator.js~Separator.editForm",
+    "member"
+  ],
+  [
+    "src/components/custom/separator/separator.js~separator.schema",
+    "class/src/components/custom/Separator/Separator.js~Separator.html#static-method-schema",
+    "src/components/custom/Separator/Separator.js~Separator.schema",
+    "method"
+  ],
+  [
+    "src/components/custom/servicecontainer/sections.js",
+    "file/src/components/custom/serviceContainer/Sections.js.html",
+    "src/components/custom/serviceContainer/Sections.js",
+    "file"
+  ],
+  [
+    "src/components/custom/servicecontainer/sections.js~sections#collapsed",
+    "class/src/components/custom/serviceContainer/Sections.js~Sections.html#instance-member-collapsed",
+    "src/components/custom/serviceContainer/Sections.js~Sections#collapsed",
+    "member"
+  ],
+  [
+    "src/components/custom/servicecontainer/sections.js~sections#constructor",
+    "class/src/components/custom/serviceContainer/Sections.js~Sections.html#instance-constructor-constructor",
+    "src/components/custom/serviceContainer/Sections.js~Sections#constructor",
+    "method"
+  ],
+  [
+    "src/components/custom/servicecontainer/sections.js~sections#templatename",
+    "class/src/components/custom/serviceContainer/Sections.js~Sections.html#instance-get-templateName",
+    "src/components/custom/serviceContainer/Sections.js~Sections#templateName",
+    "member"
+  ],
+  [
+    "src/components/custom/servicecontainer/sections.js~sections.editform",
+    "class/src/components/custom/serviceContainer/Sections.js~Sections.html#static-member-editForm",
+    "src/components/custom/serviceContainer/Sections.js~Sections.editForm",
+    "member"
+  ],
+  [
+    "src/components/custom/servicecontainer/sections.js~sections.schema",
+    "class/src/components/custom/serviceContainer/Sections.js~Sections.html#static-method-schema",
+    "src/components/custom/serviceContainer/Sections.js~Sections.schema",
+    "method"
+  ],
+  [
+    "src/components/custom/servicecontainer/servicecontainer.edit.display.js",
+    "file/src/components/custom/serviceContainer/ServiceContainer.edit.display.js.html",
+    "src/components/custom/serviceContainer/ServiceContainer.edit.display.js",
+    "file"
+  ],
+  [
+    "src/components/custom/servicecontainer/servicecontainer.form.js",
+    "file/src/components/custom/serviceContainer/ServiceContainer.form.js.html",
+    "src/components/custom/serviceContainer/ServiceContainer.form.js",
+    "file"
+  ],
+  [
+    "src/components/custom/servicecontainer/slider.js",
+    "file/src/components/custom/serviceContainer/Slider.js.html",
+    "src/components/custom/serviceContainer/Slider.js",
+    "file"
+  ],
+  [
+    "src/components/custom/servicecontainer/slider.js~slider#collapsed",
+    "class/src/components/custom/serviceContainer/Slider.js~Slider.html#instance-member-collapsed",
+    "src/components/custom/serviceContainer/Slider.js~Slider#collapsed",
+    "member"
+  ],
+  [
+    "src/components/custom/servicecontainer/slider.js~slider#constructor",
+    "class/src/components/custom/serviceContainer/Slider.js~Slider.html#instance-constructor-constructor",
+    "src/components/custom/serviceContainer/Slider.js~Slider#constructor",
+    "method"
+  ],
+  [
+    "src/components/custom/servicecontainer/slider.js~slider#templatename",
+    "class/src/components/custom/serviceContainer/Slider.js~Slider.html#instance-get-templateName",
+    "src/components/custom/serviceContainer/Slider.js~Slider#templateName",
+    "member"
+  ],
+  [
+    "src/components/custom/servicecontainer/slider.js~slider.editform",
+    "class/src/components/custom/serviceContainer/Slider.js~Slider.html#static-member-editForm",
+    "src/components/custom/serviceContainer/Slider.js~Slider.editForm",
+    "member"
+  ],
+  [
+    "src/components/custom/servicecontainer/slider.js~slider.schema",
+    "class/src/components/custom/serviceContainer/Slider.js~Slider.html#static-method-schema",
+    "src/components/custom/serviceContainer/Slider.js~Slider.schema",
     "method"
   ],
   [
@@ -7738,6 +7942,12 @@ window.esdocSearchIndex = [
     "file/src/templates/Templates.js.html",
     "src/templates/Templates.js",
     "file"
+  ],
+  [
+    "src/templates/templates.js~templates.addcurrenttemplate",
+    "class/src/templates/Templates.js~Templates.html#static-method-addCurrentTemplate",
+    "src/templates/Templates.js~Templates.addCurrentTemplate",
+    "method"
   ],
   [
     "src/templates/templates.js~templates.addtemplate",

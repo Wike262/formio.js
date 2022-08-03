@@ -1,6 +1,6 @@
 {
-  "coverage": "6.45%",
-  "expectCount": 991,
+  "coverage": "6.29%",
+  "expectCount": 1017,
   "actualCount": 64,
   "files": {
     "src/Embed.js": {
@@ -485,11 +485,25 @@
         184
       ]
     },
+    "src/components/custom/Card/Card.form.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        4
+      ]
+    },
+    "src/components/custom/PictureWithDescription/PictureWithDescription.form.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        4
+      ]
+    },
     "src/components/custom/Section/SectionContainer.form.js": {
       "expectCount": 1,
       "actualCount": 0,
       "undocumentLines": [
-        3
+        4
       ]
     },
     "src/components/custom/Section/SectionContainer.js": {
@@ -505,6 +519,59 @@
         39,
         59,
         69
+      ]
+    },
+    "src/components/custom/Separator/Separator.form.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        4
+      ]
+    },
+    "src/components/custom/Separator/Separator.js": {
+      "expectCount": 7,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        5,
+        9,
+        15,
+        17,
+        25,
+        29
+      ]
+    },
+    "src/components/custom/serviceContainer/Sections.js": {
+      "expectCount": 7,
+      "actualCount": 0,
+      "undocumentLines": [
+        6,
+        17,
+        18,
+        20,
+        24,
+        35,
+        37
+      ]
+    },
+    "src/components/custom/serviceContainer/ServiceContainer.form.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        4
+      ]
+    },
+    "src/components/custom/serviceContainer/Slider.js": {
+      "expectCount": 7,
+      "actualCount": 0,
+      "undocumentLines": [
+        6,
+        32,
+        33,
+        35,
+        39,
+        50,
+        52
       ]
     },
     "src/components/datagrid/DataGrid.form.js": {
@@ -1364,7 +1431,7 @@
       ]
     },
     "src/templates/Templates.js": {
-      "expectCount": 10,
+      "expectCount": 11,
       "actualCount": 0,
       "undocumentLines": [
         4,
@@ -1373,10 +1440,11 @@
         16,
         20,
         24,
-        29,
-        37,
+        28,
+        33,
         41,
-        48
+        45,
+        52
       ]
     },
     "src/templates/Templates.unit.js": {

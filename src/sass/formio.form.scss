@@ -1,4 +1,5 @@
 @import './formio.embed.scss';
+
 $dialog-z-index: 10000;
 $autocomplete-in-dialog-z-index: $dialog-z-index + 1000;
 
@@ -22,7 +23,7 @@ $autocomplete-in-dialog-z-index: $dialog-z-index + 1000;
   }
 
   .field-required:after {
-    color:#C20000;
+    color: #C20000;
   }
 }
 
@@ -41,7 +42,7 @@ $autocomplete-in-dialog-z-index: $dialog-z-index + 1000;
 .formio-component.alert-danger .invalid-feedback,
 .formio-component.has-message .invalid-feedback,
 .formio-component-modal-wrapper.has-message .invalid-feedback,
-.formio-component-modal-wrapper.has-error  .invalid-feedback  {
+.formio-component-modal-wrapper.has-error .invalid-feedback {
   display: block;
   color: inherit;
   margin-top: 4px;
@@ -51,9 +52,11 @@ $autocomplete-in-dialog-z-index: $dialog-z-index + 1000;
   .error {
     color: #dc3545;
   }
+
   .warning {
     color: #856404;
   }
+
   .info {
     color: #004085;
   }
@@ -96,7 +99,7 @@ $autocomplete-in-dialog-z-index: $dialog-z-index + 1000;
   top: 0;
   bottom: 0;
   border: none;
-  display:none;
+  display: none;
 }
 
 .formio-component-tags tags {
@@ -104,8 +107,8 @@ $autocomplete-in-dialog-z-index: $dialog-z-index + 1000;
 }
 
 .field-required:after, .tab-error::after {
-  content:" *";
-  color:#EB0000;
+  content: " *";
+  color: #EB0000;
 }
 
 .field-required:after {
@@ -195,7 +198,7 @@ $autocomplete-in-dialog-z-index: $dialog-z-index + 1000;
   flex-basis: 85%;
 }
 
-.card-vertical ul>li>.nav-link-vertical  {
+.card-vertical ul > li > .nav-link-vertical {
   border-right-color: transparent;
   border-radius: 4px 0 0 4px;
   margin-right: 0;
@@ -210,7 +213,7 @@ $autocomplete-in-dialog-z-index: $dialog-z-index + 1000;
   }
 }
 
-.nav-tabs-vertical>li {
+.nav-tabs-vertical > li {
   margin: 0 -1px 0 0;
 }
 
@@ -250,7 +253,7 @@ td > .form-group {
 }
 
 .btn.signature-pad-refresh {
-  position:absolute;
+  position: absolute;
   left: 0;
   top: 0;
   z-index: 1000;
@@ -275,7 +278,7 @@ td > .form-group {
   border-color: #ccc;
 }
 
-.choices__list--dropdown .choices__item--selectable{
+.choices__list--dropdown .choices__item--selectable {
   padding-right: 0px;
 }
 
@@ -318,6 +321,7 @@ td > .form-group {
 .choices[dir="rtl"] > * {
   text-align: right;
 }
+
 /* end fix for choices.js .choices__input container in rtl */
 
 /* fix for choices.js deletable items in rtl */
@@ -335,6 +339,7 @@ td > .form-group {
   border-right: 1px solid #008fa1;
   overflow: hidden;
 }
+
 /* end fix for choices.js deletable items in rtl */
 
 @-moz-document url-prefix() {
@@ -460,8 +465,8 @@ td > .form-group {
 .formio-dialog.formio-dialog-disabled-animation,
 .formio-dialog.formio-dialog-disabled-animation .formio-dialog-overlay,
 .formio-dialog.formio-dialog-disabled-animation .formio-dialog-content {
-  -webkit-animation: none!important;
-  animation: none!important;
+  -webkit-animation: none !important;
+  animation: none !important;
 }
 
 .formio-dialog-overlay {
@@ -604,7 +609,7 @@ body.formio-dialog-open {
   animation: formio-dialog-flyin .5s;
   background: #f0f0f0;
   border-radius: 5px;
-  font-family: 'Helvetica',sans-serif;
+  font-family: 'Helvetica', sans-serif;
   font-size: 1.1em;
   line-height: 1.5em;
   margin: 0 auto;
@@ -628,7 +633,7 @@ body.formio-dialog-open {
   cursor: pointer;
 }
 
-.component-settings .nav>li>a {
+.component-settings .nav > li > a {
   padding: 8px 10px;
 }
 
@@ -744,7 +749,7 @@ body.formio-dialog-open {
 }
 
 .formio-placeholder {
-  position:absolute;
+  position: absolute;
   color: #999;
 }
 
@@ -822,7 +827,7 @@ body.formio-dialog-open {
 .formio-component-selectboxes.formio-component-label-hidden.required .form-check-label:before {
   position: relative;
   content: "* ";
-  color:#EB0000;
+  color: #EB0000;
 }
 
 .formio-component-radio.formio-component-label-hidden.required .label-position-right.form-check-label:before,
@@ -850,7 +855,7 @@ body.formio-dialog-open {
   flex-direction: row;
 }
 
-.formio-component-submit button[disabled]+.has-error {
+.formio-component-submit button[disabled] + .has-error {
   display: block;
 }
 
@@ -947,11 +952,11 @@ body.formio-dialog-open {
 
 .formio-component-datagrid {
   .datagrid-table {
-    &>tbody>tr>td:last-child {
+    & > tbody > tr > td:last-child {
       position: relative;
     }
 
-    &>tbody>tr:hover>td:last-child .formio-datagrid-remove {
+    & > tbody > tr:hover > td:last-child .formio-datagrid-remove {
       visibility: visible;
       opacity: 1;
       transition: visibility 0ms, opacity 200ms linear;
@@ -1206,6 +1211,7 @@ div[data-oembed-url] {
   text-align: center;
   margin: 1em auto
 }
+
 /* ckeditor5-image/theme/image.css */
 .formio-component-content .image > img {
   display: block;
@@ -1213,6 +1219,7 @@ div[data-oembed-url] {
   max-width: 100%;
   min-width: 50px;
 }
+
 /* ckeditor5-image/theme/imagecaption.css */
 .formio-component-content .image > figcaption {
   display: table-caption;
@@ -1224,20 +1231,24 @@ div[data-oembed-url] {
   font-size: .75em;
   outline-offset: -1px;
 }
+
 /* ckeditor5-image/theme/imageresize.css */
 .formio-component-content .image.image_resized {
   max-width: 100%;
   display: block;
   box-sizing: border-box
 }
+
 /* ckeditor5-image/theme/imageresize.css */
 .formio-component-content .image.image_resized img {
   width: 100%;
 }
+
 /* ckeditor5-image/theme/imageresize.css */
 .formio-component-content .image.image_resized > figcaption {
   display: block;
 }
+
 /* ckeditor5-media-embed/theme/mediaembed.css */
 .formio-component-content .media {
   clear: both;
@@ -1245,42 +1256,51 @@ div[data-oembed-url] {
   display: block;
   min-width: 15em;
 }
+
 /* ckeditor5-image/theme/imagestyle.css */
 .formio-component-content .image-style-side:not(.image_resized), .formio-component-content .image-style-align-left:not(.image_resized), .formio-component-content .image-style-align-center:not(.image_resized), .formio-component-content .image-style-align-right:not(.image_resized) {
   max-width: 50%;
 }
+
 /* ckeditor5-image/theme/imagestyle.css */
 .formio-component-content .image-style-side:not(.image_resized), .formio-component-content .image-style-align-left:not(.image_resized), .formio-component-content .image-style-align-center:not(.image_resized), .formio-component-content .image-style-align-right:not(.image_resized) {
   max-width: 50%;
 }
+
 /* ckeditor5-image/theme/imagestyle.css */
 .formio-component-content .image-style-side:not(.image_resized), .formio-component-content .image-style-align-left:not(.image_resized), .formio-component-content .image-style-align-center:not(.image_resized), .formio-component-content .image-style-align-right:not(.image_resized) {
   max-width: 50%;
 }
+
 /* ckeditor5-image/theme/imagestyle.css */
 .formio-component-content .image-style-side:not(.image_resized), .formio-component-content .image-style-align-left:not(.image_resized), .formio-component-content .image-style-align-center:not(.image_resized), .formio-component-content .image-style-align-right:not(.image_resized) {
   max-width: 50%;
 }
+
 /* ckeditor5-image/theme/imagestyle.css */
 .formio-component-content .image-style-side {
   float: right;
   margin-left: var(--ck-image-style-spacing);
 }
+
 /* ckeditor5-image/theme/imagestyle.css */
 .formio-component-content .image-style-align-left {
   float: left;
   margin-right: var(--ck-image-style-spacing);
 }
+
 /* ckeditor5-image/theme/imagestyle.css */
 .formio-component-content .image-style-align-center {
   margin-left: auto;
   margin-right: auto;
 }
+
 /* ckeditor5-image/theme/imagestyle.css */
 .formio-component-content .image-style-align-right {
   float: right;
   margin-left: var(--ck-image-style-spacing);
 }
+
 /* ckeditor5-block-quote/theme/blockquote.css */
 .formio-component-content blockquote {
   overflow: hidden;
@@ -1291,6 +1311,7 @@ div[data-oembed-url] {
   font-style: italic;
   border-left: solid 5px hsl(0, 0%, 80%);
 }
+
 /* ckeditor5-block-quote/theme/blockquote.css */
 .formio-component-content[dir="rtl"] blockquote {
   border-left: 0;
@@ -1375,9 +1396,11 @@ div[data-oembed-url] {
 
 .formio-component-modal-wrapper {
   margin-bottom: 10px;
+
   .open-modal-button {
     height: auto;
   }
+
   .component-rendering-hidden {
     visibility: hidden;
   }
@@ -1398,7 +1421,7 @@ div[data-oembed-url] {
   li[data-list="bullet"] {
     list-style-type: none;
 
-    .ql-ui{
+    .ql-ui {
       padding-right: 0.5rem;
 
       &::before {
@@ -1527,22 +1550,25 @@ div[data-oembed-url] {
       width: 100%;
     }
   }
+
   &.active {
     .progress-bar, .classic-pagination-progress-bar {
       width: 50%;
     }
   }
+
   &.disabled {
     .classic-pagination-dot {
       background-color: #f5f5f5;
-      &::after{
+
+      &::after {
         opacity: 0;
       }
     }
   }
 }
 
-.classic-pagination-page  {
+.classic-pagination-page {
   &:first-child {
     .progress, .classic-pagination-progress {
       left: 50%;
@@ -1568,6 +1594,7 @@ div[data-oembed-url] {
     }
   }
 }
+
 //styles for google maps dropdown
 .pac-container {
   z-index: 11000;
@@ -1701,6 +1728,7 @@ div[data-oembed-url] {
 
 .formio-tooltip__wrapper {
   position: relative;
+
   & > span {
     font-weight: normal;
   }
@@ -1718,48 +1746,52 @@ span[role="link"] {
 
 .card__content {
   display: flex;
-  max-width: 375px;
+  max-width: 100%;
+  margin: 2px;
+  height: 96px;
 }
 
 .card__image {
   width: 96px;
   height: 96px;
-  margin: 0 10px 0 0;
+  margin: 0 16px 0 0;
   border-radius: 10%;
 }
 
 .card__text {
-  font-family: "RootUI";
+  word-wrap: break-word;
+  font-family: 'PT Root UI';
   font-size: 12px;
   font-weight: 700;
   line-height: 16px;
-  color: gray;
+  color: rgba(27, 44, 78, 0.6);
+  margin: 0;
 }
 
 .card__text_header {
   @extend .card__text;
   font-size: 14px;
-  color: black;
-  margin-top: 10px;
+  color: #1B2C4E;
+  margin-bottom: 8px;
+  margin-top: 4px;
 }
 
 .card__description {
-  width: 220px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-@font-face {
-  font-family: "RootUI";
-  src: url("../../dist/fonts/PT-Root-UI_Medium.ttf");
+.link {
+  text-decoration: none;
 }
+
 
 .picture__image {
   position: relative;
   display: flex;
   align-items: flex-end;
-  width: 375px;
+  width: 100%;
   height: 375px;
   background-position: center;
   background-repeat: no-repeat;
@@ -1774,8 +1806,13 @@ span[role="link"] {
   color: white;
   margin: 10px 20px;
 }
+
+.picture__content {
+  text-decoration: none;
+}
+
 .accordion__item {
-  padding: 8px 10px 8px 10px;
+  padding-left: 6px;
 }
 
 .accordion__header {
@@ -1789,35 +1826,51 @@ span[role="link"] {
 
   color: #495671;
   width: 100%;
-  height: 20px;
+  height: 36px;
+  display: flex;
+  padding-right: 4.25px;
+  align-items: center;
 }
 
 .accordion__body {
   flex-direction: row;
   align-items: flex-start;
   gap: 16px;
-
   width: 100%;
   height: max-content;
 }
-
 
 .hide {
   display: none;
 }
 
+.button__collapsing {
+  width: 6.5px;
+  height: 11.5px;
+  color: #1B2C4E;
+  margin-right: 4.25px;
+}
+
+.separator {
+  border-top-width: 0.5px;
+  margin: 11px 6px 12px 6px;
+}
+
 .containerNavbar {
-  width: 375px;
+  width: 100%;
   height: 96px;
 }
 
 .containerSlider {
-  width: 375px;
+  width: 100%;
   height: 370px;
 }
 
 .serviceSections {
-  margin: 0 -2px -2px -2px;
+  margin: 0 -1.7px -2px -1.72px;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
   width: auto;
   top: 359px;
   background: #FFFFFF;
@@ -1826,8 +1879,9 @@ span[role="link"] {
   max-height: max-content;
 }
 
-.containerServiceWrapper {
-  width: max-content;
+.container {
+  max-height: none;
+  width: unset;
   min-height: 375px;
   max-height: 700px;
   padding: 0;
@@ -1843,7 +1897,7 @@ span[role="link"] {
 }
 
 .serviceName {
-  width: 375px;
+  width: 100%;
   display: flex;
   justify-content: center;
   margin-top: 57px;
@@ -1851,9 +1905,10 @@ span[role="link"] {
 }
 
 .backIcon {
-  margin-left: 18px;
+  margin-left: 3px;
   position: absolute;
-  margin-top: 60px;
+  margin-top: 45px;
+  padding: 15px;
 }
 
 .marginNone {
@@ -1871,4 +1926,16 @@ span[role="link"] {
 .cover {
   position: absolute;
   z-index: 1;
+}
+
+.flex {
+  width: 375px;
+}
+
+.formio-component-Sections {
+  position: relative;
+}
+
+.formio-component-card {
+  margin: 15px 0;
 }

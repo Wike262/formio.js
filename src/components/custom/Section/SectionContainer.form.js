@@ -1,5 +1,6 @@
 import nestedComponentForm from '../../_classes/nested/NestedComponent.form';
 import SectionContainer from './SectionContainer.edit.display';
+
 export default function(...extend) {
   return nestedComponentForm(
     [
@@ -31,3 +32,4 @@ export default function(...extend) {
     ...extend
   );
 }
+

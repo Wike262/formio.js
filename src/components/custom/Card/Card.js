@@ -1,13 +1,13 @@
-import field from '../../_classes/field/Field';
+import FieldComponent from '../../_classes/field/Field';
 import editForm from './Card.form';
 
-export default class Card extends field {
+export default class Card extends FieldComponent {
   constructor(component, options, data) {
     super(component, options, data);
   }
 
   static schema() {
-    return field.schema({
+    return FieldComponent.schema({
       type: 'card',
     });
   }
@@ -24,7 +24,7 @@ export default class Card extends field {
 
   render() {
     return super.render(`
-    <a href=${this.component.cardWebview}>
+    <a href=${this.component.cardWebview} class="link">
       <div class="card__content">
         ${
       this.component.cardImage
@@ -48,4 +48,4 @@ export default class Card extends field {
   }
 }
 
-// Components.addComponent('card', Card);
+// Components.addComponent("card", Card);

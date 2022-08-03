@@ -1,6 +1,6 @@
 import Templates from '../../../templates/Templates';
-import panel from '../../panel/Panel';
 import nested from '../../_classes/nested/NestedComponent';
+import panel from '../../panel/Panel';
 import editForm from './ServiceContainer.form';
 
 function createServiceContainerTemplate(ctx) {
@@ -10,7 +10,7 @@ function createServiceContainerTemplate(ctx) {
     });
   }
   return `
-  <div ref="${ctx.nestedKey}">
+  <div class="container" ref="${ctx.nestedKey}">
     ${ctx.children}
   </div>
 `;
@@ -28,7 +28,7 @@ export default class ServiceContainer extends panel {
       label: 'Контейнер сервиса',
       type: 'ServiceContainer',
       key: 'ServiceContainer',
-      customClass: 'containerServiceWrapper',
+      customClass: 'container',
       components: [
         { type: 'Slider', components: [] },
         { type: 'Sections', components: [] },
@@ -48,22 +48,21 @@ export default class ServiceContainer extends panel {
     };
   }
 
-  constructor(...args) {
-    super(...args);
+  constructor(component, options, data) {
+    super(component, options, data);
     this.collapsed = !!this.component.collapsed;
     Templates.templates.bootstrap['ServiceContainer'] = { form: createServiceContainerTemplate };
-    Templates.addCurrentTemplate('ServiceContainer', { form: createServiceContainerTemplate });
-    Templates.addTemplate('ServiceContainer', { form: createServiceContainerTemplate });
   }
 
   attach(element) {
-    document.querySelectorAll('.builder-component').forEach((element) => element.classList.add('marginNone'));
-    document.querySelectorAll('.drag-container').forEach((element) => element.classList.add('paddingNone'));
+    document.querySelector('.formio-component-ServiceContainer').classList.add('flex');
+    document.querySelectorAll('.builder-component')?.forEach((element) => element.classList.add('marginNone'));
+    document.querySelectorAll('.drag-container')?.forEach((element) => element.classList.add('paddingNone'));
 
     if (
       document.querySelector('.containerSlider') &&
       document.querySelector('.containerSlider').lastElementChild.firstElementChild.role !== 'alert'
-  ) {
+    ) {
       document.querySelector('.containerSlider').firstElementChild.classList.add('cover');
       document.querySelector('.containerSlider').lastElementChild.classList.add('borderNone');
     }

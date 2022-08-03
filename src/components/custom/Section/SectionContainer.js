@@ -1,7 +1,7 @@
 import Templates from '../../../templates/Templates';
+import editForm from './SectionContainer.form';
 import panel from '../../panel/Panel';
 import nested from '../../_classes/nested/NestedComponent';
-import editForm from './SectionContainer.form';
 
 function createSectionContainerTemplate(ctx) {
   return `
@@ -9,12 +9,12 @@ function createSectionContainerTemplate(ctx) {
       <div class="accordion__header">
         ${ctx.component.title}
         <i
-          class="button-collapsing formio-collapse-icon ${ctx.iconClass(
+          class="button-collapsing formio-collapse-icon button__collapsing ${ctx.iconClass(
     ctx.collapsed ? 'angle-down' : 'angle-up'
-  )} text-muted" data-title="Collapse Panel" id="collapsing"></i>
+  )}" data-title="Collapse Panel" id="collapsing"></i>
       </div>
       <div
-        class="accordion__body"
+        class="accordion__body ${ctx.collapsed ? 'hide' : ''}"
         ref="${ctx.nestedKey}"
       >
         ${ctx.children}
@@ -30,8 +30,6 @@ export default class SectionContainer extends panel {
     super(component, options, data);
     this.collapsed = !!this.component.collapsed;
     Templates.templates.bootstrap['SectionContainer'] = { form: createSectionContainerTemplate };
-    Templates.addCurrentTemplate('SectionContainer', { form: createSectionContainerTemplate });
-    Templates.addTemplate('SectionContainer', { form: createSectionContainerTemplate });
   }
 
   get templateName() {
@@ -69,14 +67,15 @@ export default class SectionContainer extends panel {
   }
 
   attach(element) {
-    if (document.querySelector('.button-collapsing')) {
-      document.querySelectorAll('.button-collapsing').forEach((element) => {
+    if (document.querySelector('.accordion__item')) {
+      document.querySelectorAll('.accordion__item').forEach((element) => {
         element.addEventListener('click', () => {
           this.component.collapsible
             ? element.parentElement.parentElement.querySelector('.accordion__body').classList.add('hide')
-        : this.removeClass(element.parentElement.parentElement.querySelector('.accordion__body'), 'hide');
-          this.removeClass(element, this.component.collapsible ? 'fa-angle-up' : 'fa-angle-down');
-          element.classList.add(this.component.collapsible ? 'fa-angle-down' : 'fa-angle-up');
+            : this.removeClass(element.parentElement.parentElement.querySelector('.accordion__body'), 'hide');
+          const buttonCollapsing = element.querySelector('.button-collapsing');
+          this.removeClass(buttonCollapsing, this.component.collapsible ? 'fa-angle-up' : 'fa-angle-down');
+          buttonCollapsing.classList.add(this.component.collapsible ? 'fa-angle-down' : 'fa-angle-up');
           this.component.collapsible = !this.component.collapsible;
         });
       });
@@ -85,3 +84,4 @@ export default class SectionContainer extends panel {
   }
 }
 
+// Components.addComponent('SectionContainer', SectionContainer);

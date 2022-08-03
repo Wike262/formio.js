@@ -66,4 +66,15 @@ export default [
     label: 'Заголовок раздела',
     key: 'title',
   },
+  {
+    weight: 651,
+    type: 'checkbox',
+    label: 'Initially Collapsed',
+    tooltip: 'Determines the initial collapsed state of this Panel.',
+    key: 'collapsed',
+    input: true,
+    conditional: {
+      json: { '===': [{ var: 'data.collapsible' }, true] },
+    },
+  },
 ];

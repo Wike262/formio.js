@@ -1,13 +1,13 @@
+import FieldComponent from '../../_classes/field/Field';
 import editForm from './Separator.form';
-import field from '../../_classes/field/Field';
 
-export default class Separator extends field {
+export default class Separator extends FieldComponent {
   constructor(component, options, data) {
     super(component, options, data);
   }
 
   static schema() {
-    return field.schema({
+    return FieldComponent.schema({
       type: 'separator',
     });
   }
@@ -23,7 +23,7 @@ export default class Separator extends field {
   };
 
   render() {
-    return super.render('<hr />');
+    return super.render("<hr class='separator'/>");
   }
 
   attach(element) {
@@ -31,4 +31,4 @@ export default class Separator extends field {
   }
 }
 
-// Components.addComponent("separator", Separator);
+// Components.addComponent('separator', Separator);
