@@ -67,14 +67,15 @@ export default class SectionContainer extends panel {
   }
 
   attach(element) {
-    if (document.querySelector('.button-collapsing')) {
-      document.querySelectorAll('.button-collapsing').forEach((element) => {
+    if (document.querySelector('.accordion__header')) {
+      document.querySelectorAll('.accordion__header').forEach((element) => {
         element.addEventListener('click', () => {
-          this.component.collapsible
-            ? element.parentElement.parentElement.querySelector('.accordion__body').classList.add('hide')
-            : this.removeClass(element.parentElement.parentElement.querySelector('.accordion__body'), 'hide');
-          this.removeClass(element, this.component.collapsible ? 'fa-angle-up' : 'fa-angle-down');
-          element.classList.add(this.component.collapsible ? 'fa-angle-down' : 'fa-angle-up');
+          !this.component.collapsible
+            ? element.parentElement.querySelector('.accordion__body').classList.add('hide')
+            : this.removeClass(element.parentElement.querySelector('.accordion__body'), 'hide');
+          const buttonCollapsing = element.querySelector('.button-collapsing');
+          this.removeClass(buttonCollapsing, this.component.collapsible ? 'fa-angle-up' : 'fa-angle-down');
+          buttonCollapsing.classList.add(this.component.collapsible ? 'fa-angle-down' : 'fa-angle-up');
           this.component.collapsible = !this.component.collapsible;
         });
       });
