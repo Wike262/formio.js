@@ -70,13 +70,25 @@ export default class SectionContainer extends panel {
     if (document.querySelector('.accordion__header')) {
       document.querySelectorAll('.accordion__header').forEach((element) => {
         element.addEventListener('click', () => {
-          !this.component.collapsible
-            ? element.parentElement.querySelector('.accordion__body').classList.add('hide')
-            : this.removeClass(element.parentElement.querySelector('.accordion__body'), 'hide');
+          const elem = element.parentElement.querySelector('.accordion__body');
+          const hide = element.parentElement.querySelector('.accordion__body').classList.contains('hide');
           const buttonCollapsing = element.querySelector('.button-collapsing');
-          this.removeClass(buttonCollapsing, this.component.collapsible ? 'fa-angle-up' : 'fa-angle-down');
-          buttonCollapsing.classList.add(this.component.collapsible ? 'fa-angle-down' : 'fa-angle-up');
-          this.component.collapsible = !this.component.collapsible;
+
+          if (hide) {
+            elem.classList.remove('hide');
+            this.removeClass(buttonCollapsing, 'fa-angle-down');
+            buttonCollapsing.classList.add('fa-angle-up');
+          }
+          else {
+            elem.classList.add('hide');
+            this.removeClass(buttonCollapsing, 'fa-angle-up');
+            buttonCollapsing.classList.add('fa-angle-down');
+          }
+          // this.component.collapsible
+          //   ? element.parentElement.querySelector('.accordion__body').classList.add('hide')
+          //   : this.removeClass(element.parentElement.querySelector('.accordion__body'), 'hide');
+          // buttonCollapsing.classList.add(this.component.collapsible ? 'fa-angle-down' : 'fa-angle-up');
+          // this.component.collapsible = !this.component.collapsible;
         });
       });
     }
