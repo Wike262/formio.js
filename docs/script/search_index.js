@@ -294,6 +294,18 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
+    "formiojs/src/components/custom/image/image.form.js~image",
+    "function/index.html#static-function-Image",
+    "<span>Image</span> <span class=\"search-result-import-path\">formiojs/src/components/custom/Image/Image.form.js</span>",
+    "function"
+  ],
+  [
+    "formiojs/src/components/custom/image/image.js~image",
+    "class/src/components/custom/Image/Image.js~Image.html",
+    "<span>Image</span> <span class=\"search-result-import-path\">formiojs/src/components/custom/Image/Image.js</span>",
+    "class"
+  ],
+  [
     "formiojs/src/widgets/inputwidget.js~inputwidget",
     "class/src/widgets/InputWidget.js~InputWidget.html",
     "<span>InputWidget</span> <span class=\"search-result-import-path\">formiojs/src/widgets/InputWidget.js</span>",
@@ -567,6 +579,18 @@ window.esdocSearchIndex = [
     "formiojs/src/templates/templates.js~templates",
     "class/src/templates/Templates.js~Templates.html",
     "<span>Templates</span> <span class=\"search-result-import-path\">formiojs/src/templates/Templates.js</span>",
+    "class"
+  ],
+  [
+    "formiojs/src/components/custom/text/text.form.js~text",
+    "function/index.html#static-function-Text",
+    "<span>Text</span> <span class=\"search-result-import-path\">formiojs/src/components/custom/Text/Text.form.js</span>",
+    "function"
+  ],
+  [
+    "formiojs/src/components/custom/text/text.js~text",
+    "class/src/components/custom/Text/Text.js~Text.html",
+    "<span>Text</span> <span class=\"search-result-import-path\">formiojs/src/components/custom/Text/Text.js</span>",
     "class"
   ],
   [
@@ -3462,6 +3486,60 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "src/components/custom/image/image.edit.display.js",
+    "file/src/components/custom/Image/Image.edit.display.js.html",
+    "src/components/custom/Image/Image.edit.display.js",
+    "file"
+  ],
+  [
+    "src/components/custom/image/image.form.js",
+    "file/src/components/custom/Image/Image.form.js.html",
+    "src/components/custom/Image/Image.form.js",
+    "file"
+  ],
+  [
+    "src/components/custom/image/image.js",
+    "file/src/components/custom/Image/Image.js.html",
+    "src/components/custom/Image/Image.js",
+    "file"
+  ],
+  [
+    "src/components/custom/image/image.js~image#attach",
+    "class/src/components/custom/Image/Image.js~Image.html#instance-method-attach",
+    "src/components/custom/Image/Image.js~Image#attach",
+    "method"
+  ],
+  [
+    "src/components/custom/image/image.js~image#constructor",
+    "class/src/components/custom/Image/Image.js~Image.html#instance-constructor-constructor",
+    "src/components/custom/Image/Image.js~Image#constructor",
+    "method"
+  ],
+  [
+    "src/components/custom/image/image.js~image#render",
+    "class/src/components/custom/Image/Image.js~Image.html#instance-method-render",
+    "src/components/custom/Image/Image.js~Image#render",
+    "method"
+  ],
+  [
+    "src/components/custom/image/image.js~image.builderinfo",
+    "class/src/components/custom/Image/Image.js~Image.html#static-get-builderInfo",
+    "src/components/custom/Image/Image.js~Image.builderInfo",
+    "member"
+  ],
+  [
+    "src/components/custom/image/image.js~image.editform",
+    "class/src/components/custom/Image/Image.js~Image.html#static-member-editForm",
+    "src/components/custom/Image/Image.js~Image.editForm",
+    "member"
+  ],
+  [
+    "src/components/custom/image/image.js~image.schema",
+    "class/src/components/custom/Image/Image.js~Image.html#static-method-schema",
+    "src/components/custom/Image/Image.js~Image.schema",
+    "method"
+  ],
+  [
     "src/components/custom/picturewithdescription/picturewithcaption.edit.display.js",
     "file/src/components/custom/PictureWithDescription/PictureWithCaption.edit.display.js.html",
     "src/components/custom/PictureWithDescription/PictureWithCaption.edit.display.js",
@@ -3585,6 +3663,60 @@ window.esdocSearchIndex = [
     "src/components/custom/separator/separator.js~separator.schema",
     "class/src/components/custom/Separator/Separator.js~Separator.html#static-method-schema",
     "src/components/custom/Separator/Separator.js~Separator.schema",
+    "method"
+  ],
+  [
+    "src/components/custom/text/text.edit.display.js",
+    "file/src/components/custom/Text/Text.edit.display.js.html",
+    "src/components/custom/Text/Text.edit.display.js",
+    "file"
+  ],
+  [
+    "src/components/custom/text/text.form.js",
+    "file/src/components/custom/Text/Text.form.js.html",
+    "src/components/custom/Text/Text.form.js",
+    "file"
+  ],
+  [
+    "src/components/custom/text/text.js",
+    "file/src/components/custom/Text/Text.js.html",
+    "src/components/custom/Text/Text.js",
+    "file"
+  ],
+  [
+    "src/components/custom/text/text.js~text#attach",
+    "class/src/components/custom/Text/Text.js~Text.html#instance-method-attach",
+    "src/components/custom/Text/Text.js~Text#attach",
+    "method"
+  ],
+  [
+    "src/components/custom/text/text.js~text#constructor",
+    "class/src/components/custom/Text/Text.js~Text.html#instance-constructor-constructor",
+    "src/components/custom/Text/Text.js~Text#constructor",
+    "method"
+  ],
+  [
+    "src/components/custom/text/text.js~text#render",
+    "class/src/components/custom/Text/Text.js~Text.html#instance-method-render",
+    "src/components/custom/Text/Text.js~Text#render",
+    "method"
+  ],
+  [
+    "src/components/custom/text/text.js~text.builderinfo",
+    "class/src/components/custom/Text/Text.js~Text.html#static-get-builderInfo",
+    "src/components/custom/Text/Text.js~Text.builderInfo",
+    "member"
+  ],
+  [
+    "src/components/custom/text/text.js~text.editform",
+    "class/src/components/custom/Text/Text.js~Text.html#static-member-editForm",
+    "src/components/custom/Text/Text.js~Text.editForm",
+    "member"
+  ],
+  [
+    "src/components/custom/text/text.js~text.schema",
+    "class/src/components/custom/Text/Text.js~Text.html#static-method-schema",
+    "src/components/custom/Text/Text.js~Text.schema",
     "method"
   ],
   [

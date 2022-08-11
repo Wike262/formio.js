@@ -1834,3 +1834,25 @@ span[role=link] {
 .formio-component-card {
   margin: 15px 0;
 }
+
+.image {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.text {
+  font-family: "PT Root UI";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  word-wrap: break-word;
+  display: flex;
+  align-items: center;
+  color: #1B2C4E;
+}
