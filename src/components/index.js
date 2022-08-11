@@ -52,6 +52,8 @@ import pictureWithCaption from './custom/PictureWithDescription/PictureWithDescr
 import card from './custom/Card/Card';
 import Slider from './custom/serviceContainer/Slider';
 import separator from './custom/Separator/Separator';
+import Text from './custom/Text/Text';
+import Image from './custom/Image/Image';
 
 export default {
   address: AddressComponent,
@@ -109,4 +111,6 @@ export default {
   Sections: Sections,
   pictureWithCaption: pictureWithCaption,
   card: card,
+  text: Text,
+  image: Image
 };
