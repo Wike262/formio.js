@@ -54,6 +54,8 @@ import Slider from './custom/serviceContainer/Slider';
 import separator from './custom/Separator/Separator';
 import Text from './custom/Text/Text';
 import Image from './custom/Image/Image';
+import Button from './custom/Button/Button';
+import Title from './custom/Title/Title';
 
 export default {
   address: AddressComponent,
@@ -112,5 +114,7 @@ export default {
   pictureWithCaption: pictureWithCaption,
   card: card,
   text: Text,
-  image: Image
+  image: Image,
+  button: Button,
+  title: Title,
 };
