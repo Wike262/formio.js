@@ -1,6 +1,6 @@
 {
-  "coverage": "6.19%",
-  "expectCount": 1033,
+  "coverage": "6.14%",
+  "expectCount": 1042,
   "actualCount": 64,
   "files": {
     "src/Embed.js": {
@@ -485,6 +485,13 @@
         184
       ]
     },
+    "src/components/custom/Button/Button.form.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        4
+      ]
+    },
     "src/components/custom/Card/Card.form.js": {
       "expectCount": 1,
       "actualCount": 0,
@@ -569,6 +576,26 @@
       ]
     },
     "src/components/custom/Text/Text.js": {
+      "expectCount": 7,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        5,
+        7,
+        13,
+        23,
+        27,
+        33
+      ]
+    },
+    "src/components/custom/Title/Title.form.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        4
+      ]
+    },
+    "src/components/custom/Title/Title.js": {
       "expectCount": 7,
       "actualCount": 0,
       "undocumentLines": [

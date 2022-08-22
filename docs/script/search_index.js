@@ -30,6 +30,12 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "formiojs/src/components/custom/button/button.form.js~button",
+    "function/index.html#static-function-Button",
+    "<span>Button</span> <span class=\"search-result-import-path\">formiojs/src/components/custom/Button/Button.form.js</span>",
+    "function"
+  ],
+  [
     "formiojs/src/utils/calendarutils.js~calendar_error_messages",
     "variable/index.html#static-variable-CALENDAR_ERROR_MESSAGES",
     "<span>CALENDAR_ERROR_MESSAGES</span> <span class=\"search-result-import-path\">formiojs/src/utils/calendarUtils.js</span>",
@@ -615,6 +621,18 @@ window.esdocSearchIndex = [
     "formiojs/src/components/time/time.js~timecomponent",
     "class/src/components/time/Time.js~TimeComponent.html",
     "<span>TimeComponent</span> <span class=\"search-result-import-path\">formiojs/src/components/time/Time.js</span>",
+    "class"
+  ],
+  [
+    "formiojs/src/components/custom/title/title.form.js~title",
+    "function/index.html#static-function-Title",
+    "<span>Title</span> <span class=\"search-result-import-path\">formiojs/src/components/custom/Title/Title.form.js</span>",
+    "function"
+  ],
+  [
+    "formiojs/src/components/custom/title/title.js~title",
+    "class/src/components/custom/Title/Title.js~Title.html",
+    "<span>Title</span> <span class=\"search-result-import-path\">formiojs/src/components/custom/Title/Title.js</span>",
     "class"
   ],
   [
@@ -3474,6 +3492,18 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "src/components/custom/button/button.edit.display.js",
+    "file/src/components/custom/Button/Button.edit.display.js.html",
+    "src/components/custom/Button/Button.edit.display.js",
+    "file"
+  ],
+  [
+    "src/components/custom/button/button.form.js",
+    "file/src/components/custom/Button/Button.form.js.html",
+    "src/components/custom/Button/Button.form.js",
+    "file"
+  ],
+  [
     "src/components/custom/card/card.edit.display.js",
     "file/src/components/custom/Card/Card.edit.display.js.html",
     "src/components/custom/Card/Card.edit.display.js",
@@ -3717,6 +3747,60 @@ window.esdocSearchIndex = [
     "src/components/custom/text/text.js~text.schema",
     "class/src/components/custom/Text/Text.js~Text.html#static-method-schema",
     "src/components/custom/Text/Text.js~Text.schema",
+    "method"
+  ],
+  [
+    "src/components/custom/title/title.edit.display.js",
+    "file/src/components/custom/Title/Title.edit.display.js.html",
+    "src/components/custom/Title/Title.edit.display.js",
+    "file"
+  ],
+  [
+    "src/components/custom/title/title.form.js",
+    "file/src/components/custom/Title/Title.form.js.html",
+    "src/components/custom/Title/Title.form.js",
+    "file"
+  ],
+  [
+    "src/components/custom/title/title.js",
+    "file/src/components/custom/Title/Title.js.html",
+    "src/components/custom/Title/Title.js",
+    "file"
+  ],
+  [
+    "src/components/custom/title/title.js~title#attach",
+    "class/src/components/custom/Title/Title.js~Title.html#instance-method-attach",
+    "src/components/custom/Title/Title.js~Title#attach",
+    "method"
+  ],
+  [
+    "src/components/custom/title/title.js~title#constructor",
+    "class/src/components/custom/Title/Title.js~Title.html#instance-constructor-constructor",
+    "src/components/custom/Title/Title.js~Title#constructor",
+    "method"
+  ],
+  [
+    "src/components/custom/title/title.js~title#render",
+    "class/src/components/custom/Title/Title.js~Title.html#instance-method-render",
+    "src/components/custom/Title/Title.js~Title#render",
+    "method"
+  ],
+  [
+    "src/components/custom/title/title.js~title.builderinfo",
+    "class/src/components/custom/Title/Title.js~Title.html#static-get-builderInfo",
+    "src/components/custom/Title/Title.js~Title.builderInfo",
+    "member"
+  ],
+  [
+    "src/components/custom/title/title.js~title.editform",
+    "class/src/components/custom/Title/Title.js~Title.html#static-member-editForm",
+    "src/components/custom/Title/Title.js~Title.editForm",
+    "member"
+  ],
+  [
+    "src/components/custom/title/title.js~title.schema",
+    "class/src/components/custom/Title/Title.js~Title.html#static-method-schema",
+    "src/components/custom/Title/Title.js~Title.schema",
     "method"
   ],
   [
