@@ -62,7 +62,7 @@ export default {
   base: Component,
   component: Component,
   componentmodal: ComponentModal,
-  button: ButtonComponent,
+ // button: ButtonComponent,
   checkbox: CheckBoxComponent,
   columns: ColumnsComponent,
   container: ContainerComponent,
@@ -116,5 +116,5 @@ export default {
   text: Text,
   image: Image,
   title: Title,
-  customButton: Button,
+  button: Button,
 };
