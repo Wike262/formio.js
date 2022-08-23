@@ -4,13 +4,15 @@ import panel from '../../panel/Panel';
 import editForm from './ServiceContainer.form';
 
 function createServiceContainerTemplate(ctx) {
+  const mytrackerEvent = JSON.stringify({ event: ctx.component.mytracker_event, payload: ctx.component.mytracker_properties });
+
   if (ctx.component.serviceImage) {
     Object.assign(ctx.component.components[0], {
       serviceImage: ctx.component.serviceImage,
     });
   }
   return `
-  <div class="container" ref="${ctx.nestedKey}">
+  <div class="container" ref="${ctx.nestedKey}" data-mytracker=${mytrackerEvent}>
     ${ctx.children}
   </div>
 `;
@@ -30,8 +32,8 @@ export default class ServiceContainer extends panel {
       key: 'ServiceContainer',
       customClass: 'container',
       components: [
-        { type: 'Slider', components: [] },
-        { type: 'Sections', components: [] },
+        { type: 'Slider', key: 'Slider', components: [] },
+        { type: 'Sections', key: 'Section', components: [] },
       ],
       input: false,
       persistent: false,

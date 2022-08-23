@@ -23,7 +23,8 @@ export default class PictureWithCaption extends FieldComponent {
   };
 
   render() {
-    return super.render(`<a class="picture__content" href=${this.component.picture__webview ?? '#'}>
+    const mytrackerEvent = JSON.stringify({ event: this.component.mytracker_event, payload: this.component.mytracker_properties });
+    return super.render(`<a class="picture__content" href=${this.component.picture__webview ?? '#'} data-mytracker=${mytrackerEvent}>
       <div class="picture__image" style="background-image: url(${this.component.picture__image})">
       <p class="picture__caption"> ${this.component.picture__caption ?? ''}</p>
       </div>

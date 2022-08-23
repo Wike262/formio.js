@@ -23,8 +23,9 @@ export default class Card extends FieldComponent {
   };
 
   render() {
+    const mytrackerEvent = JSON.stringify({ event: this.component.mytracker_event, payload: this.component.mytracker_properties });
     return super.render(`
-    <a href=${this.component.cardWebview} class="link">
+    <a href=${this.component.cardWebview} class="link" data-mytracker=${mytrackerEvent}>
       <div class="card__content">
         ${
       this.component.cardImage

@@ -1,5 +1,6 @@
 import nestedComponentForm from '../../_classes/nested/NestedComponent.form';
 import CardEditDisplay from './Card.edit.display';
+import CardData from './Card.edit.data';
 
 export default function(...extend) {
   return nestedComponentForm(
@@ -10,7 +11,8 @@ export default function(...extend) {
       },
       {
         key: 'api',
-        ignore: true,
+        label: 'MyTracker',
+        components: CardData,
       },
       {
         key: 'conditional',
