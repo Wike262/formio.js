@@ -188,6 +188,7 @@
 <div class="content" data-ice="content"><h1 data-ice="title">src/components/custom/PictureWithDescription/PictureWithDescription.form.js</h1>
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import nestedComponentForm from &apos;../../_classes/nested/NestedComponent.form&apos;;
 import PictureWithCaption from &apos;./PictureWithCaption.edit.display&apos;;
+import PictureWithCaptionData from &apos;./PictureWithCaption.edit.data&apos;;
 
 export default function(...extend) {
   return nestedComponentForm(
@@ -198,7 +199,8 @@ export default function(...extend) {
       },
       {
         key: &apos;api&apos;,
-        ignore: true,
+        label: &apos;MyTracker&apos;,
+        components: PictureWithCaptionData,
       },
       {
         key: &apos;conditional&apos;,

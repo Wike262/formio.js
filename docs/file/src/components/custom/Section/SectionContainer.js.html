@@ -192,8 +192,10 @@ import panel from &apos;../../panel/Panel&apos;;
 import nested from &apos;../../_classes/nested/NestedComponent&apos;;
 
 function createSectionContainerTemplate(ctx) {
+  const mytrackerEvent = JSON.stringify({ event: ctx.component.mytracker_event, payload: ctx.component.mytracker_properties });
+
   return `
-    &lt;div class=&quot;accordion__item&quot;&gt;
+    &lt;div class=&quot;accordion__item&quot; data-mytracker=${mytrackerEvent}&gt;
       &lt;div class=&quot;accordion__header&quot;&gt;
         ${ctx.component.title}
         &lt;i

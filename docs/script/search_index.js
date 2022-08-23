@@ -3504,6 +3504,12 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "src/components/custom/card/card.edit.data.js",
+    "file/src/components/custom/Card/Card.edit.data.js.html",
+    "src/components/custom/Card/Card.edit.data.js",
+    "file"
+  ],
+  [
     "src/components/custom/card/card.edit.display.js",
     "file/src/components/custom/Card/Card.edit.display.js.html",
     "src/components/custom/Card/Card.edit.display.js",
@@ -3570,6 +3576,12 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/components/custom/picturewithdescription/picturewithcaption.edit.data.js",
+    "file/src/components/custom/PictureWithDescription/PictureWithCaption.edit.data.js.html",
+    "src/components/custom/PictureWithDescription/PictureWithCaption.edit.data.js",
+    "file"
+  ],
+  [
     "src/components/custom/picturewithdescription/picturewithcaption.edit.display.js",
     "file/src/components/custom/PictureWithDescription/PictureWithCaption.edit.display.js.html",
     "src/components/custom/PictureWithDescription/PictureWithCaption.edit.display.js",
@@ -3579,6 +3591,12 @@ window.esdocSearchIndex = [
     "src/components/custom/picturewithdescription/picturewithdescription.form.js",
     "file/src/components/custom/PictureWithDescription/PictureWithDescription.form.js.html",
     "src/components/custom/PictureWithDescription/PictureWithDescription.form.js",
+    "file"
+  ],
+  [
+    "src/components/custom/section/sectioncontainer.edit.data.js",
+    "file/src/components/custom/Section/SectionContainer.edit.data.js.html",
+    "src/components/custom/Section/SectionContainer.edit.data.js",
     "file"
   ],
   [
@@ -3838,6 +3856,12 @@ window.esdocSearchIndex = [
     "class/src/components/custom/serviceContainer/Sections.js~Sections.html#static-method-schema",
     "src/components/custom/serviceContainer/Sections.js~Sections.schema",
     "method"
+  ],
+  [
+    "src/components/custom/servicecontainer/servicecontainer.edit.data.js",
+    "file/src/components/custom/serviceContainer/ServiceContainer.edit.data.js.html",
+    "src/components/custom/serviceContainer/ServiceContainer.edit.data.js",
+    "file"
   ],
   [
     "src/components/custom/servicecontainer/servicecontainer.edit.display.js",
