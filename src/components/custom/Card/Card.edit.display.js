@@ -44,6 +44,37 @@ export default [
     tooltip: 'Вставьте ссылку на webview',
   },
   {
+    label: "Уникальный идентификатор",
+    weight: 5,
+    tooltip: "Вставьте уникальный идентификатор",
+    components: [
+      {
+        id: "inputUUID",
+        input: true,
+        key: "customUUID",
+        changeEvent: "input",
+        customClass: "customInput",
+        type: "input",
+        placeholder: "UUID карточки...",
+      },
+      {
+        id: "createUUID",
+        type: "button",
+        action: "custom",
+        label: "Сгенерировать",
+      },
+    ],
+  },
+  {
+    id: "copyUUID",
+    type: "button",
+    label: "Копировать ссылку",
+    key: "deeplink",
+    action: "custom",
+    weight: 6,
+    tooltip: "Копирование ссылки-deeplink",
+  },
+  {
     key: 'description',
     ignore: true,
   },

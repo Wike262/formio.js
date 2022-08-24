@@ -21,7 +21,7 @@ gulp.task('clean', require('del').bind(null, ['dist', 'lib']));
 // ESLint
 gulp.task('eslint', function eslintTask() {
   return gulp.src(['./src/**/*.js', '!./src/**/*.spec.js'])
-    .pipe(eslint())
+    .pipe(eslint({ fix: true }))
     .pipe(eslint.format())
     .pipe(eslint.failAfterError());
 });

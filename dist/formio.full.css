@@ -4044,6 +4044,15 @@ span[role=link] {
   text-decoration: none;
 }
 
+.customInput {
+  width: 100%;
+}
+
+.inputWithButton {
+  display: inline-flex;
+  width: 100%;
+}
+
 .picture__image {
   position: relative;
   display: flex;

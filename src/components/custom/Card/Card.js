@@ -1,5 +1,10 @@
+import { GlobalFormio as Formio } from '../../../Formio';
+import { uuid } from 'uuid';
+
 import FieldComponent from '../../_classes/field/Field';
 import editForm from './Card.form';
+
+const deeplinkService = 'ru.gid.app://service/form/';
 
 export default class Card extends FieldComponent {
   constructor(component, options, data) {
@@ -22,10 +27,40 @@ export default class Card extends FieldComponent {
     schema: Card.schema(),
   };
 
+  attach(element) {
+    const uuidElement = document.getElementById('createUUID');
+    const uuidCopyElement = document.getElementById('copyUUID');
+
+    if (uuidElement && this.component.id === element.id) {
+      const uuidCreateElement = uuidElement.firstElementChild;
+
+      document.getElementById('inputUUID').parentElement.classList.add('inputWithButton');
+      uuidElement.addEventListener('click', () => {
+        const UUID = uuid();
+        const uuidInputElement = uuidCreateElement.parentElement.parentElement.firstElementChild.firstElementChild.firstElementChild;
+        uuidInputElement.value = UUID;
+        uuidInputElement.dispatchEvent(new Event('input', { bubbles: true, cancelable: false }));
+        this.component.customUUID = UUID;
+      });
+    }
+    if (uuidCopyElement && this.component.id === element.id) {
+      uuidCopyElement.firstElementChild.addEventListener('click', () => {
+        const deeplink = `${deeplinkService}${Formio.getProjectUrl()}${this.component.customUUID}`;
+
+        navigator.clipboard.writeText(deeplink);
+      });
+      if (!this.component.customUUID) {
+        uuidCopyElement.firstElementChild.setAttribute('disabled', true);
+      }
+    }
+
+    return super.attach(element);
+  }
+
   render() {
     const mytrackerEvent = JSON.stringify({ event: this.component.mytracker_event, payload: this.component.mytracker_properties });
     return super.render(`
-    <a href=${this.component.cardWebview} class="link" data-mytracker=${mytrackerEvent}>
+    <a href=${this.component.cardWebview} class="link" data-mytracker=${mytrackerEvent} data-uuid=${this.component.customUUID}>
       <div class="card__content">
         ${
       this.component.cardImage
@@ -43,10 +78,7 @@ export default class Card extends FieldComponent {
     </a>
    `);
   }
-
-  attach(element) {
-    return super.attach(element);
-  }
+//
 }
 
 // Components.addComponent("card", Card);

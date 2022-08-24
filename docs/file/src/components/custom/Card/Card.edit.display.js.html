@@ -232,6 +232,37 @@
     tooltip: &apos;&#x412;&#x441;&#x442;&#x430;&#x432;&#x44C;&#x442;&#x435; &#x441;&#x441;&#x44B;&#x43B;&#x43A;&#x443; &#x43D;&#x430; webview&apos;,
   },
   {
+    label: &quot;&#x423;&#x43D;&#x438;&#x43A;&#x430;&#x43B;&#x44C;&#x43D;&#x44B;&#x439; &#x438;&#x434;&#x435;&#x43D;&#x442;&#x438;&#x444;&#x438;&#x43A;&#x430;&#x442;&#x43E;&#x440;&quot;,
+    weight: 5,
+    tooltip: &quot;&#x412;&#x441;&#x442;&#x430;&#x432;&#x44C;&#x442;&#x435; &#x443;&#x43D;&#x438;&#x43A;&#x430;&#x43B;&#x44C;&#x43D;&#x44B;&#x439; &#x438;&#x434;&#x435;&#x43D;&#x442;&#x438;&#x444;&#x438;&#x43A;&#x430;&#x442;&#x43E;&#x440;&quot;,
+    components: [
+      {
+        id: &quot;inputUUID&quot;,
+        input: true,
+        key: &quot;customUUID&quot;,
+        changeEvent: &quot;input&quot;,
+        customClass: &quot;customInput&quot;,
+        type: &quot;input&quot;,
+        placeholder: &quot;UUID &#x43A;&#x430;&#x440;&#x442;&#x43E;&#x447;&#x43A;&#x438;...&quot;,
+      },
+      {
+        id: &quot;createUUID&quot;,
+        type: &quot;button&quot;,
+        action: &quot;custom&quot;,
+        label: &quot;&#x421;&#x433;&#x435;&#x43D;&#x435;&#x440;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x442;&#x44C;&quot;,
+      },
+    ],
+  },
+  {
+    id: &quot;copyUUID&quot;,
+    type: &quot;button&quot;,
+    label: &quot;&#x41A;&#x43E;&#x43F;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x442;&#x44C; &#x441;&#x441;&#x44B;&#x43B;&#x43A;&#x443;&quot;,
+    key: &quot;deeplink&quot;,
+    action: &quot;custom&quot;,
+    weight: 6,
+    tooltip: &quot;&#x41A;&#x43E;&#x43F;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x43D;&#x438;&#x435; &#x441;&#x441;&#x44B;&#x43B;&#x43A;&#x438;-deeplink&quot;,
+  },
+  {
     key: &apos;description&apos;,
     ignore: true,
   },
