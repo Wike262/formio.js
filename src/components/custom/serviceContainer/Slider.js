@@ -8,7 +8,7 @@ function createSliderTemplate(ctx) {
     <div ref="${ctx.nestedKey}" class="containerSlider">
       <div class="containerNavbar">
         <img
-          src='https://test-gidapp.k8s-dev.gid.team/storage/public/c6bfd484-7a8e-43cd-b1ea-48570bff2301.png'
+          src='https://app.gid.ru/storage/public/4968e579-b051-49fb-b0f3-ecc4af4057ae.png'
           alt='Назад'
           class='backIcon'
         />
