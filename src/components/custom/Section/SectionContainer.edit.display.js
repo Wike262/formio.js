@@ -1,80 +1,80 @@
 export default [
   {
-    key: 'labelPosition',
+    key: "labelPosition",
     ignore: true,
   },
   {
-    key: 'placeholder',
+    key: "placeholder",
     ignore: true,
   },
   {
-    key: 'description',
+    key: "description",
     ignore: true,
   },
   {
-    key: 'modalEdit',
+    key: "modalEdit",
     ignore: true,
   },
   {
-    key: 'customClass',
+    key: "customClass",
     ignore: true,
   },
   {
-    key: 'autofocus',
+    key: "autofocus",
     ignore: true,
   },
   {
-    key: 'tooltip',
+    key: "tooltip",
     ignore: true,
   },
   {
-    key: 'hidden',
+    key: "hidden",
     ignore: true,
   },
   {
-    key: 'hideLabel',
+    key: "hideLabel",
     ignore: true,
   },
   {
-    key: 'tabindex',
+    key: "tabindex",
     ignore: true,
   },
   {
-    key: 'tableView',
+    key: "tableView",
     ignore: true,
   },
   {
-    key: 'disabled',
+    key: "disabled",
     ignore: true,
   },
   {
-    key: 'label',
+    key: "label",
     hidden: true,
     calculateValue(context) {
       return context.data.title;
     },
   },
   {
-    key: 'tabindex',
+    key: "tabindex",
     hidden: true,
   },
   {
     weight: 1,
-    type: 'textfield',
+    type: "textfield",
     input: true,
-    placeholder: 'Заголовок раздела',
-    label: 'Заголовок раздела',
-    key: 'title',
+    placeholder: "Заголовок раздела",
+    label: "Заголовок раздела",
+    key: "title",
   },
   {
     weight: 651,
-    type: 'checkbox',
-    label: 'Initially Collapsed',
-    tooltip: 'Determines the initial collapsed state of this Panel.',
-    key: 'collapsed',
+    type: "checkbox",
+    label: "Initially Collapsed",
+    tooltip: "Determines the initial collapsed state of this Panel.",
+    key: "collapsed",
     input: true,
     conditional: {
-      json: { '===': [{ var: 'data.collapsible' }, true] },
+      json: { "===": [{ var: "data.collapsible" }, true] },
     },
   },
 ];

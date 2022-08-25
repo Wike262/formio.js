@@ -5,27 +5,27 @@ export default function(...extend) {
   return nestedComponentForm(
     [
       {
-        key: 'display',
+        key: "display",
         components: Button,
       },
       {
-        key: 'api',
+        key: "api",
         ignore: true,
       },
       {
-        key: 'conditional',
+        key: "conditional",
         ignore: true,
       },
       {
-        key: 'logic',
+        key: "logic",
         ignore: true,
       },
       {
-        key: 'layout',
+        key: "layout",
         ignore: true,
       },
       {
-        key: 'addons',
+        key: "addons",
         ignore: true,
       },
     ],

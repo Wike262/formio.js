@@ -116,5 +116,5 @@ export default {
   text: Text,
   image: Image,
   title: Title,
-  button: Button,
+  customButton: Button,
 };

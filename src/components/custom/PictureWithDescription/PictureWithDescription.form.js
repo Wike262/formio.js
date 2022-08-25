@@ -6,28 +6,28 @@ export default function(...extend) {
   return nestedComponentForm(
     [
       {
-        key: 'display',
+        key: "display",
         components: PictureWithCaption,
       },
       {
-        key: 'api',
-        label: 'MyTracker',
+        key: "api",
+        label: "MyTracker",
         components: PictureWithCaptionData,
       },
       {
-        key: 'conditional',
+        key: "conditional",
         ignore: true,
       },
       {
-        key: 'logic',
+        key: "logic",
         ignore: true,
       },
       {
-        key: 'layout',
+        key: "layout",
         ignore: true,
       },
       {
-        key: 'addons',
+        key: "addons",
         ignore: true,
       },
     ],

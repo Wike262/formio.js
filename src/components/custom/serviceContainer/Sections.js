@@ -18,14 +18,15 @@ export default class Sections extends panel {
   static editForm = editForm;
 
   get templateName() {
-    return 'Sections';
+    return "Sections";
   }
+
 
   static schema() {
     return nested.schema({
-      label: 'Контейнер сервиса',
-      type: 'Sections',
-      key: 'Sections',
+      label: "Контейнер сервиса",
+      type: "Sections",
+      key: "Sections",
       components: [],
       input: false,
       persistent: false,
@@ -35,7 +36,13 @@ export default class Sections extends panel {
   constructor(component, options, data) {
     super(component, options, data);
     this.collapsed = !!this.component.collapsed;
-    Templates.templates.bootstrap['Sections'] = { form: createSectionsTemplate };
+    Templates.templates.bootstrap["Sections"] = { form: createSectionsTemplate };
+  }
+
+  attach(element) {
+    document.querySelector(".serviceSections").firstElementChild.classList.add("drag-container-section");
+    document.querySelector(".serviceSections").parentElement.parentElement.classList.add("position-absolute");
+    return super.attach(element);
   }
 }
 

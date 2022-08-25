@@ -12,11 +12,11 @@ function createSectionContainerTemplate(ctx) {
         ${ctx.component.title}
         <i
           class="button-collapsing formio-collapse-icon button__collapsing ${ctx.iconClass(
-    ctx.collapsed ? 'angle-down' : 'angle-up'
-  )}" data-title="Collapse Panel" id="collapsing"></i>
+            ctx.collapsed ? "angle-down" : "angle-up"
+          )}" data-title="Collapse Panel" id="collapsing"></i>
       </div>
       <div
-        class="accordion__body ${ctx.collapsed ? 'hide' : ''}"
+        class="accordion__body ${ctx.collapsed ? "hide" : ""}"
         ref="${ctx.nestedKey}"
       >
         ${ctx.children}
@@ -35,18 +35,18 @@ export default class SectionContainer extends panel {
   }
 
   get templateName() {
-    return 'SectionContainer';
+    return "SectionContainer";
   }
 
   static schema(...extend) {
     return nested.schema(
       {
-        label: 'Контейнер раздела',
-        type: 'SectionContainer',
-        key: 'SectionContainer',
-        title: 'Раздел',
-        theme: 'default',
-        breadcrumb: 'default',
+        label: "Контейнер раздела",
+        type: "SectionContainer",
+        key: "SectionContainer",
+        title: "Раздел",
+        theme: "default",
+        breadcrumb: "default",
         components: [],
         clearOnHide: false,
         input: false,
@@ -60,9 +60,9 @@ export default class SectionContainer extends panel {
 
   static get builderInfo() {
     return {
-      title: 'Раздел',
-      icon: 'list-alt',
-      group: 'components',
+      title: "Раздел",
+      icon: "list-alt",
+      group: "components",
       weight: 5,
       schema: SectionContainer.schema(),
     };

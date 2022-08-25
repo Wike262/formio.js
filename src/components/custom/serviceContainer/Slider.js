@@ -7,21 +7,23 @@ function createSliderTemplate(ctx) {
   return `
     <div ref="${ctx.nestedKey}" class="containerSlider">
       <div class="containerNavbar">
-        <img
-          src='https://test-gidapp.k8s-dev.gid.team/storage/public/c6bfd484-7a8e-43cd-b1ea-48570bff2301.png'
-          alt='Назад'
-          class='backIcon'
-        />
+       <div class=${ctx.component.colorButton ? "backIconWithBackground" : "backIcon"}>
+          <img
+            src='https://app.gid.ru/storage/public/4968e579-b051-49fb-b0f3-ecc4af4057ae.png'
+            alt='Назад'
+          />
+        </div>
+
         <div class='serviceName'>
           ${
-    ctx.component.serviceImage
-      ? `<img
+            ctx.component.serviceImage
+              ? `<img
             class='serviceIcon'
             alt='serviceName'
             src=${ctx.component.serviceImage}
           />`
-      : ''
-  }
+              : ''
+          }
         </div>
       </div>
       ${ctx.children}
@@ -33,14 +35,14 @@ export default class Slider extends panel {
   static editForm = editForm;
 
   get templateName() {
-    return 'Slider';
+    return "Slider";
   }
 
   static schema() {
     return nested.schema({
-      label: 'Контейнер сервиса',
-      type: 'Slider',
-      key: 'Slider',
+      label: "Контейнер сервиса",
+      type: "Slider",
+      key: "Slider",
       components: [],
       input: false,
       persistent: false,
@@ -50,7 +52,14 @@ export default class Slider extends panel {
   constructor(component, options, data) {
     super(component, options, data);
     this.collapsed = !!this.component.collapsed;
-    Templates.templates.bootstrap['Slider'] = { form: createSliderTemplate };
+    Templates.templates.bootstrap["Slider"] = { form: createSliderTemplate };
+  }
+
+  attach(element) {
+    if (!this.component.components.length) {
+      document.querySelector(".containerSlider .drag-container").firstElementChild.classList.add("no-drag-custom");
+    }
+    return super.attach(element);
   }
 }
 

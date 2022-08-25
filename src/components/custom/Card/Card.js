@@ -13,44 +13,44 @@ export default class Card extends FieldComponent {
 
   static schema() {
     return FieldComponent.schema({
-      type: 'card',
+      type: "card",
     });
   }
 
   static editForm = editForm;
 
   static builderInfo = {
-    title: 'Карточка',
-    group: 'components',
-    icon: 'address-card',
+    title: "Карточка",
+    group: "components",
+    icon: "address-card",
     weight: 2,
     schema: Card.schema(),
   };
 
   attach(element) {
-    const uuidElement = document.getElementById('createUUID');
-    const uuidCopyElement = document.getElementById('copyUUID');
+    const uuidElement = document.getElementById("createUUID");
+    const uuidCopyElement = document.getElementById("copyUUID");
 
     if (uuidElement && this.component.id === element.id) {
       const uuidCreateElement = uuidElement.firstElementChild;
 
-      document.getElementById('inputUUID').parentElement.classList.add('inputWithButton');
-      uuidElement.addEventListener('click', () => {
+      document.getElementById("inputUUID").parentElement.classList.add("inputWithButton");
+      uuidElement.addEventListener("click", () => {
         const UUID = uuid();
         const uuidInputElement = uuidCreateElement.parentElement.parentElement.firstElementChild.firstElementChild.firstElementChild;
         uuidInputElement.value = UUID;
-        uuidInputElement.dispatchEvent(new Event('input', { bubbles: true, cancelable: false }));
+        uuidInputElement.dispatchEvent(new Event("input", { bubbles: true, cancelable: false }));
         this.component.customUUID = UUID;
       });
     }
     if (uuidCopyElement && this.component.id === element.id) {
-      uuidCopyElement.firstElementChild.addEventListener('click', () => {
+      uuidCopyElement.firstElementChild.addEventListener("click", () => {
         const deeplink = `${deeplinkService}${Formio.getProjectUrl()}${this.component.customUUID}`;
 
         navigator.clipboard.writeText(deeplink);
       });
       if (!this.component.customUUID) {
-        uuidCopyElement.firstElementChild.setAttribute('disabled', true);
+        uuidCopyElement.firstElementChild.setAttribute("disabled", true);
       }
     }
 
@@ -63,22 +63,21 @@ export default class Card extends FieldComponent {
     <a href=${this.component.cardWebview} class="link" data-mytracker=${mytrackerEvent} data-uuid=${this.component.customUUID}>
       <div class="card__content">
         ${
-      this.component.cardImage
-        ? `<img
+          this.component.cardImage
+            ? `<img
                 class="card__image"
                 src=${this.component.cardImage}
               />`
-        : ''
-    }
+            : ""
+        }
         <div class="card__description">
-            <p class="card__text_header">${this.component.cardTitle ?? ''}</p>
-            <p class="card__text">${this.component.cardDescription ?? ''}</p>
+            <p class="card__text_header">${this.component.cardTitle ?? ""}</p>
+            <p class="card__text">${this.component.cardDescription ?? ""}</p>
         </div>
       </div>
     </a>
    `);
   }
-//
 }
 
 // Components.addComponent("card", Card);

@@ -8,25 +8,25 @@ export default class PictureWithCaption extends FieldComponent {
 
   static schema() {
     return FieldComponent.schema({
-      type: 'pictureWithCaption',
+      type: "pictureWithCaption",
     });
   }
 
   static editForm = editForm;
 
   static builderInfo = {
-    title: 'Картинка с подписью',
-    group: 'components',
-    icon: 'image',
+    title: "Картинка с подписью",
+    group: "components",
+    icon: "image",
     weight: 3,
     schema: PictureWithCaption.schema(),
   };
 
   render() {
     const mytrackerEvent = JSON.stringify({ event: this.component.mytracker_event, payload: this.component.mytracker_properties });
-    return super.render(`<a class="picture__content" href=${this.component.picture__webview ?? '#'} data-mytracker=${mytrackerEvent}>
+    return super.render(`<a class="picture__content" href=${this.component.picture__webview ?? "#"} data-mytracker=${mytrackerEvent}>
       <div class="picture__image" style="background-image: url(${this.component.picture__image})">
-      <p class="picture__caption"> ${this.component.picture__caption ?? ''}</p>
+      <p class="picture__caption"> ${this.component.picture__caption ?? ""}</p>
       </div>
     </a>`);
   }

@@ -1,67 +1,76 @@
 export default [
   {
-    key: 'labelPosition',
+    key: "labelPosition",
     ignore: true,
   },
   {
-    key: 'description',
+    key: "description",
     ignore: true,
   },
   {
-    key: 'hideLabel',
+    key: "hideLabel",
     ignore: true,
   },
   {
-    key: 'placeholder',
+    key: "placeholder",
     ignore: true,
   },
   {
-    key: 'placeholder',
+    key: "placeholder",
     ignore: true,
   },
   {
-    key: 'hidden',
+    key: "hidden",
     ignore: true,
   },
   {
-    key: 'tableView',
+    key: "tableView",
     ignore: true,
   },
   {
-    key: 'modalEdit',
+    key: "modalEdit",
     ignore: true,
   },
   {
-    key: 'customClass',
+    key: "customClass",
     ignore: true,
   },
   {
-    key: 'autofocus',
+    key: "autofocus",
     ignore: true,
   },
   {
-    key: 'tooltip',
+    key: "tooltip",
     ignore: true,
   },
   {
-    key: 'tabindex',
+    key: "tabindex",
     ignore: true,
   },
   {
-    key: 'disabled',
+    key: "disabled",
     ignore: true,
   },
   {
-    key: 'label',
+    key: "label",
     ignore: true,
   },
   {
-    type: 'input',
-    label: 'Изображение сервиса',
-    key: 'serviceImage',
+    type: "input",
+    label: "Изображение сервиса",
+    key: "serviceImage",
     input: true,
     weight: 3,
-    placeholder: 'Ссылка...',
-    tooltip: 'Вставьте ссылку на изображение',
+    placeholder: "Ссылка...",
+    tooltip: "Вставьте ссылку на изображение",
+  },
+  {
+    type: "checkbox",
+    label: "Серый фон кнопки «Назад»",
+    key: "colorButton",
+    input: true,
+    weight: 3,
+    placeholder: "Фон...",
+    tooltip: "Выберите фон",
   },
 ];
