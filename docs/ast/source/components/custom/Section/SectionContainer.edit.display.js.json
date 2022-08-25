@@ -122,7 +122,7 @@
                     },
                     "extra": {
                       "rawValue": "labelPosition",
-                      "raw": "'labelPosition'"
+                      "raw": "\"labelPosition\""
                     },
                     "value": "labelPosition"
                   }
@@ -245,7 +245,7 @@
                     },
                     "extra": {
                       "rawValue": "placeholder",
-                      "raw": "'placeholder'"
+                      "raw": "\"placeholder\""
                     },
                     "value": "placeholder"
                   }
@@ -368,7 +368,7 @@
                     },
                     "extra": {
                       "rawValue": "description",
-                      "raw": "'description'"
+                      "raw": "\"description\""
                     },
                     "value": "description"
                   }
@@ -491,7 +491,7 @@
                     },
                     "extra": {
                       "rawValue": "modalEdit",
-                      "raw": "'modalEdit'"
+                      "raw": "\"modalEdit\""
                     },
                     "value": "modalEdit"
                   }
@@ -614,7 +614,7 @@
                     },
                     "extra": {
                       "rawValue": "customClass",
-                      "raw": "'customClass'"
+                      "raw": "\"customClass\""
                     },
                     "value": "customClass"
                   }
@@ -737,7 +737,7 @@
                     },
                     "extra": {
                       "rawValue": "autofocus",
-                      "raw": "'autofocus'"
+                      "raw": "\"autofocus\""
                     },
                     "value": "autofocus"
                   }
@@ -860,7 +860,7 @@
                     },
                     "extra": {
                       "rawValue": "tooltip",
-                      "raw": "'tooltip'"
+                      "raw": "\"tooltip\""
                     },
                     "value": "tooltip"
                   }
@@ -983,7 +983,7 @@
                     },
                     "extra": {
                       "rawValue": "hidden",
-                      "raw": "'hidden'"
+                      "raw": "\"hidden\""
                     },
                     "value": "hidden"
                   }
@@ -1106,7 +1106,7 @@
                     },
                     "extra": {
                       "rawValue": "hideLabel",
-                      "raw": "'hideLabel'"
+                      "raw": "\"hideLabel\""
                     },
                     "value": "hideLabel"
                   }
@@ -1229,7 +1229,7 @@
                     },
                     "extra": {
                       "rawValue": "tabindex",
-                      "raw": "'tabindex'"
+                      "raw": "\"tabindex\""
                     },
                     "value": "tabindex"
                   }
@@ -1352,7 +1352,7 @@
                     },
                     "extra": {
                       "rawValue": "tableView",
-                      "raw": "'tableView'"
+                      "raw": "\"tableView\""
                     },
                     "value": "tableView"
                   }
@@ -1475,7 +1475,7 @@
                     },
                     "extra": {
                       "rawValue": "disabled",
-                      "raw": "'disabled'"
+                      "raw": "\"disabled\""
                     },
                     "value": "disabled"
                   }
@@ -1598,7 +1598,7 @@
                     },
                     "extra": {
                       "rawValue": "label",
-                      "raw": "'label'"
+                      "raw": "\"label\""
                     },
                     "value": "label"
                   }
@@ -1896,7 +1896,7 @@
                     },
                     "extra": {
                       "rawValue": "tabindex",
-                      "raw": "'tabindex'"
+                      "raw": "\"tabindex\""
                     },
                     "value": "tabindex"
                   }
@@ -2074,7 +2074,7 @@
                     },
                     "extra": {
                       "rawValue": "textfield",
-                      "raw": "'textfield'"
+                      "raw": "\"textfield\""
                     },
                     "value": "textfield"
                   }
@@ -2180,7 +2180,7 @@
                     },
                     "extra": {
                       "rawValue": "Заголовок раздела",
-                      "raw": "'Заголовок раздела'"
+                      "raw": "\"Заголовок раздела\""
                     },
                     "value": "Заголовок раздела"
                   }
@@ -2235,7 +2235,7 @@
                     },
                     "extra": {
                       "rawValue": "Заголовок раздела",
-                      "raw": "'Заголовок раздела'"
+                      "raw": "\"Заголовок раздела\""
                     },
                     "value": "Заголовок раздела"
                   }
@@ -2290,7 +2290,7 @@
                     },
                     "extra": {
                       "rawValue": "title",
-                      "raw": "'title'"
+                      "raw": "\"title\""
                     },
                     "value": "title"
                   }
@@ -2417,7 +2417,7 @@
                     },
                     "extra": {
                       "rawValue": "checkbox",
-                      "raw": "'checkbox'"
+                      "raw": "\"checkbox\""
                     },
                     "value": "checkbox"
                   }
@@ -2472,7 +2472,7 @@
                     },
                     "extra": {
                       "rawValue": "Initially Collapsed",
-                      "raw": "'Initially Collapsed'"
+                      "raw": "\"Initially Collapsed\""
                     },
                     "value": "Initially Collapsed"
                   }
@@ -2527,7 +2527,7 @@
                     },
                     "extra": {
                       "rawValue": "Determines the initial collapsed state of this Panel.",
-                      "raw": "'Determines the initial collapsed state of this Panel.'"
+                      "raw": "\"Determines the initial collapsed state of this Panel.\""
                     },
                     "value": "Determines the initial collapsed state of this Panel."
                   }
@@ -2582,7 +2582,7 @@
                     },
                     "extra": {
                       "rawValue": "collapsed",
-                      "raw": "'collapsed'"
+                      "raw": "\"collapsed\""
                     },
                     "value": "collapsed"
                   }
@@ -2769,7 +2769,7 @@
                                 },
                                 "extra": {
                                   "rawValue": "===",
-                                  "raw": "'==='"
+                                  "raw": "\"===\""
                                 },
                                 "value": "==="
                               },
@@ -2853,7 +2853,7 @@
                                           },
                                           "extra": {
                                             "rawValue": "data.collapsible",
-                                            "raw": "'data.collapsible'"
+                                            "raw": "\"data.collapsible\""
                                           },
                                           "value": "data.collapsible"
                                         }

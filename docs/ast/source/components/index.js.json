@@ -1,7 +1,7 @@
 {
   "type": "File",
   "start": 0,
-  "end": 4606,
+  "end": 4612,
   "loc": {
     "start": {
       "line": 1,
@@ -15,7 +15,7 @@
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 4606,
+    "end": 4612,
     "loc": {
       "start": {
         "line": 1,
@@ -4033,7 +4033,7 @@
       {
         "type": "ExportDefaultDeclaration",
         "start": 2992,
-        "end": 4605,
+        "end": 4611,
         "loc": {
           "start": {
             "line": 60,
@@ -4047,7 +4047,7 @@
         "declaration": {
           "type": "ObjectExpression",
           "start": 3007,
-          "end": 4604,
+          "end": 4610,
           "loc": {
             "start": {
               "line": 60,
@@ -7045,7 +7045,7 @@
             {
               "type": "ObjectProperty",
               "start": 4587,
-              "end": 4601,
+              "end": 4607,
               "loc": {
                 "start": {
                   "line": 119,
@@ -7053,7 +7053,7 @@
                 },
                 "end": {
                   "line": 119,
-                  "column": 16
+                  "column": 22
                 }
               },
               "method": false,
@@ -7062,7 +7062,7 @@
               "key": {
                 "type": "Identifier",
                 "start": 4587,
-                "end": 4593,
+                "end": 4599,
                 "loc": {
                   "start": {
                     "line": 119,
@@ -7070,24 +7070,24 @@
                   },
                   "end": {
                     "line": 119,
-                    "column": 8
+                    "column": 14
                   },
-                  "identifierName": "button"
+                  "identifierName": "customButton"
                 },
-                "name": "button"
+                "name": "customButton"
               },
               "value": {
                 "type": "Identifier",
-                "start": 4595,
-                "end": 4601,
+                "start": 4601,
+                "end": 4607,
                 "loc": {
                   "start": {
                     "line": 119,
-                    "column": 10
+                    "column": 16
                   },
                   "end": {
                     "line": 119,
-                    "column": 16
+                    "column": 22
                   },
                   "identifierName": "Button"
                 },
@@ -20872,9 +20872,9 @@
         "postfix": false,
         "binop": null
       },
-      "value": "button",
+      "value": "customButton",
       "start": 4587,
-      "end": 4593,
+      "end": 4599,
       "loc": {
         "start": {
           "line": 119,
@@ -20882,7 +20882,7 @@
         },
         "end": {
           "line": 119,
-          "column": 8
+          "column": 14
         }
       }
     },
@@ -20899,16 +20899,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 4593,
-      "end": 4594,
+      "start": 4599,
+      "end": 4600,
       "loc": {
         "start": {
           "line": 119,
-          "column": 8
+          "column": 14
         },
         "end": {
           "line": 119,
-          "column": 9
+          "column": 15
         }
       }
     },
@@ -20925,16 +20925,16 @@
         "binop": null
       },
       "value": "Button",
-      "start": 4595,
-      "end": 4601,
+      "start": 4601,
+      "end": 4607,
       "loc": {
         "start": {
           "line": 119,
-          "column": 10
+          "column": 16
         },
         "end": {
           "line": 119,
-          "column": 16
+          "column": 22
         }
       }
     },
@@ -20951,16 +20951,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 4601,
-      "end": 4602,
+      "start": 4607,
+      "end": 4608,
       "loc": {
         "start": {
           "line": 119,
-          "column": 16
+          "column": 22
         },
         "end": {
           "line": 119,
-          "column": 17
+          "column": 23
         }
       }
     },
@@ -20976,8 +20976,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 4603,
-      "end": 4604,
+      "start": 4609,
+      "end": 4610,
       "loc": {
         "start": {
           "line": 120,
@@ -21002,8 +21002,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 4604,
-      "end": 4605,
+      "start": 4610,
+      "end": 4611,
       "loc": {
         "start": {
           "line": 120,
@@ -21028,8 +21028,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 4606,
-      "end": 4606,
+      "start": 4612,
+      "end": 4612,
       "loc": {
         "start": {
           "line": 121,

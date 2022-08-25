@@ -122,7 +122,7 @@
                     },
                     "extra": {
                       "rawValue": "multiple",
-                      "raw": "'multiple'"
+                      "raw": "\"multiple\""
                     },
                     "value": "multiple"
                   }
@@ -245,7 +245,7 @@
                     },
                     "extra": {
                       "rawValue": "allowCalculateOverride",
-                      "raw": "'allowCalculateOverride'"
+                      "raw": "\"allowCalculateOverride\""
                     },
                     "value": "allowCalculateOverride"
                   }
@@ -368,7 +368,7 @@
                     },
                     "extra": {
                       "rawValue": "defaultValue",
-                      "raw": "'defaultValue'"
+                      "raw": "\"defaultValue\""
                     },
                     "value": "defaultValue"
                   }
@@ -491,7 +491,7 @@
                     },
                     "extra": {
                       "rawValue": "tags",
-                      "raw": "'tags'"
+                      "raw": "\"tags\""
                     },
                     "value": "tags"
                   }
@@ -614,7 +614,7 @@
                     },
                     "extra": {
                       "rawValue": "properties",
-                      "raw": "'properties'"
+                      "raw": "\"properties\""
                     },
                     "value": "properties"
                   }
@@ -737,7 +737,7 @@
                     },
                     "extra": {
                       "rawValue": "key",
-                      "raw": "'key'"
+                      "raw": "\"key\""
                     },
                     "value": "key"
                   }
@@ -860,7 +860,7 @@
                     },
                     "extra": {
                       "rawValue": "input",
-                      "raw": "'input'"
+                      "raw": "\"input\""
                     },
                     "value": "input"
                   }
@@ -915,7 +915,7 @@
                     },
                     "extra": {
                       "rawValue": "Наименование события",
-                      "raw": "'Наименование события'"
+                      "raw": "\"Наименование события\""
                     },
                     "value": "Наименование события"
                   }
@@ -970,7 +970,7 @@
                     },
                     "extra": {
                       "rawValue": "mytracker_event",
-                      "raw": "'mytracker_event'"
+                      "raw": "\"mytracker_event\""
                     },
                     "value": "mytracker_event"
                   }
@@ -1131,7 +1131,7 @@
                     },
                     "extra": {
                       "rawValue": "Событие...",
-                      "raw": "'Событие...'"
+                      "raw": "\"Событие...\""
                     },
                     "value": "Событие..."
                   }
@@ -1186,7 +1186,7 @@
                     },
                     "extra": {
                       "rawValue": "Наименование события для MyTracker",
-                      "raw": "'Наименование события для MyTracker'"
+                      "raw": "\"Наименование события для MyTracker\""
                     },
                     "value": "Наименование события для MyTracker"
                   }
@@ -1258,7 +1258,7 @@
                     },
                     "extra": {
                       "rawValue": "datamap",
-                      "raw": "'datamap'"
+                      "raw": "\"datamap\""
                     },
                     "value": "datamap"
                   }
@@ -1313,7 +1313,7 @@
                     },
                     "extra": {
                       "rawValue": "Параметры события",
-                      "raw": "'Параметры события'"
+                      "raw": "\"Параметры события\""
                     },
                     "value": "Параметры события"
                   }
@@ -1368,7 +1368,7 @@
                     },
                     "extra": {
                       "rawValue": "mytracker_properties",
-                      "raw": "'mytracker_properties'"
+                      "raw": "\"mytracker_properties\""
                     },
                     "value": "mytracker_properties"
                   }
@@ -1529,7 +1529,7 @@
                     },
                     "extra": {
                       "rawValue": "Событие...",
-                      "raw": "'Событие...'"
+                      "raw": "\"Событие...\""
                     },
                     "value": "Событие..."
                   }
@@ -1584,7 +1584,7 @@
                     },
                     "extra": {
                       "rawValue": "Наименование события для MyTracker",
-                      "raw": "'Наименование события для MyTracker'"
+                      "raw": "\"Наименование события для MyTracker\""
                     },
                     "value": "Наименование события для MyTracker"
                   }

@@ -190,39 +190,38 @@
 import CardEditDisplay from &apos;./Card.edit.display&apos;;
 import CardData from &apos;./Card.edit.data&apos;;
 
-export default function(...extend) {
+export default function (...extend) {
   return nestedComponentForm(
     [
       {
-        key: &apos;display&apos;,
+        key: &quot;display&quot;,
         components: CardEditDisplay,
       },
       {
-        key: &apos;api&apos;,
-        label: &apos;MyTracker&apos;,
+        key: &quot;api&quot;,
+        label: &quot;MyTracker&quot;,
         components: CardData,
       },
       {
-        key: &apos;conditional&apos;,
+        key: &quot;conditional&quot;,
         ignore: true,
       },
       {
-        key: &apos;logic&apos;,
+        key: &quot;logic&quot;,
         ignore: true,
       },
       {
-        key: &apos;layout&apos;,
+        key: &quot;layout&quot;,
         ignore: true,
       },
       {
-        key: &apos;addons&apos;,
+        key: &quot;addons&quot;,
         ignore: true,
       },
     ],
     ...extend
   );
 }
-
 </code></pre>
 
 </div>

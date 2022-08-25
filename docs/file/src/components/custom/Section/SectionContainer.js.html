@@ -200,11 +200,11 @@ function createSectionContainerTemplate(ctx) {
         ${ctx.component.title}
         &lt;i
           class=&quot;button-collapsing formio-collapse-icon button__collapsing ${ctx.iconClass(
-    ctx.collapsed ? &apos;angle-down&apos; : &apos;angle-up&apos;
-  )}&quot; data-title=&quot;Collapse Panel&quot; id=&quot;collapsing&quot;&gt;&lt;/i&gt;
+            ctx.collapsed ? &quot;angle-down&quot; : &quot;angle-up&quot;
+          )}&quot; data-title=&quot;Collapse Panel&quot; id=&quot;collapsing&quot;&gt;&lt;/i&gt;
       &lt;/div&gt;
       &lt;div
-        class=&quot;accordion__body ${ctx.collapsed ? &apos;hide&apos; : &apos;&apos;}&quot;
+        class=&quot;accordion__body ${ctx.collapsed ? &quot;hide&quot; : &quot;&quot;}&quot;
         ref=&quot;${ctx.nestedKey}&quot;
       &gt;
         ${ctx.children}
@@ -223,18 +223,18 @@ export default class SectionContainer extends panel {
   }
 
   get templateName() {
-    return &apos;SectionContainer&apos;;
+    return &quot;SectionContainer&quot;;
   }
 
   static schema(...extend) {
     return nested.schema(
       {
-        label: &apos;&#x41A;&#x43E;&#x43D;&#x442;&#x435;&#x439;&#x43D;&#x435;&#x440; &#x440;&#x430;&#x437;&#x434;&#x435;&#x43B;&#x430;&apos;,
-        type: &apos;SectionContainer&apos;,
-        key: &apos;SectionContainer&apos;,
-        title: &apos;&#x420;&#x430;&#x437;&#x434;&#x435;&#x43B;&apos;,
-        theme: &apos;default&apos;,
-        breadcrumb: &apos;default&apos;,
+        label: &quot;&#x41A;&#x43E;&#x43D;&#x442;&#x435;&#x439;&#x43D;&#x435;&#x440; &#x440;&#x430;&#x437;&#x434;&#x435;&#x43B;&#x430;&quot;,
+        type: &quot;SectionContainer&quot;,
+        key: &quot;SectionContainer&quot;,
+        title: &quot;&#x420;&#x430;&#x437;&#x434;&#x435;&#x43B;&quot;,
+        theme: &quot;default&quot;,
+        breadcrumb: &quot;default&quot;,
         components: [],
         clearOnHide: false,
         input: false,
@@ -248,9 +248,9 @@ export default class SectionContainer extends panel {
 
   static get builderInfo() {
     return {
-      title: &apos;&#x420;&#x430;&#x437;&#x434;&#x435;&#x43B;&apos;,
-      icon: &apos;list-alt&apos;,
-      group: &apos;components&apos;,
+      title: &quot;&#x420;&#x430;&#x437;&#x434;&#x435;&#x43B;&quot;,
+      icon: &quot;list-alt&quot;,
+      group: &quot;components&quot;,
       weight: 5,
       schema: SectionContainer.schema(),
     };

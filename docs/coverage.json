@@ -1,6 +1,6 @@
 {
-  "coverage": "6.14%",
-  "expectCount": 1042,
+  "coverage": "6.13%",
+  "expectCount": 1044,
   "actualCount": 64,
   "files": {
     "src/Embed.js": {
@@ -609,16 +609,17 @@
       ]
     },
     "src/components/custom/serviceContainer/Sections.js": {
-      "expectCount": 7,
+      "expectCount": 8,
       "actualCount": 0,
       "undocumentLines": [
         6,
         17,
         18,
         20,
-        24,
-        35,
-        37
+        25,
+        36,
+        38,
+        42
       ]
     },
     "src/components/custom/serviceContainer/ServiceContainer.form.js": {
@@ -629,16 +630,17 @@
       ]
     },
     "src/components/custom/serviceContainer/Slider.js": {
-      "expectCount": 7,
+      "expectCount": 8,
       "actualCount": 0,
       "undocumentLines": [
         6,
-        32,
-        33,
+        34,
         35,
-        39,
-        50,
-        52
+        37,
+        41,
+        52,
+        54,
+        58
       ]
     },
     "src/components/datagrid/DataGrid.form.js": {

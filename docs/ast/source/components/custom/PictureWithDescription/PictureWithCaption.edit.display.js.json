@@ -122,7 +122,7 @@
                     },
                     "extra": {
                       "rawValue": "labelPosition",
-                      "raw": "'labelPosition'"
+                      "raw": "\"labelPosition\""
                     },
                     "value": "labelPosition"
                   }
@@ -245,7 +245,7 @@
                     },
                     "extra": {
                       "rawValue": "label",
-                      "raw": "'label'"
+                      "raw": "\"label\""
                     },
                     "value": "label"
                   }
@@ -368,7 +368,7 @@
                     },
                     "extra": {
                       "rawValue": "input",
-                      "raw": "'input'"
+                      "raw": "\"input\""
                     },
                     "value": "input"
                   }
@@ -423,7 +423,7 @@
                     },
                     "extra": {
                       "rawValue": "Изображение",
-                      "raw": "'Изображение'"
+                      "raw": "\"Изображение\""
                     },
                     "value": "Изображение"
                   }
@@ -478,7 +478,7 @@
                     },
                     "extra": {
                       "rawValue": "picture__image",
-                      "raw": "'picture__image'"
+                      "raw": "\"picture__image\""
                     },
                     "value": "picture__image"
                   }
@@ -639,7 +639,7 @@
                     },
                     "extra": {
                       "rawValue": "Ссылка...",
-                      "raw": "'Ссылка...'"
+                      "raw": "\"Ссылка...\""
                     },
                     "value": "Ссылка..."
                   }
@@ -694,7 +694,7 @@
                     },
                     "extra": {
                       "rawValue": "Вставьте ссылку на изображение",
-                      "raw": "'Вставьте ссылку на изображение'"
+                      "raw": "\"Вставьте ссылку на изображение\""
                     },
                     "value": "Вставьте ссылку на изображение"
                   }
@@ -766,7 +766,7 @@
                     },
                     "extra": {
                       "rawValue": "input",
-                      "raw": "'input'"
+                      "raw": "\"input\""
                     },
                     "value": "input"
                   }
@@ -821,7 +821,7 @@
                     },
                     "extra": {
                       "rawValue": "Описание",
-                      "raw": "'Описание'"
+                      "raw": "\"Описание\""
                     },
                     "value": "Описание"
                   }
@@ -876,7 +876,7 @@
                     },
                     "extra": {
                       "rawValue": "picture__caption",
-                      "raw": "'picture__caption'"
+                      "raw": "\"picture__caption\""
                     },
                     "value": "picture__caption"
                   }
@@ -1037,7 +1037,7 @@
                     },
                     "extra": {
                       "rawValue": "Описание...",
-                      "raw": "'Описание...'"
+                      "raw": "\"Описание...\""
                     },
                     "value": "Описание..."
                   }
@@ -1092,7 +1092,7 @@
                     },
                     "extra": {
                       "rawValue": "Подпись к картинке",
-                      "raw": "'Подпись к картинке'"
+                      "raw": "\"Подпись к картинке\""
                     },
                     "value": "Подпись к картинке"
                   }
@@ -1164,7 +1164,7 @@
                     },
                     "extra": {
                       "rawValue": "input",
-                      "raw": "'input'"
+                      "raw": "\"input\""
                     },
                     "value": "input"
                   }
@@ -1219,7 +1219,7 @@
                     },
                     "extra": {
                       "rawValue": "Ссылка на webview",
-                      "raw": "'Ссылка на webview'"
+                      "raw": "\"Ссылка на webview\""
                     },
                     "value": "Ссылка на webview"
                   }
@@ -1274,7 +1274,7 @@
                     },
                     "extra": {
                       "rawValue": "picture__webview",
-                      "raw": "'picture__webview'"
+                      "raw": "\"picture__webview\""
                     },
                     "value": "picture__webview"
                   }
@@ -1435,7 +1435,7 @@
                     },
                     "extra": {
                       "rawValue": "Ссылка...",
-                      "raw": "'Ссылка...'"
+                      "raw": "\"Ссылка...\""
                     },
                     "value": "Ссылка..."
                   }
@@ -1490,7 +1490,7 @@
                     },
                     "extra": {
                       "rawValue": "Введите ссылку на webview",
-                      "raw": "'Введите ссылку на webview'"
+                      "raw": "\"Введите ссылку на webview\""
                     },
                     "value": "Введите ссылку на webview"
                   }
@@ -1562,7 +1562,7 @@
                     },
                     "extra": {
                       "rawValue": "description",
-                      "raw": "'description'"
+                      "raw": "\"description\""
                     },
                     "value": "description"
                   }
@@ -1685,7 +1685,7 @@
                     },
                     "extra": {
                       "rawValue": "hideLabel",
-                      "raw": "'hideLabel'"
+                      "raw": "\"hideLabel\""
                     },
                     "value": "hideLabel"
                   }
@@ -1808,7 +1808,7 @@
                     },
                     "extra": {
                       "rawValue": "placeholder",
-                      "raw": "'placeholder'"
+                      "raw": "\"placeholder\""
                     },
                     "value": "placeholder"
                   }
@@ -1931,7 +1931,7 @@
                     },
                     "extra": {
                       "rawValue": "placeholder",
-                      "raw": "'placeholder'"
+                      "raw": "\"placeholder\""
                     },
                     "value": "placeholder"
                   }
@@ -2054,7 +2054,7 @@
                     },
                     "extra": {
                       "rawValue": "hidden",
-                      "raw": "'hidden'"
+                      "raw": "\"hidden\""
                     },
                     "value": "hidden"
                   }
@@ -2177,7 +2177,7 @@
                     },
                     "extra": {
                       "rawValue": "tableView",
-                      "raw": "'tableView'"
+                      "raw": "\"tableView\""
                     },
                     "value": "tableView"
                   }
@@ -2300,7 +2300,7 @@
                     },
                     "extra": {
                       "rawValue": "modalEdit",
-                      "raw": "'modalEdit'"
+                      "raw": "\"modalEdit\""
                     },
                     "value": "modalEdit"
                   }
@@ -2423,7 +2423,7 @@
                     },
                     "extra": {
                       "rawValue": "customClass",
-                      "raw": "'customClass'"
+                      "raw": "\"customClass\""
                     },
                     "value": "customClass"
                   }
@@ -2546,7 +2546,7 @@
                     },
                     "extra": {
                       "rawValue": "autofocus",
-                      "raw": "'autofocus'"
+                      "raw": "\"autofocus\""
                     },
                     "value": "autofocus"
                   }
@@ -2669,7 +2669,7 @@
                     },
                     "extra": {
                       "rawValue": "tooltip",
-                      "raw": "'tooltip'"
+                      "raw": "\"tooltip\""
                     },
                     "value": "tooltip"
                   }
@@ -2792,7 +2792,7 @@
                     },
                     "extra": {
                       "rawValue": "tabindex",
-                      "raw": "'tabindex'"
+                      "raw": "\"tabindex\""
                     },
                     "value": "tabindex"
                   }
@@ -2915,7 +2915,7 @@
                     },
                     "extra": {
                       "rawValue": "disabled",
-                      "raw": "'disabled'"
+                      "raw": "\"disabled\""
                     },
                     "value": "disabled"
                   }

@@ -195,21 +195,23 @@ function createSliderTemplate(ctx) {
   return `
     &lt;div ref=&quot;${ctx.nestedKey}&quot; class=&quot;containerSlider&quot;&gt;
       &lt;div class=&quot;containerNavbar&quot;&gt;
-        &lt;img
-          src=&apos;https://test-gidapp.k8s-dev.gid.team/storage/public/c6bfd484-7a8e-43cd-b1ea-48570bff2301.png&apos;
-          alt=&apos;&#x41D;&#x430;&#x437;&#x430;&#x434;&apos;
-          class=&apos;backIcon&apos;
-        /&gt;
+       &lt;div class=${ctx.component.colorButton ? &quot;backIconWithBackground&quot; : &quot;backIcon&quot;}&gt;
+          &lt;img
+            src=&apos;https://app.gid.ru/storage/public/4968e579-b051-49fb-b0f3-ecc4af4057ae.png&apos;
+            alt=&apos;&#x41D;&#x430;&#x437;&#x430;&#x434;&apos;
+          /&gt;
+        &lt;/div&gt;
+
         &lt;div class=&apos;serviceName&apos;&gt;
           ${
-    ctx.component.serviceImage
-      ? `&lt;img
+            ctx.component.serviceImage
+              ? `&lt;img
             class=&apos;serviceIcon&apos;
             alt=&apos;serviceName&apos;
             src=${ctx.component.serviceImage}
           /&gt;`
-      : &apos;&apos;
-  }
+              : &apos;&apos;
+          }
         &lt;/div&gt;
       &lt;/div&gt;
       ${ctx.children}
@@ -221,14 +223,14 @@ export default class Slider extends panel {
   static editForm = editForm;
 
   get templateName() {
-    return &apos;Slider&apos;;
+    return &quot;Slider&quot;;
   }
 
   static schema() {
     return nested.schema({
-      label: &apos;&#x41A;&#x43E;&#x43D;&#x442;&#x435;&#x439;&#x43D;&#x435;&#x440; &#x441;&#x435;&#x440;&#x432;&#x438;&#x441;&#x430;&apos;,
-      type: &apos;Slider&apos;,
-      key: &apos;Slider&apos;,
+      label: &quot;&#x41A;&#x43E;&#x43D;&#x442;&#x435;&#x439;&#x43D;&#x435;&#x440; &#x441;&#x435;&#x440;&#x432;&#x438;&#x441;&#x430;&quot;,
+      type: &quot;Slider&quot;,
+      key: &quot;Slider&quot;,
       components: [],
       input: false,
       persistent: false,
@@ -238,7 +240,14 @@ export default class Slider extends panel {
   constructor(component, options, data) {
     super(component, options, data);
     this.collapsed = !!this.component.collapsed;
-    Templates.templates.bootstrap[&apos;Slider&apos;] = { form: createSliderTemplate };
+    Templates.templates.bootstrap[&quot;Slider&quot;] = { form: createSliderTemplate };
+  }
+
+  attach(element) {
+    if (!this.component.components.length) {
+      document.querySelector(&quot;.containerSlider .drag-container&quot;).firstElementChild.classList.add(&quot;no-drag-custom&quot;);
+    }
+    return super.attach(element);
   }
 }
 

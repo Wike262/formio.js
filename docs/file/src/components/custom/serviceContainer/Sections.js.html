@@ -206,14 +206,15 @@ export default class Sections extends panel {
   static editForm = editForm;
 
   get templateName() {
-    return &apos;Sections&apos;;
+    return &quot;Sections&quot;;
   }
+
 
   static schema() {
     return nested.schema({
-      label: &apos;&#x41A;&#x43E;&#x43D;&#x442;&#x435;&#x439;&#x43D;&#x435;&#x440; &#x441;&#x435;&#x440;&#x432;&#x438;&#x441;&#x430;&apos;,
-      type: &apos;Sections&apos;,
-      key: &apos;Sections&apos;,
+      label: &quot;&#x41A;&#x43E;&#x43D;&#x442;&#x435;&#x439;&#x43D;&#x435;&#x440; &#x441;&#x435;&#x440;&#x432;&#x438;&#x441;&#x430;&quot;,
+      type: &quot;Sections&quot;,
+      key: &quot;Sections&quot;,
       components: [],
       input: false,
       persistent: false,
@@ -223,7 +224,13 @@ export default class Sections extends panel {
   constructor(component, options, data) {
     super(component, options, data);
     this.collapsed = !!this.component.collapsed;
-    Templates.templates.bootstrap[&apos;Sections&apos;] = { form: createSectionsTemplate };
+    Templates.templates.bootstrap[&quot;Sections&quot;] = { form: createSectionsTemplate };
+  }
+
+  attach(element) {
+    document.querySelector(&quot;.serviceSections&quot;).firstElementChild.classList.add(&quot;drag-container-section&quot;);
+    document.querySelector(&quot;.serviceSections&quot;).parentElement.parentElement.classList.add(&quot;position-absolute&quot;);
+    return super.attach(element);
   }
 }
 

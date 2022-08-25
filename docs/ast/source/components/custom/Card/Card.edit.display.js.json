@@ -122,7 +122,7 @@
                     },
                     "extra": {
                       "rawValue": "labelPosition",
-                      "raw": "'labelPosition'"
+                      "raw": "\"labelPosition\""
                     },
                     "value": "labelPosition"
                   }
@@ -245,7 +245,7 @@
                     },
                     "extra": {
                       "rawValue": "label",
-                      "raw": "'label'"
+                      "raw": "\"label\""
                     },
                     "value": "label"
                   }
@@ -368,7 +368,7 @@
                     },
                     "extra": {
                       "rawValue": "input",
-                      "raw": "'input'"
+                      "raw": "\"input\""
                     },
                     "value": "input"
                   }
@@ -423,7 +423,7 @@
                     },
                     "extra": {
                       "rawValue": "Заголовок",
-                      "raw": "'Заголовок'"
+                      "raw": "\"Заголовок\""
                     },
                     "value": "Заголовок"
                   }
@@ -478,7 +478,7 @@
                     },
                     "extra": {
                       "rawValue": "cardTitle",
-                      "raw": "'cardTitle'"
+                      "raw": "\"cardTitle\""
                     },
                     "value": "cardTitle"
                   }
@@ -639,7 +639,7 @@
                     },
                     "extra": {
                       "rawValue": "Заголовок...",
-                      "raw": "'Заголовок...'"
+                      "raw": "\"Заголовок...\""
                     },
                     "value": "Заголовок..."
                   }
@@ -694,7 +694,7 @@
                     },
                     "extra": {
                       "rawValue": "Заголовок карточки",
-                      "raw": "'Заголовок карточки'"
+                      "raw": "\"Заголовок карточки\""
                     },
                     "value": "Заголовок карточки"
                   }
@@ -766,7 +766,7 @@
                     },
                     "extra": {
                       "rawValue": "input",
-                      "raw": "'input'"
+                      "raw": "\"input\""
                     },
                     "value": "input"
                   }
@@ -821,7 +821,7 @@
                     },
                     "extra": {
                       "rawValue": "Описание",
-                      "raw": "'Описание'"
+                      "raw": "\"Описание\""
                     },
                     "value": "Описание"
                   }
@@ -876,7 +876,7 @@
                     },
                     "extra": {
                       "rawValue": "cardDescription",
-                      "raw": "'cardDescription'"
+                      "raw": "\"cardDescription\""
                     },
                     "value": "cardDescription"
                   }
@@ -1037,7 +1037,7 @@
                     },
                     "extra": {
                       "rawValue": "Описание...",
-                      "raw": "'Описание...'"
+                      "raw": "\"Описание...\""
                     },
                     "value": "Описание..."
                   }
@@ -1092,7 +1092,7 @@
                     },
                     "extra": {
                       "rawValue": "Описание карточки",
-                      "raw": "'Описание карточки'"
+                      "raw": "\"Описание карточки\""
                     },
                     "value": "Описание карточки"
                   }
@@ -1164,7 +1164,7 @@
                     },
                     "extra": {
                       "rawValue": "input",
-                      "raw": "'input'"
+                      "raw": "\"input\""
                     },
                     "value": "input"
                   }
@@ -1219,7 +1219,7 @@
                     },
                     "extra": {
                       "rawValue": "Изображение",
-                      "raw": "'Изображение'"
+                      "raw": "\"Изображение\""
                     },
                     "value": "Изображение"
                   }
@@ -1274,7 +1274,7 @@
                     },
                     "extra": {
                       "rawValue": "cardImage",
-                      "raw": "'cardImage'"
+                      "raw": "\"cardImage\""
                     },
                     "value": "cardImage"
                   }
@@ -1435,7 +1435,7 @@
                     },
                     "extra": {
                       "rawValue": "Ссылка...",
-                      "raw": "'Ссылка...'"
+                      "raw": "\"Ссылка...\""
                     },
                     "value": "Ссылка..."
                   }
@@ -1490,7 +1490,7 @@
                     },
                     "extra": {
                       "rawValue": "Вставьте ссылку на изображение",
-                      "raw": "'Вставьте ссылку на изображение'"
+                      "raw": "\"Вставьте ссылку на изображение\""
                     },
                     "value": "Вставьте ссылку на изображение"
                   }
@@ -1562,7 +1562,7 @@
                     },
                     "extra": {
                       "rawValue": "input",
-                      "raw": "'input'"
+                      "raw": "\"input\""
                     },
                     "value": "input"
                   }
@@ -1617,7 +1617,7 @@
                     },
                     "extra": {
                       "rawValue": "Ссылка на webview",
-                      "raw": "'Ссылка на webview'"
+                      "raw": "\"Ссылка на webview\""
                     },
                     "value": "Ссылка на webview"
                   }
@@ -1672,7 +1672,7 @@
                     },
                     "extra": {
                       "rawValue": "cardWebview",
-                      "raw": "'cardWebview'"
+                      "raw": "\"cardWebview\""
                     },
                     "value": "cardWebview"
                   }
@@ -1833,7 +1833,7 @@
                     },
                     "extra": {
                       "rawValue": "Ссылка...",
-                      "raw": "'Ссылка...'"
+                      "raw": "\"Ссылка...\""
                     },
                     "value": "Ссылка..."
                   }
@@ -1888,7 +1888,7 @@
                     },
                     "extra": {
                       "rawValue": "Вставьте ссылку на webview",
-                      "raw": "'Вставьте ссылку на webview'"
+                      "raw": "\"Вставьте ссылку на webview\""
                     },
                     "value": "Вставьте ссылку на webview"
                   }
@@ -3231,7 +3231,7 @@
                     },
                     "extra": {
                       "rawValue": "description",
-                      "raw": "'description'"
+                      "raw": "\"description\""
                     },
                     "value": "description"
                   }
@@ -3354,7 +3354,7 @@
                     },
                     "extra": {
                       "rawValue": "hideLabel",
-                      "raw": "'hideLabel'"
+                      "raw": "\"hideLabel\""
                     },
                     "value": "hideLabel"
                   }
@@ -3477,7 +3477,7 @@
                     },
                     "extra": {
                       "rawValue": "placeholder",
-                      "raw": "'placeholder'"
+                      "raw": "\"placeholder\""
                     },
                     "value": "placeholder"
                   }
@@ -3600,7 +3600,7 @@
                     },
                     "extra": {
                       "rawValue": "placeholder",
-                      "raw": "'placeholder'"
+                      "raw": "\"placeholder\""
                     },
                     "value": "placeholder"
                   }
@@ -3723,7 +3723,7 @@
                     },
                     "extra": {
                       "rawValue": "hidden",
-                      "raw": "'hidden'"
+                      "raw": "\"hidden\""
                     },
                     "value": "hidden"
                   }
@@ -3846,7 +3846,7 @@
                     },
                     "extra": {
                       "rawValue": "tableView",
-                      "raw": "'tableView'"
+                      "raw": "\"tableView\""
                     },
                     "value": "tableView"
                   }
@@ -3969,7 +3969,7 @@
                     },
                     "extra": {
                       "rawValue": "modalEdit",
-                      "raw": "'modalEdit'"
+                      "raw": "\"modalEdit\""
                     },
                     "value": "modalEdit"
                   }
@@ -4092,7 +4092,7 @@
                     },
                     "extra": {
                       "rawValue": "customClass",
-                      "raw": "'customClass'"
+                      "raw": "\"customClass\""
                     },
                     "value": "customClass"
                   }
@@ -4215,7 +4215,7 @@
                     },
                     "extra": {
                       "rawValue": "autofocus",
-                      "raw": "'autofocus'"
+                      "raw": "\"autofocus\""
                     },
                     "value": "autofocus"
                   }
@@ -4338,7 +4338,7 @@
                     },
                     "extra": {
                       "rawValue": "tooltip",
-                      "raw": "'tooltip'"
+                      "raw": "\"tooltip\""
                     },
                     "value": "tooltip"
                   }
@@ -4461,7 +4461,7 @@
                     },
                     "extra": {
                       "rawValue": "tabindex",
-                      "raw": "'tabindex'"
+                      "raw": "\"tabindex\""
                     },
                     "value": "tabindex"
                   }
@@ -4584,7 +4584,7 @@
                     },
                     "extra": {
                       "rawValue": "disabled",
-                      "raw": "'disabled'"
+                      "raw": "\"disabled\""
                     },
                     "value": "disabled"
                   }

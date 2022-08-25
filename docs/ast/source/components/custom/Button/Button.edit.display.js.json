@@ -122,7 +122,7 @@
                     },
                     "extra": {
                       "rawValue": "labelPosition",
-                      "raw": "'labelPosition'"
+                      "raw": "\"labelPosition\""
                     },
                     "value": "labelPosition"
                   }
@@ -245,7 +245,7 @@
                     },
                     "extra": {
                       "rawValue": "label",
-                      "raw": "'label'"
+                      "raw": "\"label\""
                     },
                     "value": "label"
                   }
@@ -368,7 +368,7 @@
                     },
                     "extra": {
                       "rawValue": "placeholder",
-                      "raw": "'placeholder'"
+                      "raw": "\"placeholder\""
                     },
                     "value": "placeholder"
                   }
@@ -491,7 +491,7 @@
                     },
                     "extra": {
                       "rawValue": "hidden",
-                      "raw": "'hidden'"
+                      "raw": "\"hidden\""
                     },
                     "value": "hidden"
                   }
@@ -614,7 +614,7 @@
                     },
                     "extra": {
                       "rawValue": "tableView",
-                      "raw": "'tableView'"
+                      "raw": "\"tableView\""
                     },
                     "value": "tableView"
                   }
@@ -737,7 +737,7 @@
                     },
                     "extra": {
                       "rawValue": "modalEdit",
-                      "raw": "'modalEdit'"
+                      "raw": "\"modalEdit\""
                     },
                     "value": "modalEdit"
                   }
@@ -860,7 +860,7 @@
                     },
                     "extra": {
                       "rawValue": "customClass",
-                      "raw": "'customClass'"
+                      "raw": "\"customClass\""
                     },
                     "value": "customClass"
                   }
@@ -983,7 +983,7 @@
                     },
                     "extra": {
                       "rawValue": "description",
-                      "raw": "'description'"
+                      "raw": "\"description\""
                     },
                     "value": "description"
                   }
@@ -1106,7 +1106,7 @@
                     },
                     "extra": {
                       "rawValue": "hideLabel",
-                      "raw": "'hideLabel'"
+                      "raw": "\"hideLabel\""
                     },
                     "value": "hideLabel"
                   }
@@ -1229,7 +1229,7 @@
                     },
                     "extra": {
                       "rawValue": "autofocus",
-                      "raw": "'autofocus'"
+                      "raw": "\"autofocus\""
                     },
                     "value": "autofocus"
                   }
@@ -1352,7 +1352,7 @@
                     },
                     "extra": {
                       "rawValue": "tooltip",
-                      "raw": "'tooltip'"
+                      "raw": "\"tooltip\""
                     },
                     "value": "tooltip"
                   }
@@ -1475,7 +1475,7 @@
                     },
                     "extra": {
                       "rawValue": "tabindex",
-                      "raw": "'tabindex'"
+                      "raw": "\"tabindex\""
                     },
                     "value": "tabindex"
                   }
@@ -1598,7 +1598,7 @@
                     },
                     "extra": {
                       "rawValue": "disabled",
-                      "raw": "'disabled'"
+                      "raw": "\"disabled\""
                     },
                     "value": "disabled"
                   }
@@ -1721,7 +1721,7 @@
                     },
                     "extra": {
                       "rawValue": "input",
-                      "raw": "'input'"
+                      "raw": "\"input\""
                     },
                     "value": "input"
                   }
@@ -1776,7 +1776,7 @@
                     },
                     "extra": {
                       "rawValue": "Текст",
-                      "raw": "'Текст'"
+                      "raw": "\"Текст\""
                     },
                     "value": "Текст"
                   }
@@ -1831,7 +1831,7 @@
                     },
                     "extra": {
                       "rawValue": "text",
-                      "raw": "'text'"
+                      "raw": "\"text\""
                     },
                     "value": "text"
                   }
@@ -1992,7 +1992,7 @@
                     },
                     "extra": {
                       "rawValue": "Текст...",
-                      "raw": "'Текст...'"
+                      "raw": "\"Текст...\""
                     },
                     "value": "Текст..."
                   }
@@ -2047,7 +2047,7 @@
                     },
                     "extra": {
                       "rawValue": "Введите текст кнопки",
-                      "raw": "'Введите текст кнопки'"
+                      "raw": "\"Введите текст кнопки\""
                     },
                     "value": "Введите текст кнопки"
                   }
@@ -2119,7 +2119,7 @@
                     },
                     "extra": {
                       "rawValue": "input",
-                      "raw": "'input'"
+                      "raw": "\"input\""
                     },
                     "value": "input"
                   }
@@ -2174,7 +2174,7 @@
                     },
                     "extra": {
                       "rawValue": "Ссылка",
-                      "raw": "'Ссылка'"
+                      "raw": "\"Ссылка\""
                     },
                     "value": "Ссылка"
                   }
@@ -2229,7 +2229,7 @@
                     },
                     "extra": {
                       "rawValue": "link",
-                      "raw": "'link'"
+                      "raw": "\"link\""
                     },
                     "value": "link"
                   }
@@ -2390,7 +2390,7 @@
                     },
                     "extra": {
                       "rawValue": "Ссылка...",
-                      "raw": "'Ссылка...'"
+                      "raw": "\"Ссылка...\""
                     },
                     "value": "Ссылка..."
                   }
@@ -2445,7 +2445,7 @@
                     },
                     "extra": {
                       "rawValue": "Введите ссылку",
-                      "raw": "'Введите ссылку'"
+                      "raw": "\"Введите ссылку\""
                     },
                     "value": "Введите ссылку"
                   }
@@ -2517,7 +2517,7 @@
                     },
                     "extra": {
                       "rawValue": "checkbox",
-                      "raw": "'checkbox'"
+                      "raw": "\"checkbox\""
                     },
                     "value": "checkbox"
                   }
@@ -2572,7 +2572,7 @@
                     },
                     "extra": {
                       "rawValue": "Синий фон",
-                      "raw": "'Синий фон'"
+                      "raw": "\"Синий фон\""
                     },
                     "value": "Синий фон"
                   }
@@ -2627,7 +2627,7 @@
                     },
                     "extra": {
                       "rawValue": "colorButton",
-                      "raw": "'colorButton'"
+                      "raw": "\"colorButton\""
                     },
                     "value": "colorButton"
                   }
@@ -2788,7 +2788,7 @@
                     },
                     "extra": {
                       "rawValue": "Фон...",
-                      "raw": "'Фон...'"
+                      "raw": "\"Фон...\""
                     },
                     "value": "Фон..."
                   }
@@ -2843,7 +2843,7 @@
                     },
                     "extra": {
                       "rawValue": "Выберите фон",
-                      "raw": "'Выберите фон'"
+                      "raw": "\"Выберите фон\""
                     },
                     "value": "Выберите фон"
                   }
