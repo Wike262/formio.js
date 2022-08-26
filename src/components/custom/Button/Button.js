@@ -6,7 +6,7 @@ export default class Button extends field {
 
   static schema() {
     return field.schema({
-      type: 'button',
+      type: 'customButton',
     });
   }
 
@@ -30,19 +30,27 @@ export default class Button extends field {
     return super.render(`
       <div class=${this.component.colorButton ? 'primary__button' : 'white__button'}>
         ${
-          this.component.link
-            ? `   <a href=${this.component.link} class='${this.component.colorButton ? 'white__text' : 'primary__text'}'>
+      this.component.link
+        ? `<a href=${this.component.link} class="${this.component.colorButton ? 'white__text' : 'primary__text'}">
               ${text}
-               </a>`
-            : `${text}`
-        }
-
+            </a>`
+        : `<p class="${this.component.colorButton ? 'white__text' : 'primary__text'}">${text}</p>`
+    }
       </div>`);
   }
 
   attach(element) {
+    element.classList.add('buttonPosition');
+    const buttons = Array.from(element.parentElement.querySelectorAll('.buttonPosition'));
+    if (buttons.length > 1) {
+      buttons.map((button, index) => {
+        if (index + 1 !== buttons.length) {
+          (button).classList.add('marginButton');
+        }
+      });
+    }
     return super.attach(element);
   }
 }
 
-// Components.addComponent('button', Button);
+// Components.addComponent("customButton", Button);

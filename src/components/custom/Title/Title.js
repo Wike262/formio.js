@@ -26,7 +26,7 @@ export default class Title extends field {
 
   render() {
     return super.render(`
-      ${this.component.title ? `<div class='title'>${this.component.title}</div>` : ''}
+      ${this.component.title ? `<div class="title">${this.component.title}</div>` : ''}
    `);
   }
 

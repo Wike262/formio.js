@@ -6,16 +6,17 @@ import editForm from './ServiceContainer.form';
 function createServiceContainerTemplate(ctx) {
   const mytrackerEvent = JSON.stringify({ event: ctx.component.mytracker_event, payload: ctx.component.mytracker_properties });
 
-  if (ctx.component.serviceImage) {
+  if (ctx.component.serviceImage || ctx.component.colorButton) {
     Object.assign(ctx.component.components[0], {
       serviceImage: ctx.component.serviceImage,
+      colorButton: ctx.component.colorButton,
     });
   }
   return `
-  <div class="container" ref="${ctx.nestedKey}" data-mytracker=${mytrackerEvent}>
-    ${ctx.children}
-  </div>
-`;
+    <div class="container" ref="${ctx.nestedKey}" data-mytracker=${mytrackerEvent}>
+      ${ctx.children}
+    </div>
+  `;
 }
 
 export default class ServiceContainer extends panel {
@@ -64,7 +65,7 @@ export default class ServiceContainer extends panel {
     if (
       document.querySelector('.containerSlider') &&
       document.querySelector('.containerSlider').lastElementChild.firstElementChild.role !== 'alert'
-    ) {
+  ) {
       document.querySelector('.containerSlider').firstElementChild.classList.add('cover');
       document.querySelector('.containerSlider').lastElementChild.classList.add('borderNone');
     }

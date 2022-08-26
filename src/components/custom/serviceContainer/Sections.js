@@ -5,13 +5,13 @@ import editForm from './ServiceContainer.form';
 
 function createSectionsTemplate(ctx) {
   return `
-    <div
-      ref="${ctx.nestedKey}"
-      class="serviceSections"
-    >
-      ${ctx.children}
-    </div>
-`;
+      <div
+        ref="${ctx.nestedKey}"
+        class="serviceSections"
+      >
+        ${ctx.children}
+      </div>
+  `;
 }
 
 export default class Sections extends panel {
@@ -36,6 +36,12 @@ export default class Sections extends panel {
     super(component, options, data);
     this.collapsed = !!this.component.collapsed;
     Templates.templates.bootstrap['Sections'] = { form: createSectionsTemplate };
+  }
+
+  attach(element) {
+    document.querySelector('.serviceSections').firstElementChild.classList.add('drag-container-section');
+    document.querySelector('.serviceSections').parentElement.parentElement.classList.add('position-absolute');
+    return super.attach(element);
   }
 }
 

@@ -64,4 +64,13 @@ export default [
     placeholder: 'Ссылка...',
     tooltip: 'Вставьте ссылку на изображение',
   },
+  {
+    type: 'checkbox',
+    label: 'Серый фон кнопки «Назад»',
+    key: 'colorButton',
+    input: true,
+    weight: 3,
+    placeholder: 'Фон...',
+    tooltip: 'Выберите фон',
+  },
 ];
