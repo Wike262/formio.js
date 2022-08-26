@@ -195,21 +195,23 @@ function createSliderTemplate(ctx) {
   return `
     &lt;div ref=&quot;${ctx.nestedKey}&quot; class=&quot;containerSlider&quot;&gt;
       &lt;div class=&quot;containerNavbar&quot;&gt;
-        &lt;img
-          src=&apos;https://test-gidapp.k8s-dev.gid.team/storage/public/c6bfd484-7a8e-43cd-b1ea-48570bff2301.png&apos;
-          alt=&apos;&#x41D;&#x430;&#x437;&#x430;&#x434;&apos;
-          class=&apos;backIcon&apos;
-        /&gt;
-        &lt;div class=&apos;serviceName&apos;&gt;
+       &lt;div class=${ctx.component.colorButton ? &apos;backIconWithBackground&apos; : &apos;backIcon&apos;}&gt;
+          &lt;img
+            src=&apos;https://app.gid.ru/storage/public/4968e579-b051-49fb-b0f3-ecc4af4057ae.png&apos;
+            alt=&apos;&#x41D;&#x430;&#x437;&#x430;&#x434;&apos;
+          /&gt;
+       &lt;/div&gt;
+
+       &lt;div class=&apos;serviceName&apos;&gt;
           ${
-    ctx.component.serviceImage
-      ? `&lt;img
-            class=&apos;serviceIcon&apos;
-            alt=&apos;serviceName&apos;
-            src=${ctx.component.serviceImage}
-          /&gt;`
-      : &apos;&apos;
-  }
+            ctx.component.serviceImage
+              ? `&lt;img
+                    class=&apos;serviceIcon&apos;
+                    alt=&apos;serviceName&apos;
+                    src=${ctx.component.serviceImage}
+                  /&gt;`
+              : &apos;&apos;
+          }
         &lt;/div&gt;
       &lt;/div&gt;
       ${ctx.children}
@@ -239,6 +241,13 @@ export default class Slider extends panel {
     super(component, options, data);
     this.collapsed = !!this.component.collapsed;
     Templates.templates.bootstrap[&apos;Slider&apos;] = { form: createSliderTemplate };
+  }
+
+  attach(element) {
+    if (!this.component.components.length) {
+      document.querySelector(&apos;.containerSlider .drag-container&apos;).firstElementChild.classList.add(&apos;no-drag-custom&apos;);
+    }
+    return super.attach(element);
   }
 }
 

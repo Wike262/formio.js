@@ -260,25 +260,13 @@ export default class SectionContainer extends panel {
     if (document.querySelector(&apos;.accordion__header&apos;)) {
       document.querySelectorAll(&apos;.accordion__header&apos;).forEach((element) =&gt; {
         element.addEventListener(&apos;click&apos;, () =&gt; {
-          const elem = element.parentElement.querySelector(&apos;.accordion__body&apos;);
-          const hide = element.parentElement.querySelector(&apos;.accordion__body&apos;).classList.contains(&apos;hide&apos;);
+          this.component.collapsible
+            ? element.parentElement.parentElement.querySelector(&apos;.accordion__body&apos;).classList.add(&apos;hide&apos;)
+        : this.removeClass(element.parentElement.parentElement.querySelector(&apos;.accordion__body&apos;), &apos;hide&apos;);
           const buttonCollapsing = element.querySelector(&apos;.button-collapsing&apos;);
-
-          if (hide) {
-            elem.classList.remove(&apos;hide&apos;);
-            this.removeClass(buttonCollapsing, &apos;fa-angle-down&apos;);
-            buttonCollapsing.classList.add(&apos;fa-angle-up&apos;);
-          }
-          else {
-            elem.classList.add(&apos;hide&apos;);
-            this.removeClass(buttonCollapsing, &apos;fa-angle-up&apos;);
-            buttonCollapsing.classList.add(&apos;fa-angle-down&apos;);
-          }
-          // this.component.collapsible
-          //   ? element.parentElement.querySelector(&apos;.accordion__body&apos;).classList.add(&apos;hide&apos;)
-          //   : this.removeClass(element.parentElement.querySelector(&apos;.accordion__body&apos;), &apos;hide&apos;);
-          // buttonCollapsing.classList.add(this.component.collapsible ? &apos;fa-angle-down&apos; : &apos;fa-angle-up&apos;);
-          // this.component.collapsible = !this.component.collapsible;
+          this.removeClass(buttonCollapsing, this.component.collapsible ? &apos;fa-angle-up&apos; : &apos;fa-angle-down&apos;);
+          buttonCollapsing.classList.add(this.component.collapsible ? &apos;fa-angle-down&apos; : &apos;fa-angle-up&apos;);
+          this.component.collapsible = !this.component.collapsible;
         });
       });
     }

@@ -3828,6 +3828,12 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "src/components/custom/servicecontainer/sections.js~sections#attach",
+    "class/src/components/custom/serviceContainer/Sections.js~Sections.html#instance-method-attach",
+    "src/components/custom/serviceContainer/Sections.js~Sections#attach",
+    "method"
+  ],
+  [
     "src/components/custom/servicecontainer/sections.js~sections#collapsed",
     "class/src/components/custom/serviceContainer/Sections.js~Sections.html#instance-member-collapsed",
     "src/components/custom/serviceContainer/Sections.js~Sections#collapsed",
@@ -3880,6 +3886,12 @@ window.esdocSearchIndex = [
     "file/src/components/custom/serviceContainer/Slider.js.html",
     "src/components/custom/serviceContainer/Slider.js",
     "file"
+  ],
+  [
+    "src/components/custom/servicecontainer/slider.js~slider#attach",
+    "class/src/components/custom/serviceContainer/Slider.js~Slider.html#instance-method-attach",
+    "src/components/custom/serviceContainer/Slider.js~Slider#attach",
+    "method"
   ],
   [
     "src/components/custom/servicecontainer/slider.js~slider#collapsed",

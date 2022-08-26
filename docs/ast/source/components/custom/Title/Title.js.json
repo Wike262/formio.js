@@ -1441,8 +1441,8 @@
                                         }
                                       },
                                       "value": {
-                                        "raw": "<div class='title'>",
-                                        "cooked": "<div class='title'>"
+                                        "raw": "<div class=\"title\">",
+                                        "cooked": "<div class=\"title\">"
                                       },
                                       "tail": false
                                     },
@@ -4601,7 +4601,7 @@
         "binop": null,
         "updateContext": null
       },
-      "value": "<div class='title'>",
+      "value": "<div class=\"title\">",
       "start": 539,
       "end": 558,
       "loc": {

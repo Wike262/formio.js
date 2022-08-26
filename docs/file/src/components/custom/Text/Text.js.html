@@ -214,6 +214,7 @@ export default class Text extends field {
 
   render() {
     return super.render(`
+      ${this.component.title ? `&lt;div class=&quot;textTitle&quot;&gt;${this.component.title}&lt;/div&gt;` : &apos;&apos;}
       ${this.component.text ? `&lt;div class=&quot;text&quot;&gt;${this.component.text}&lt;/div&gt;` : &apos;&apos;}
    `);
   }

@@ -1960,7 +1960,7 @@
                     },
                     "extra": {
                       "rawValue": "Уникальный идентификатор",
-                      "raw": "\"Уникальный идентификатор\""
+                      "raw": "'Уникальный идентификатор'"
                     },
                     "value": "Уникальный идентификатор"
                   }
@@ -2070,7 +2070,7 @@
                     },
                     "extra": {
                       "rawValue": "Вставьте уникальный идентификатор",
-                      "raw": "\"Вставьте уникальный идентификатор\""
+                      "raw": "'Вставьте уникальный идентификатор'"
                     },
                     "value": "Вставьте уникальный идентификатор"
                   }
@@ -2189,7 +2189,7 @@
                               },
                               "extra": {
                                 "rawValue": "inputUUID",
-                                "raw": "\"inputUUID\""
+                                "raw": "'inputUUID'"
                               },
                               "value": "inputUUID"
                             }
@@ -2295,7 +2295,7 @@
                               },
                               "extra": {
                                 "rawValue": "customUUID",
-                                "raw": "\"customUUID\""
+                                "raw": "'customUUID'"
                               },
                               "value": "customUUID"
                             }
@@ -2350,7 +2350,7 @@
                               },
                               "extra": {
                                 "rawValue": "input",
-                                "raw": "\"input\""
+                                "raw": "'input'"
                               },
                               "value": "input"
                             }
@@ -2405,7 +2405,7 @@
                               },
                               "extra": {
                                 "rawValue": "customInput",
-                                "raw": "\"customInput\""
+                                "raw": "'customInput'"
                               },
                               "value": "customInput"
                             }
@@ -2460,7 +2460,7 @@
                               },
                               "extra": {
                                 "rawValue": "input",
-                                "raw": "\"input\""
+                                "raw": "'input'"
                               },
                               "value": "input"
                             }
@@ -2515,7 +2515,7 @@
                               },
                               "extra": {
                                 "rawValue": "UUID карточки...",
-                                "raw": "\"UUID карточки...\""
+                                "raw": "'UUID карточки...'"
                               },
                               "value": "UUID карточки..."
                             }
@@ -2587,7 +2587,7 @@
                               },
                               "extra": {
                                 "rawValue": "createUUID",
-                                "raw": "\"createUUID\""
+                                "raw": "'createUUID'"
                               },
                               "value": "createUUID"
                             }
@@ -2642,7 +2642,7 @@
                               },
                               "extra": {
                                 "rawValue": "button",
-                                "raw": "\"button\""
+                                "raw": "'button'"
                               },
                               "value": "button"
                             }
@@ -2697,7 +2697,7 @@
                               },
                               "extra": {
                                 "rawValue": "custom",
-                                "raw": "\"custom\""
+                                "raw": "'custom'"
                               },
                               "value": "custom"
                             }
@@ -2752,7 +2752,7 @@
                               },
                               "extra": {
                                 "rawValue": "Сгенерировать",
-                                "raw": "\"Сгенерировать\""
+                                "raw": "'Сгенерировать'"
                               },
                               "value": "Сгенерировать"
                             }
@@ -2829,7 +2829,7 @@
                     },
                     "extra": {
                       "rawValue": "copyUUID",
-                      "raw": "\"copyUUID\""
+                      "raw": "'copyUUID'"
                     },
                     "value": "copyUUID"
                   }
@@ -2884,7 +2884,7 @@
                     },
                     "extra": {
                       "rawValue": "button",
-                      "raw": "\"button\""
+                      "raw": "'button'"
                     },
                     "value": "button"
                   }
@@ -2939,7 +2939,7 @@
                     },
                     "extra": {
                       "rawValue": "Копировать ссылку",
-                      "raw": "\"Копировать ссылку\""
+                      "raw": "'Копировать ссылку'"
                     },
                     "value": "Копировать ссылку"
                   }
@@ -2994,7 +2994,7 @@
                     },
                     "extra": {
                       "rawValue": "deeplink",
-                      "raw": "\"deeplink\""
+                      "raw": "'deeplink'"
                     },
                     "value": "deeplink"
                   }
@@ -3049,7 +3049,7 @@
                     },
                     "extra": {
                       "rawValue": "custom",
-                      "raw": "\"custom\""
+                      "raw": "'custom'"
                     },
                     "value": "custom"
                   }
@@ -3159,7 +3159,7 @@
                     },
                     "extra": {
                       "rawValue": "Копирование ссылки-deeplink",
-                      "raw": "\"Копирование ссылки-deeplink\""
+                      "raw": "'Копирование ссылки-deeplink'"
                     },
                     "value": "Копирование ссылки-deeplink"
                   }

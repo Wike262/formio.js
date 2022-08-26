@@ -193,13 +193,13 @@ import editForm from &apos;./ServiceContainer.form&apos;;
 
 function createSectionsTemplate(ctx) {
   return `
-    &lt;div
-      ref=&quot;${ctx.nestedKey}&quot;
-      class=&quot;serviceSections&quot;
-    &gt;
-      ${ctx.children}
-    &lt;/div&gt;
-`;
+      &lt;div
+        ref=&quot;${ctx.nestedKey}&quot;
+        class=&quot;serviceSections&quot;
+      &gt;
+        ${ctx.children}
+      &lt;/div&gt;
+  `;
 }
 
 export default class Sections extends panel {
@@ -224,6 +224,12 @@ export default class Sections extends panel {
     super(component, options, data);
     this.collapsed = !!this.component.collapsed;
     Templates.templates.bootstrap[&apos;Sections&apos;] = { form: createSectionsTemplate };
+  }
+
+  attach(element) {
+    document.querySelector(&apos;.serviceSections&apos;).firstElementChild.classList.add(&apos;drag-container-section&apos;);
+    document.querySelector(&apos;.serviceSections&apos;).parentElement.parentElement.classList.add(&apos;position-absolute&apos;);
+    return super.attach(element);
   }
 }
 
