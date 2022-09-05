@@ -1,3 +1,5 @@
+import { fontSizeOptions, fontWeightOptions } from '../constants/constants';
+
 export default [
   {
     key: 'labelPosition',
@@ -17,6 +19,51 @@ export default [
     tooltip: 'Заголовок карточки',
   },
   {
+    id: 'titleSetting',
+    weight: 1,
+    components: [
+      {
+        type: 'select',
+        label: 'Жирность заголовка',
+        key: 'titleWeight',
+        customClass: 'col-4',
+        search: false,
+        input: true,
+        placeholder: 'Жирность...',
+        searchEnabled: false,
+        dataSrc: 'values',
+        data: {
+          values: fontWeightOptions,
+        },
+      },
+      {
+        type: 'select',
+        label: 'Размер заголовка',
+        key: 'titleSize',
+        customClass: 'col-4',
+        search: false,
+        input: true,
+        placeholder: 'Размер...',
+        searchEnabled: false,
+        dataSrc: 'values',
+        data: {
+          values: fontSizeOptions,
+        },
+      },
+      {
+        type: 'input',
+        label: 'Цвет заголовка',
+        key: 'titleColor',
+        customClass: 'col-4',
+        input: true,
+        inputMask: '#******',
+        displayMask: '#******',
+        placeholder: 'Цвет...',
+        tooltip: 'Введите код цвета в формате #B0B0B0',
+      },
+    ],
+  },
+  {
     type: 'input',
     label: 'Описание',
     key: 'cardDescription',
@@ -24,6 +71,51 @@ export default [
     weight: 2,
     placeholder: 'Описание...',
     tooltip: 'Описание карточки',
+  },
+  {
+    id: 'textSetting',
+    weight: 2,
+    components: [
+      {
+        type: 'select',
+        label: 'Жирность текста',
+        key: 'textWeight',
+        customClass: 'col-4',
+        search: false,
+        input: true,
+        placeholder: 'Жирность...',
+        searchEnabled: false,
+        dataSrc: 'values',
+        data: {
+          values: fontWeightOptions,
+        },
+      },
+      {
+        type: 'select',
+        label: 'Размер текста',
+        key: 'textSize',
+        customClass: 'col-4',
+        search: false,
+        input: true,
+        placeholder: 'Размер...',
+        searchEnabled: false,
+        dataSrc: 'values',
+        data: {
+          values: fontSizeOptions,
+        },
+      },
+      {
+        type: 'input',
+        label: 'Цвет текста',
+        key: 'textColor',
+        customClass: 'col-4',
+        input: true,
+        inputMask: '#******',
+        displayMask: '#******',
+        placeholder: 'Цвет...',
+        tooltip: 'Введите код цвета в формате #B0B0B0',
+      },
+    ],
   },
   {
     type: 'input',
@@ -42,6 +134,37 @@ export default [
     weight: 4,
     placeholder: 'Ссылка...',
     tooltip: 'Вставьте ссылку на webview',
+  },
+  {
+    label: 'Уникальный идентификатор',
+    weight: 5,
+    tooltip: 'Вставьте уникальный идентификатор',
+    components: [
+      {
+        id: 'inputUUID',
+        input: true,
+        key: 'customUUID',
+        changeEvent: 'input',
+        customClass: 'customInput',
+        type: 'input',
+        placeholder: 'UUID карточки...',
+      },
+      {
+        id: 'createUUID',
+        type: 'button',
+        action: 'custom',
+        label: 'Сгенерировать',
+      },
+    ],
+  },
+  {
+    id: 'copyUUID',
+    type: 'button',
+    label: 'Копировать ссылку',
+    key: 'deeplink',
+    action: 'custom',
+    weight: 6,
+    tooltip: 'Копирование ссылки-deeplink',
   },
   {
     key: 'description',

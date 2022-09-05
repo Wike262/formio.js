@@ -1,3 +1,5 @@
+import { fontSizeOptions, fontWeightOptions } from '../constants/constants';
+
 export default [
   {
     key: 'labelPosition',
@@ -24,6 +26,51 @@ export default [
     weight: 2,
     placeholder: 'Описание...',
     tooltip: 'Подпись к картинке',
+  },
+  {
+    id: 'textSetting',
+    weight: 2,
+    components: [
+      {
+        type: 'select',
+        label: 'Жирность текста',
+        key: 'textWeight',
+        customClass: 'col-4',
+        search: false,
+        input: true,
+        placeholder: 'Жирность...',
+        searchEnabled: false,
+        dataSrc: 'values',
+        data: {
+          values: fontWeightOptions,
+        },
+      },
+      {
+        type: 'select',
+        label: 'Размер текста',
+        key: 'textSize',
+        customClass: 'col-4',
+        search: false,
+        input: true,
+        placeholder: 'Размер...',
+        searchEnabled: false,
+        dataSrc: 'values',
+        data: {
+          values: fontSizeOptions,
+        },
+      },
+      {
+        type: 'input',
+        label: 'Цвет текста',
+        key: 'textColor',
+        customClass: 'col-4',
+        input: true,
+        inputMask: '#******',
+        displayMask: '#******',
+        placeholder: 'Цвет...',
+        tooltip: 'Введите код цвета в формате #B0B0B0',
+      },
+    ],
   },
   {
     type: 'input',

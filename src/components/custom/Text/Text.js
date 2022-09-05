@@ -25,12 +25,24 @@ export default class Text extends field {
   }
 
   render() {
+    const styleTitle = `font-size: ${this.component.titleSize || 14}pt; font-weight: ${this.component.titleWeight || 700}; color:${
+      this.component.titleColor || '#1B2C4E'
+    };`;
+
+    const styleText = `font-size: ${this.component.textSize || 18}pt; font-weight: ${this.component.textWeight || 500}; color:${
+      this.component.textColor || '#1B2C4E'
+    };`;
     return super.render(`
-      ${this.component.text ? `<div class="text">${this.component.text}</div>` : ''}
+      ${this.component.title ? `<p class="textTitle" style=${JSON.stringify(styleTitle)}>${this.component.title}</p>` : ''}
+      ${this.component.text ? `<p class="text" style=${JSON.stringify(styleText)}>${this.component.text}</p>` : ''}
    `);
   }
 
   attach(element) {
+    if (document.getElementById('titleSetting')) {
+      document.getElementById('titleSetting')?.firstElementChild?.classList.add('d-inline-flex');
+      document.getElementById('textSetting')?.firstElementChild?.classList.add('d-inline-flex');
+    }
     return super.attach(element);
   }
 }

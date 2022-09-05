@@ -24,14 +24,22 @@ export default class PictureWithCaption extends FieldComponent {
 
   render() {
     const mytrackerEvent = JSON.stringify({ event: this.component.mytracker_event, payload: this.component.mytracker_properties });
+
+    const styleText = `font-size: ${this.component.textSize || 24}pt; font-weight: ${this.component.textWeight || 400}; color:${
+      this.component.textColor || '#FFFFFF;'
+    };`;
+
     return super.render(`<a class="picture__content" href=${this.component.picture__webview ?? '#'} data-mytracker=${mytrackerEvent}>
       <div class="picture__image" style="background-image: url(${this.component.picture__image})">
-      <p class="picture__caption"> ${this.component.picture__caption ?? ''}</p>
+      <p class="picture__caption" style=${JSON.stringify(styleText)}> ${this.component.picture__caption ?? ''}</p>
       </div>
     </a>`);
   }
 
   attach(element) {
+    if (document.getElementById('textSetting')) {
+      document.getElementById('textSetting').firstElementChild.classList.add('d-inline-flex');
+    }
     return super.attach(element);
   }
 }

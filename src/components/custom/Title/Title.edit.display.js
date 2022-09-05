@@ -1,3 +1,5 @@
+import { fontSizeOptions, fontWeightOptions } from '../constants/constants';
+
 export default [
   {
     key: 'labelPosition',
@@ -59,5 +61,50 @@ export default [
     weight: 1,
     placeholder: 'Заголовок...',
     tooltip: 'Заголовок',
+  },
+  {
+    id: 'titleSetting',
+    weight: 1,
+    components: [
+      {
+        type: 'select',
+        label: 'Жирность заголовка',
+        key: 'titleWeight',
+        customClass: 'col-4',
+        search: false,
+        input: true,
+        placeholder: 'Жирность...',
+        searchEnabled: false,
+        dataSrc: 'values',
+        data: {
+          values: fontWeightOptions,
+        },
+      },
+      {
+        type: 'select',
+        label: 'Размер заголовка',
+        key: 'titleSize',
+        customClass: 'col-4',
+        search: false,
+        input: true,
+        placeholder: 'Размер...',
+        searchEnabled: false,
+        dataSrc: 'values',
+        data: {
+          values: fontSizeOptions,
+        },
+      },
+      {
+        type: 'input',
+        label: 'Цвет заголовка',
+        key: 'titleColor',
+        customClass: 'col-4',
+        input: true,
+        inputMask: '#******',
+        displayMask: '#******',
+        placeholder: 'Цвет...',
+        tooltip: 'Введите код цвета в формате #B0B0B0',
+      },
+    ],
   },
 ];
