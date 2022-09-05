@@ -474,12 +474,6 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
-    "formiojs/src/components/custom/section/sectioncontainer.js~sectioncontainer",
-    "class/src/components/custom/Section/SectionContainer.js~SectionContainer.html",
-    "<span>SectionContainer</span> <span class=\"search-result-import-path\">formiojs/src/components/custom/Section/SectionContainer.js</span>",
-    "class"
-  ],
-  [
     "formiojs/src/components/custom/servicecontainer/sections.js~sections",
     "class/src/components/custom/serviceContainer/Sections.js~Sections.html",
     "<span>Sections</span> <span class=\"search-result-import-path\">formiojs/src/components/custom/serviceContainer/Sections.js</span>",
@@ -594,12 +588,6 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
-    "formiojs/src/components/custom/text/text.js~text",
-    "class/src/components/custom/Text/Text.js~Text.html",
-    "<span>Text</span> <span class=\"search-result-import-path\">formiojs/src/components/custom/Text/Text.js</span>",
-    "class"
-  ],
-  [
     "formiojs/src/components/textarea/textarea.form.js~textarea",
     "function/index.html#static-function-TextArea",
     "<span>TextArea</span> <span class=\"search-result-import-path\">formiojs/src/components/textarea/TextArea.form.js</span>",
@@ -628,12 +616,6 @@ window.esdocSearchIndex = [
     "function/index.html#static-function-Title",
     "<span>Title</span> <span class=\"search-result-import-path\">formiojs/src/components/custom/Title/Title.form.js</span>",
     "function"
-  ],
-  [
-    "formiojs/src/components/custom/title/title.js~title",
-    "class/src/components/custom/Title/Title.js~Title.html",
-    "<span>Title</span> <span class=\"search-result-import-path\">formiojs/src/components/custom/Title/Title.js</span>",
-    "class"
   ],
   [
     "formiojs/src/validator/transformers/index.js~transformers",
@@ -778,6 +760,18 @@ window.esdocSearchIndex = [
     "function/index.html#static-function-flattenComponents",
     "<span>flattenComponents</span> <span class=\"search-result-import-path\">formiojs/src/utils/formUtils.js</span>",
     "function"
+  ],
+  [
+    "formiojs/src/components/custom/constants/constants.js~fontsizeoptions",
+    "variable/index.html#static-variable-fontSizeOptions",
+    "<span>fontSizeOptions</span> <span class=\"search-result-import-path\">formiojs/src/components/custom/constants/constants.js</span>",
+    "variable"
+  ],
+  [
+    "formiojs/src/components/custom/constants/constants.js~fontweightoptions",
+    "variable/index.html#static-variable-fontWeightOptions",
+    "<span>fontWeightOptions</span> <span class=\"search-result-import-path\">formiojs/src/components/custom/constants/constants.js</span>",
+    "variable"
   ],
   [
     "formiojs/src/utils/formutils.js~formatascurrency",
@@ -3612,54 +3606,6 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/components/custom/section/sectioncontainer.js",
-    "file/src/components/custom/Section/SectionContainer.js.html",
-    "src/components/custom/Section/SectionContainer.js",
-    "file"
-  ],
-  [
-    "src/components/custom/section/sectioncontainer.js~sectioncontainer#attach",
-    "class/src/components/custom/Section/SectionContainer.js~SectionContainer.html#instance-method-attach",
-    "src/components/custom/Section/SectionContainer.js~SectionContainer#attach",
-    "method"
-  ],
-  [
-    "src/components/custom/section/sectioncontainer.js~sectioncontainer#collapsed",
-    "class/src/components/custom/Section/SectionContainer.js~SectionContainer.html#instance-member-collapsed",
-    "src/components/custom/Section/SectionContainer.js~SectionContainer#collapsed",
-    "member"
-  ],
-  [
-    "src/components/custom/section/sectioncontainer.js~sectioncontainer#constructor",
-    "class/src/components/custom/Section/SectionContainer.js~SectionContainer.html#instance-constructor-constructor",
-    "src/components/custom/Section/SectionContainer.js~SectionContainer#constructor",
-    "method"
-  ],
-  [
-    "src/components/custom/section/sectioncontainer.js~sectioncontainer#templatename",
-    "class/src/components/custom/Section/SectionContainer.js~SectionContainer.html#instance-get-templateName",
-    "src/components/custom/Section/SectionContainer.js~SectionContainer#templateName",
-    "member"
-  ],
-  [
-    "src/components/custom/section/sectioncontainer.js~sectioncontainer.builderinfo",
-    "class/src/components/custom/Section/SectionContainer.js~SectionContainer.html#static-get-builderInfo",
-    "src/components/custom/Section/SectionContainer.js~SectionContainer.builderInfo",
-    "member"
-  ],
-  [
-    "src/components/custom/section/sectioncontainer.js~sectioncontainer.editform",
-    "class/src/components/custom/Section/SectionContainer.js~SectionContainer.html#static-member-editForm",
-    "src/components/custom/Section/SectionContainer.js~SectionContainer.editForm",
-    "member"
-  ],
-  [
-    "src/components/custom/section/sectioncontainer.js~sectioncontainer.schema",
-    "class/src/components/custom/Section/SectionContainer.js~SectionContainer.html#static-method-schema",
-    "src/components/custom/Section/SectionContainer.js~SectionContainer.schema",
-    "method"
-  ],
-  [
     "src/components/custom/separator/separator.edit.display.js",
     "file/src/components/custom/Separator/Separator.edit.display.js.html",
     "src/components/custom/Separator/Separator.edit.display.js",
@@ -3726,48 +3672,6 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/components/custom/text/text.js",
-    "file/src/components/custom/Text/Text.js.html",
-    "src/components/custom/Text/Text.js",
-    "file"
-  ],
-  [
-    "src/components/custom/text/text.js~text#attach",
-    "class/src/components/custom/Text/Text.js~Text.html#instance-method-attach",
-    "src/components/custom/Text/Text.js~Text#attach",
-    "method"
-  ],
-  [
-    "src/components/custom/text/text.js~text#constructor",
-    "class/src/components/custom/Text/Text.js~Text.html#instance-constructor-constructor",
-    "src/components/custom/Text/Text.js~Text#constructor",
-    "method"
-  ],
-  [
-    "src/components/custom/text/text.js~text#render",
-    "class/src/components/custom/Text/Text.js~Text.html#instance-method-render",
-    "src/components/custom/Text/Text.js~Text#render",
-    "method"
-  ],
-  [
-    "src/components/custom/text/text.js~text.builderinfo",
-    "class/src/components/custom/Text/Text.js~Text.html#static-get-builderInfo",
-    "src/components/custom/Text/Text.js~Text.builderInfo",
-    "member"
-  ],
-  [
-    "src/components/custom/text/text.js~text.editform",
-    "class/src/components/custom/Text/Text.js~Text.html#static-member-editForm",
-    "src/components/custom/Text/Text.js~Text.editForm",
-    "member"
-  ],
-  [
-    "src/components/custom/text/text.js~text.schema",
-    "class/src/components/custom/Text/Text.js~Text.html#static-method-schema",
-    "src/components/custom/Text/Text.js~Text.schema",
-    "method"
-  ],
-  [
     "src/components/custom/title/title.edit.display.js",
     "file/src/components/custom/Title/Title.edit.display.js.html",
     "src/components/custom/Title/Title.edit.display.js",
@@ -3780,46 +3684,10 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/components/custom/title/title.js",
-    "file/src/components/custom/Title/Title.js.html",
-    "src/components/custom/Title/Title.js",
+    "src/components/custom/constants/constants.js",
+    "file/src/components/custom/constants/constants.js.html",
+    "src/components/custom/constants/constants.js",
     "file"
-  ],
-  [
-    "src/components/custom/title/title.js~title#attach",
-    "class/src/components/custom/Title/Title.js~Title.html#instance-method-attach",
-    "src/components/custom/Title/Title.js~Title#attach",
-    "method"
-  ],
-  [
-    "src/components/custom/title/title.js~title#constructor",
-    "class/src/components/custom/Title/Title.js~Title.html#instance-constructor-constructor",
-    "src/components/custom/Title/Title.js~Title#constructor",
-    "method"
-  ],
-  [
-    "src/components/custom/title/title.js~title#render",
-    "class/src/components/custom/Title/Title.js~Title.html#instance-method-render",
-    "src/components/custom/Title/Title.js~Title#render",
-    "method"
-  ],
-  [
-    "src/components/custom/title/title.js~title.builderinfo",
-    "class/src/components/custom/Title/Title.js~Title.html#static-get-builderInfo",
-    "src/components/custom/Title/Title.js~Title.builderInfo",
-    "member"
-  ],
-  [
-    "src/components/custom/title/title.js~title.editform",
-    "class/src/components/custom/Title/Title.js~Title.html#static-member-editForm",
-    "src/components/custom/Title/Title.js~Title.editForm",
-    "member"
-  ],
-  [
-    "src/components/custom/title/title.js~title.schema",
-    "class/src/components/custom/Title/Title.js~Title.html#static-method-schema",
-    "src/components/custom/Title/Title.js~Title.schema",
-    "method"
   ],
   [
     "src/components/custom/servicecontainer/sections.js",

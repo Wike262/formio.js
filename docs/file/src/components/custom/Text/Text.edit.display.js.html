@@ -60,14 +60,13 @@
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-custom-image">components/custom/Image</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/custom/Image/Image.js~Image.html">Image</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Image">Image</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-custom-picturewithdescription">components/custom/PictureWithDescription</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-PictureWithDescription">PictureWithDescription</a></span></span></li>
-<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-custom-section">components/custom/Section</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/custom/Section/SectionContainer.js~SectionContainer.html">SectionContainer</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-SectionContainer">SectionContainer</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-custom-section">components/custom/Section</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-SectionContainer">SectionContainer</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-custom-separator">components/custom/Separator</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/custom/Separator/Separator.js~Separator.html">Separator</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Separator">Separator</a></span></span></li>
-<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-custom-text">components/custom/Text</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/custom/Text/Text.js~Text.html">Text</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Text">Text</a></span></span></li>
-<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-custom-title">components/custom/Title</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/custom/Title/Title.js~Title.html">Title</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Title">Title</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-custom-text">components/custom/Text</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Text">Text</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-custom-title">components/custom/Title</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Title">Title</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-custom-constants">components/custom/constants</a><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-fontSizeOptions">fontSizeOptions</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-fontWeightOptions">fontWeightOptions</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-custom-servicecontainer">components/custom/serviceContainer</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/custom/serviceContainer/Sections.js~Sections.html">Sections</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/custom/serviceContainer/Slider.js~Slider.html">Slider</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-ServiceContainer">ServiceContainer</a></span></span></li>
@@ -186,7 +185,9 @@
 </nav>
 
 <div class="content" data-ice="content"><h1 data-ice="title">src/components/custom/Text/Text.edit.display.js</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">export default [
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { fontSizeOptions, fontWeightOptions } from &apos;../constants/constants&apos;;
+
+export default [
   {
     key: &apos;labelPosition&apos;,
     ignore: true,
@@ -240,13 +241,112 @@
     ignore: true,
   },
   {
+    type: &apos;input&apos;,
+    label: &apos;&#x417;&#x430;&#x433;&#x43E;&#x43B;&#x43E;&#x432;&#x43E;&#x43A;&apos;,
+    key: &apos;title&apos;,
+    input: true,
+    weight: 1,
+    placeholder: &apos;&#x417;&#x430;&#x433;&#x43E;&#x43B;&#x43E;&#x432;&#x43E;&#x43A;...&apos;,
+    tooltip: &apos;&#x417;&#x430;&#x433;&#x43E;&#x43B;&#x43E;&#x432;&#x43E;&#x43A;&apos;,
+  },
+  {
+    id: &apos;titleSetting&apos;,
+    weight: 1,
+    components: [
+      {
+        type: &apos;select&apos;,
+        label: &apos;&#x416;&#x438;&#x440;&#x43D;&#x43E;&#x441;&#x442;&#x44C; &#x437;&#x430;&#x433;&#x43E;&#x43B;&#x43E;&#x432;&#x43A;&#x430;&apos;,
+        key: &apos;titleWeight&apos;,
+        customClass: &apos;col-4&apos;,
+        search: false,
+        input: true,
+        placeholder: &apos;&#x416;&#x438;&#x440;&#x43D;&#x43E;&#x441;&#x442;&#x44C;...&apos;,
+        searchEnabled: false,
+        dataSrc: &apos;values&apos;,
+        data: {
+          values: fontWeightOptions,
+        },
+      },
+      {
+        type: &apos;select&apos;,
+        label: &apos;&#x420;&#x430;&#x437;&#x43C;&#x435;&#x440; &#x437;&#x430;&#x433;&#x43E;&#x43B;&#x43E;&#x432;&#x43A;&#x430;&apos;,
+        key: &apos;titleSize&apos;,
+        customClass: &apos;col-4&apos;,
+        search: false,
+        input: true,
+        placeholder: &apos;&#x420;&#x430;&#x437;&#x43C;&#x435;&#x440;...&apos;,
+        searchEnabled: false,
+        dataSrc: &apos;values&apos;,
+        data: {
+          values: fontSizeOptions,
+        },
+      },
+      {
+        type: &apos;input&apos;,
+        label: &apos;&#x426;&#x432;&#x435;&#x442; &#x437;&#x430;&#x433;&#x43E;&#x43B;&#x43E;&#x432;&#x43A;&#x430;&apos;,
+        key: &apos;titleColor&apos;,
+        customClass: &apos;col-4&apos;,
+        input: true,
+        inputMask: &apos;#******&apos;,
+        displayMask: &apos;#******&apos;,
+        placeholder: &apos;&#x426;&#x432;&#x435;&#x442;...&apos;,
+        tooltip: &apos;&#x412;&#x432;&#x435;&#x434;&#x438;&#x442;&#x435; &#x43A;&#x43E;&#x434; &#x446;&#x432;&#x435;&#x442;&#x430; &#x432; &#x444;&#x43E;&#x440;&#x43C;&#x430;&#x442;&#x435; #B0B0B0&apos;,
+      },
+    ],
+  },
+  {
     type: &apos;textarea&apos;,
     label: &apos;&#x422;&#x435;&#x43A;&#x441;&#x442;&apos;,
     key: &apos;text&apos;,
     input: true,
-    weight: 1,
+    weight: 2,
     placeholder: &apos;&#x422;&#x435;&#x43A;&#x441;&#x442;...&apos;,
     tooltip: &apos;&#x422;&#x435;&#x43A;&#x441;&#x442;&apos;,
+  },
+  {
+    id: &apos;textSetting&apos;,
+    weight: 2,
+    components: [
+      {
+        type: &apos;select&apos;,
+        label: &apos;&#x416;&#x438;&#x440;&#x43D;&#x43E;&#x441;&#x442;&#x44C; &#x442;&#x435;&#x43A;&#x441;&#x442;&#x430;&apos;,
+        key: &apos;textWeight&apos;,
+        customClass: &apos;col-4&apos;,
+        search: false,
+        input: true,
+        placeholder: &apos;&#x416;&#x438;&#x440;&#x43D;&#x43E;&#x441;&#x442;&#x44C;...&apos;,
+        searchEnabled: false,
+        dataSrc: &apos;values&apos;,
+        data: {
+          values: fontWeightOptions,
+        },
+      },
+      {
+        type: &apos;select&apos;,
+        label: &apos;&#x420;&#x430;&#x437;&#x43C;&#x435;&#x440; &#x442;&#x435;&#x43A;&#x441;&#x442;&#x430;&apos;,
+        key: &apos;textSize&apos;,
+        customClass: &apos;col-4&apos;,
+        search: false,
+        input: true,
+        placeholder: &apos;&#x420;&#x430;&#x437;&#x43C;&#x435;&#x440;...&apos;,
+        searchEnabled: false,
+        dataSrc: &apos;values&apos;,
+        data: {
+          values: fontSizeOptions,
+        },
+      },
+      {
+        type: &apos;input&apos;,
+        label: &apos;&#x426;&#x432;&#x435;&#x442; &#x442;&#x435;&#x43A;&#x441;&#x442;&#x430;&apos;,
+        key: &apos;textColor&apos;,
+        customClass: &apos;col-4&apos;,
+        input: true,
+        inputMask: &apos;#******&apos;,
+        displayMask: &apos;#******&apos;,
+        placeholder: &apos;&#x426;&#x432;&#x435;&#x442;...&apos;,
+        tooltip: &apos;&#x412;&#x432;&#x435;&#x434;&#x438;&#x442;&#x435; &#x43A;&#x43E;&#x434; &#x446;&#x432;&#x435;&#x442;&#x430; &#x432; &#x444;&#x43E;&#x440;&#x43C;&#x430;&#x442;&#x435; #B0B0B0&apos;,
+      },
+    ],
   },
 ];
 </code></pre>
