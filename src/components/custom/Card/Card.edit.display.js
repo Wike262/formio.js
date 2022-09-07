@@ -1,3 +1,5 @@
+//import { fontSizeOptions, fontWeightOptions } from '../../../../../constants';
+import { fontSizeOptions, fontWeightOptions } from '../../constants';
 export default [
   {
     key: 'labelPosition',
@@ -17,6 +19,51 @@ export default [
     tooltip: 'Заголовок карточки',
   },
   {
+    id: 'titleSetting',
+    weight: 1,
+    components: [
+      {
+        type: 'select',
+        label: 'Жирность заголовка',
+        key: 'titleWeight',
+        customClass: 'col-4',
+        search: false,
+        input: true,
+        placeholder: 'Жирность...',
+        searchEnabled: false,
+        dataSrc: 'values',
+        data: {
+          values: fontWeightOptions,
+        },
+      },
+      {
+        type: 'select',
+        label: 'Размер заголовка',
+        key: 'titleSize',
+        customClass: 'col-4',
+        search: false,
+        input: true,
+        placeholder: 'Размер...',
+        searchEnabled: false,
+        dataSrc: 'values',
+        data: {
+          values: fontSizeOptions,
+        },
+      },
+      {
+        type: 'input',
+        label: 'Цвет заголовка',
+        key: 'titleColor',
+        customClass: 'col-4',
+        input: true,
+        inputMask: '#******',
+        displayMask: '#******',
+        placeholder: 'Цвет...',
+        tooltip: 'Введите код цвета в формате #B0B0B0',
+      },
+    ],
+  },
+  {
     type: 'input',
     label: 'Описание',
     key: 'cardDescription',
@@ -26,26 +73,91 @@ export default [
     tooltip: 'Описание карточки',
   },
   {
-    type: 'input',
-    label: 'Изображение',
-    key: 'cardImage',
-    input: true,
+    id: 'textSetting',
     weight: 3,
-    placeholder: 'Ссылка...',
-    tooltip: 'Вставьте ссылку на изображение',
+    components: [
+      {
+        type: 'select',
+        label: 'Жирность текста',
+        key: 'textWeight',
+        customClass: 'col-4',
+        search: false,
+        input: true,
+        placeholder: 'Жирность...',
+        searchEnabled: false,
+        dataSrc: 'values',
+        data: {
+          values: fontWeightOptions,
+        },
+      },
+      {
+        type: 'select',
+        label: 'Размер текста',
+        key: 'textSize',
+        customClass: 'col-4',
+        search: false,
+        input: true,
+        placeholder: 'Размер...',
+        searchEnabled: false,
+        dataSrc: 'values',
+        data: {
+          values: fontSizeOptions,
+        },
+      },
+      {
+        type: 'input',
+        label: 'Цвет текста',
+        key: 'textColor',
+        customClass: 'col-4',
+        input: true,
+        inputMask: '#******',
+        displayMask: '#******',
+        placeholder: 'Цвет...',
+        tooltip: 'Введите код цвета в формате #B0B0B0',
+      },
+    ],
+  },
+  {
+    label: 'Изображение',
+    weight: 4,
+    components: [
+      {
+        id: 'customUploadImage',
+        type: 'input',
+        input: true,
+        key: 'uploaderInput',
+        customClass: 'uploaderInput',
+        placeholder: 'Ссылка...',
+      },
+      {
+        id: 'uploaderButton',
+        type: 'button',
+        customClass: 'inputButton',
+        action: 'custom',
+        label: 'Загрузить',
+      },
+      {
+        id: 'updateImageButton',
+        type: 'button',
+        action: 'custom',
+        changeEvent: 'click',
+        customClass: 'inputButton',
+        label: 'Обновить',
+      },
+    ],
   },
   {
     type: 'input',
-    label: 'Ссылка на webview',
-    key: 'cardWebview',
+    label: 'Ссылка',
+    key: 'cardLink',
     input: true,
-    weight: 4,
+    weight: 5,
     placeholder: 'Ссылка...',
-    tooltip: 'Вставьте ссылку на webview',
+    tooltip: 'Вставьте ссылку',
   },
   {
     label: 'Уникальный идентификатор',
-    weight: 5,
+    weight: 6,
     tooltip: 'Вставьте уникальный идентификатор',
     components: [
       {
@@ -61,6 +173,7 @@ export default [
         id: 'createUUID',
         type: 'button',
         action: 'custom',
+        customClass: 'inputButton',
         label: 'Сгенерировать',
       },
     ],
@@ -71,7 +184,7 @@ export default [
     label: 'Копировать ссылку',
     key: 'deeplink',
     action: 'custom',
-    weight: 6,
+    weight: 7,
     tooltip: 'Копирование ссылки-deeplink',
   },
   {
@@ -123,3 +236,4 @@ export default [
     ignore: true,
   },
 ];
+

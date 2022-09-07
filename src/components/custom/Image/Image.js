@@ -26,11 +26,15 @@ export default class Image extends field {
 
   render() {
     return super.render(`
-       ${this.component.image ? `<image class="image" src="${this.component.image}" /> ` : ''}
+       ${this.component.uploaderInput ? `<img class="image" src=${this.component.uploaderInput} /> ` : ''}
     `);
   }
 
   attach(element) {
+    if (this.component.id === element.id) {
+      document.getElementById('customUploadImage').parentElement.classList.add('inputWithButton');
+    }
+
     return super.attach(element);
   }
 }

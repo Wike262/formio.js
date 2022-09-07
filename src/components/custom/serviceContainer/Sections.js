@@ -39,8 +39,16 @@ export default class Sections extends panel {
   }
 
   attach(element) {
-    document.querySelector('.serviceSections').firstElementChild.classList.add('drag-container-section');
-    document.querySelector('.serviceSections').parentElement.parentElement.classList.add('position-absolute');
+    if (document.querySelector('.serviceSections')?.firstElementChild) {
+      document.querySelector('.serviceSections')?.firstElementChild?.classList.add('drag-container-section');
+    }
+
+    if (document.querySelector('.preview-panel')) {
+      element.querySelector('.serviceSections')?.classList.add('service-sections-preview');
+      element.querySelector('.serviceSections')?.parentElement?.classList.add('formio-component-Sections-preview');
+    }
+
+    document.querySelector('.serviceSections')?.parentElement?.parentElement?.classList.add('position-absolute');
     return super.attach(element);
   }
 }

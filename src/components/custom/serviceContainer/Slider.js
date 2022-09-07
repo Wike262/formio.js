@@ -5,29 +5,29 @@ import editForm from './ServiceContainer.form';
 
 function createSliderTemplate(ctx) {
   return `
-    <div ref="${ctx.nestedKey}" class="containerSlider">
+    <div ref="${ctx.nestedKey}" class="containerSlider" id="containerSlider">
+      ${ctx.children}
       <div class="containerNavbar">
        <div class=${ctx.component.colorButton ? 'backIconWithBackground' : 'backIcon'}>
           <img
-            src='https://app.gid.ru/storage/public/4968e579-b051-49fb-b0f3-ecc4af4057ae.png'
+            src='https://test-gidapp.k8s-dev.gid.team/storage/public/c6bfd484-7a8e-43cd-b1ea-48570bff2301.png'
             alt='Назад'
           />
-       </div>
+        </div>
 
        <div class='serviceName'>
           ${
-            ctx.component.serviceImage
+          ctx.component.uploaderInput
               ? `<img
                     class='serviceIcon'
                     alt='serviceName'
-                    src=${ctx.component.serviceImage}
+                    src=${ctx.component.uploaderInput}
                   />`
               : ''
           }
-        </div>
-      </div>
-      ${ctx.children}
-    </div>
+       </div>
+     </div>
+  </div>
 `;
 }
 
@@ -44,21 +44,39 @@ export default class Slider extends panel {
       type: 'Slider',
       key: 'Slider',
       components: [],
-      input: false,
+      input: true,
       persistent: false,
     });
   }
 
   constructor(component, options, data) {
     super(component, options, data);
-    this.collapsed = !!this.component.collapsed;
     Templates.templates.bootstrap['Slider'] = { form: createSliderTemplate };
   }
 
   attach(element) {
-    if (!this.component.components.length) {
-      document.querySelector('.containerSlider .drag-container').firstElementChild.classList.add('no-drag-custom');
+    if (!this.component.components.length && document.querySelector('.containerSlider .drag-container')) {
+      document.querySelector('.containerSlider .drag-container')?.firstElementChild?.classList.add('no-drag-custom');
     }
+
+    if (this.component.id === element.id) {
+      document.getElementById('customUploadImage').parentElement.classList.add('inputWithButton');
+    }
+
+    const updateImageButton = document.getElementById('updateImageButton');
+    if (updateImageButton) {
+      updateImageButton.onclick = () => {
+        const input = document.getElementById('customUploadImage-uploaderInput');
+        const inputValue = input.value;
+        input.dispatchEvent(new Event('input', { bubbles: true, cancelable: false }));
+        this.component.uploaderInput = inputValue;
+      };
+    }
+
+    document
+      .getElementById('containerSlider')
+      ?.firstElementChild?.firstElementChild?.firstElementChild?.classList.add('padding-top-for-setting');
+
     return super.attach(element);
   }
 }
