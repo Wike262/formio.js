@@ -41,6 +41,9 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-editForms">editForms</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#builders">builders</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/builders/Builders.js~Builders.html">Builders</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components">components</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/Components.js~Components.html">Components</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-deeplinkService">deeplinkService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-fontSizeOptions">fontSizeOptions</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-fontWeightOptions">fontWeightOptions</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components--classes-component">components/_classes/component</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Component">Component</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components--classes-component-editform">components/_classes/component/editForm</a><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-EditFormUtils">EditFormUtils</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components--classes-field">components/_classes/field</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/_classes/field/Field.js~Field.html">Field</a></span></span></li>
@@ -68,9 +71,7 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Text">Text</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-custom-title">components/custom/Title</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/custom/Title/Title.js~Title.html">Title</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Title">Title</a></span></span></li>
-<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-custom-servicecontainer">components/custom/serviceContainer</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/custom/serviceContainer/Sections.js~Sections.html">Sections</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/custom/serviceContainer/Slider.js~Slider.html">Slider</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-ServiceContainer">ServiceContainer</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-custom-servicecontainer">components/custom/serviceContainer</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-ServiceContainer">ServiceContainer</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-datagrid">components/datagrid</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-DataGrid">DataGrid</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-datamap">components/datamap</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-DataMap">DataMap</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-datetime">components/datetime</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/datetime/DateTime.js~DateTimeComponent.html">DateTimeComponent</a></span></span></li>
@@ -186,7 +187,9 @@
 </nav>
 
 <div class="content" data-ice="content"><h1 data-ice="title">src/components/custom/Card/Card.edit.display.js</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">export default [
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">//import { fontSizeOptions, fontWeightOptions } from &apos;../../../../../constants&apos;;
+import { fontSizeOptions, fontWeightOptions } from &apos;../../constants&apos;;
+export default [
   {
     key: &apos;labelPosition&apos;,
     ignore: true,
@@ -205,6 +208,51 @@
     tooltip: &apos;&#x417;&#x430;&#x433;&#x43E;&#x43B;&#x43E;&#x432;&#x43E;&#x43A; &#x43A;&#x430;&#x440;&#x442;&#x43E;&#x447;&#x43A;&#x438;&apos;,
   },
   {
+    id: &apos;titleSetting&apos;,
+    weight: 1,
+    components: [
+      {
+        type: &apos;select&apos;,
+        label: &apos;&#x416;&#x438;&#x440;&#x43D;&#x43E;&#x441;&#x442;&#x44C; &#x437;&#x430;&#x433;&#x43E;&#x43B;&#x43E;&#x432;&#x43A;&#x430;&apos;,
+        key: &apos;titleWeight&apos;,
+        customClass: &apos;col-4&apos;,
+        search: false,
+        input: true,
+        placeholder: &apos;&#x416;&#x438;&#x440;&#x43D;&#x43E;&#x441;&#x442;&#x44C;...&apos;,
+        searchEnabled: false,
+        dataSrc: &apos;values&apos;,
+        data: {
+          values: fontWeightOptions,
+        },
+      },
+      {
+        type: &apos;select&apos;,
+        label: &apos;&#x420;&#x430;&#x437;&#x43C;&#x435;&#x440; &#x437;&#x430;&#x433;&#x43E;&#x43B;&#x43E;&#x432;&#x43A;&#x430;&apos;,
+        key: &apos;titleSize&apos;,
+        customClass: &apos;col-4&apos;,
+        search: false,
+        input: true,
+        placeholder: &apos;&#x420;&#x430;&#x437;&#x43C;&#x435;&#x440;...&apos;,
+        searchEnabled: false,
+        dataSrc: &apos;values&apos;,
+        data: {
+          values: fontSizeOptions,
+        },
+      },
+      {
+        type: &apos;input&apos;,
+        label: &apos;&#x426;&#x432;&#x435;&#x442; &#x437;&#x430;&#x433;&#x43E;&#x43B;&#x43E;&#x432;&#x43A;&#x430;&apos;,
+        key: &apos;titleColor&apos;,
+        customClass: &apos;col-4&apos;,
+        input: true,
+        inputMask: &apos;#******&apos;,
+        displayMask: &apos;#******&apos;,
+        placeholder: &apos;&#x426;&#x432;&#x435;&#x442;...&apos;,
+        tooltip: &apos;&#x412;&#x432;&#x435;&#x434;&#x438;&#x442;&#x435; &#x43A;&#x43E;&#x434; &#x446;&#x432;&#x435;&#x442;&#x430; &#x432; &#x444;&#x43E;&#x440;&#x43C;&#x430;&#x442;&#x435; #B0B0B0&apos;,
+      },
+    ],
+  },
+  {
     type: &apos;input&apos;,
     label: &apos;&#x41E;&#x43F;&#x438;&#x441;&#x430;&#x43D;&#x438;&#x435;&apos;,
     key: &apos;cardDescription&apos;,
@@ -214,26 +262,91 @@
     tooltip: &apos;&#x41E;&#x43F;&#x438;&#x441;&#x430;&#x43D;&#x438;&#x435; &#x43A;&#x430;&#x440;&#x442;&#x43E;&#x447;&#x43A;&#x438;&apos;,
   },
   {
-    type: &apos;input&apos;,
-    label: &apos;&#x418;&#x437;&#x43E;&#x431;&#x440;&#x430;&#x436;&#x435;&#x43D;&#x438;&#x435;&apos;,
-    key: &apos;cardImage&apos;,
-    input: true,
+    id: &apos;textSetting&apos;,
     weight: 3,
-    placeholder: &apos;&#x421;&#x441;&#x44B;&#x43B;&#x43A;&#x430;...&apos;,
-    tooltip: &apos;&#x412;&#x441;&#x442;&#x430;&#x432;&#x44C;&#x442;&#x435; &#x441;&#x441;&#x44B;&#x43B;&#x43A;&#x443; &#x43D;&#x430; &#x438;&#x437;&#x43E;&#x431;&#x440;&#x430;&#x436;&#x435;&#x43D;&#x438;&#x435;&apos;,
+    components: [
+      {
+        type: &apos;select&apos;,
+        label: &apos;&#x416;&#x438;&#x440;&#x43D;&#x43E;&#x441;&#x442;&#x44C; &#x442;&#x435;&#x43A;&#x441;&#x442;&#x430;&apos;,
+        key: &apos;textWeight&apos;,
+        customClass: &apos;col-4&apos;,
+        search: false,
+        input: true,
+        placeholder: &apos;&#x416;&#x438;&#x440;&#x43D;&#x43E;&#x441;&#x442;&#x44C;...&apos;,
+        searchEnabled: false,
+        dataSrc: &apos;values&apos;,
+        data: {
+          values: fontWeightOptions,
+        },
+      },
+      {
+        type: &apos;select&apos;,
+        label: &apos;&#x420;&#x430;&#x437;&#x43C;&#x435;&#x440; &#x442;&#x435;&#x43A;&#x441;&#x442;&#x430;&apos;,
+        key: &apos;textSize&apos;,
+        customClass: &apos;col-4&apos;,
+        search: false,
+        input: true,
+        placeholder: &apos;&#x420;&#x430;&#x437;&#x43C;&#x435;&#x440;...&apos;,
+        searchEnabled: false,
+        dataSrc: &apos;values&apos;,
+        data: {
+          values: fontSizeOptions,
+        },
+      },
+      {
+        type: &apos;input&apos;,
+        label: &apos;&#x426;&#x432;&#x435;&#x442; &#x442;&#x435;&#x43A;&#x441;&#x442;&#x430;&apos;,
+        key: &apos;textColor&apos;,
+        customClass: &apos;col-4&apos;,
+        input: true,
+        inputMask: &apos;#******&apos;,
+        displayMask: &apos;#******&apos;,
+        placeholder: &apos;&#x426;&#x432;&#x435;&#x442;...&apos;,
+        tooltip: &apos;&#x412;&#x432;&#x435;&#x434;&#x438;&#x442;&#x435; &#x43A;&#x43E;&#x434; &#x446;&#x432;&#x435;&#x442;&#x430; &#x432; &#x444;&#x43E;&#x440;&#x43C;&#x430;&#x442;&#x435; #B0B0B0&apos;,
+      },
+    ],
+  },
+  {
+    label: &apos;&#x418;&#x437;&#x43E;&#x431;&#x440;&#x430;&#x436;&#x435;&#x43D;&#x438;&#x435;&apos;,
+    weight: 4,
+    components: [
+      {
+        id: &apos;customUploadImage&apos;,
+        type: &apos;input&apos;,
+        input: true,
+        key: &apos;uploaderInput&apos;,
+        customClass: &apos;uploaderInput&apos;,
+        placeholder: &apos;&#x421;&#x441;&#x44B;&#x43B;&#x43A;&#x430;...&apos;,
+      },
+      {
+        id: &apos;uploaderButton&apos;,
+        type: &apos;button&apos;,
+        customClass: &apos;inputButton&apos;,
+        action: &apos;custom&apos;,
+        label: &apos;&#x417;&#x430;&#x433;&#x440;&#x443;&#x437;&#x438;&#x442;&#x44C;&apos;,
+      },
+      {
+        id: &apos;updateImageButton&apos;,
+        type: &apos;button&apos;,
+        action: &apos;custom&apos;,
+        changeEvent: &apos;click&apos;,
+        customClass: &apos;inputButton&apos;,
+        label: &apos;&#x41E;&#x431;&#x43D;&#x43E;&#x432;&#x438;&#x442;&#x44C;&apos;,
+      },
+    ],
   },
   {
     type: &apos;input&apos;,
-    label: &apos;&#x421;&#x441;&#x44B;&#x43B;&#x43A;&#x430; &#x43D;&#x430; webview&apos;,
-    key: &apos;cardWebview&apos;,
+    label: &apos;&#x421;&#x441;&#x44B;&#x43B;&#x43A;&#x430;&apos;,
+    key: &apos;cardLink&apos;,
     input: true,
-    weight: 4,
+    weight: 5,
     placeholder: &apos;&#x421;&#x441;&#x44B;&#x43B;&#x43A;&#x430;...&apos;,
-    tooltip: &apos;&#x412;&#x441;&#x442;&#x430;&#x432;&#x44C;&#x442;&#x435; &#x441;&#x441;&#x44B;&#x43B;&#x43A;&#x443; &#x43D;&#x430; webview&apos;,
+    tooltip: &apos;&#x412;&#x441;&#x442;&#x430;&#x432;&#x44C;&#x442;&#x435; &#x441;&#x441;&#x44B;&#x43B;&#x43A;&#x443;&apos;,
   },
   {
     label: &apos;&#x423;&#x43D;&#x438;&#x43A;&#x430;&#x43B;&#x44C;&#x43D;&#x44B;&#x439; &#x438;&#x434;&#x435;&#x43D;&#x442;&#x438;&#x444;&#x438;&#x43A;&#x430;&#x442;&#x43E;&#x440;&apos;,
-    weight: 5,
+    weight: 6,
     tooltip: &apos;&#x412;&#x441;&#x442;&#x430;&#x432;&#x44C;&#x442;&#x435; &#x443;&#x43D;&#x438;&#x43A;&#x430;&#x43B;&#x44C;&#x43D;&#x44B;&#x439; &#x438;&#x434;&#x435;&#x43D;&#x442;&#x438;&#x444;&#x438;&#x43A;&#x430;&#x442;&#x43E;&#x440;&apos;,
     components: [
       {
@@ -249,6 +362,7 @@
         id: &apos;createUUID&apos;,
         type: &apos;button&apos;,
         action: &apos;custom&apos;,
+        customClass: &apos;inputButton&apos;,
         label: &apos;&#x421;&#x433;&#x435;&#x43D;&#x435;&#x440;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x442;&#x44C;&apos;,
       },
     ],
@@ -259,7 +373,7 @@
     label: &apos;&#x41A;&#x43E;&#x43F;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x442;&#x44C; &#x441;&#x441;&#x44B;&#x43B;&#x43A;&#x443;&apos;,
     key: &apos;deeplink&apos;,
     action: &apos;custom&apos;,
-    weight: 6,
+    weight: 7,
     tooltip: &apos;&#x41A;&#x43E;&#x43F;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x43D;&#x438;&#x435; &#x441;&#x441;&#x44B;&#x43B;&#x43A;&#x438;-deeplink&apos;,
   },
   {
@@ -311,6 +425,7 @@
     ignore: true,
   },
 ];
+
 </code></pre>
 
 </div>

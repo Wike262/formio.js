@@ -480,12 +480,6 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
-    "formiojs/src/components/custom/servicecontainer/sections.js~sections",
-    "class/src/components/custom/serviceContainer/Sections.js~Sections.html",
-    "<span>Sections</span> <span class=\"search-result-import-path\">formiojs/src/components/custom/serviceContainer/Sections.js</span>",
-    "class"
-  ],
-  [
     "formiojs/src/components/select/select.form.js~select",
     "function/index.html#static-function-Select",
     "<span>Select</span> <span class=\"search-result-import-path\">formiojs/src/components/select/Select.form.js</span>",
@@ -520,12 +514,6 @@ window.esdocSearchIndex = [
     "function/index.html#static-function-Signature",
     "<span>Signature</span> <span class=\"search-result-import-path\">formiojs/src/components/signature/Signature.form.js</span>",
     "function"
-  ],
-  [
-    "formiojs/src/components/custom/servicecontainer/slider.js~slider",
-    "class/src/components/custom/serviceContainer/Slider.js~Slider.html",
-    "<span>Slider</span> <span class=\"search-result-import-path\">formiojs/src/components/custom/serviceContainer/Slider.js</span>",
-    "class"
   ],
   [
     "formiojs/src/contrib/stripe/checkout/stripecheckout.js~stripecheckoutcomponent",
@@ -726,6 +714,12 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "formiojs/src/components/constants.js~deeplinkservice",
+    "variable/index.html#static-variable-deeplinkService",
+    "<span>deeplinkService</span> <span class=\"search-result-import-path\">formiojs/src/components/constants.js</span>",
+    "variable"
+  ],
+  [
     "formiojs/src/providers/storage/dropbox.js~dropbox",
     "function/index.html#static-function-dropbox",
     "<span>dropbox</span> <span class=\"search-result-import-path\">formiojs/src/providers/storage/dropbox.js</span>",
@@ -778,6 +772,18 @@ window.esdocSearchIndex = [
     "function/index.html#static-function-flattenComponents",
     "<span>flattenComponents</span> <span class=\"search-result-import-path\">formiojs/src/utils/formUtils.js</span>",
     "function"
+  ],
+  [
+    "formiojs/src/components/constants.js~fontsizeoptions",
+    "variable/index.html#static-variable-fontSizeOptions",
+    "<span>fontSizeOptions</span> <span class=\"search-result-import-path\">formiojs/src/components/constants.js</span>",
+    "variable"
+  ],
+  [
+    "formiojs/src/components/constants.js~fontweightoptions",
+    "variable/index.html#static-variable-fontWeightOptions",
+    "<span>fontWeightOptions</span> <span class=\"search-result-import-path\">formiojs/src/components/constants.js</span>",
+    "variable"
   ],
   [
     "formiojs/src/utils/formutils.js~formatascurrency",
@@ -3162,6 +3168,12 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "src/components/constants.js",
+    "file/src/components/constants.js.html",
+    "src/components/constants.js",
+    "file"
+  ],
+  [
     "src/components/container/container.form.js",
     "file/src/components/container/Container.form.js.html",
     "src/components/container/Container.form.js",
@@ -3822,48 +3834,6 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/components/custom/servicecontainer/sections.js",
-    "file/src/components/custom/serviceContainer/Sections.js.html",
-    "src/components/custom/serviceContainer/Sections.js",
-    "file"
-  ],
-  [
-    "src/components/custom/servicecontainer/sections.js~sections#attach",
-    "class/src/components/custom/serviceContainer/Sections.js~Sections.html#instance-method-attach",
-    "src/components/custom/serviceContainer/Sections.js~Sections#attach",
-    "method"
-  ],
-  [
-    "src/components/custom/servicecontainer/sections.js~sections#collapsed",
-    "class/src/components/custom/serviceContainer/Sections.js~Sections.html#instance-member-collapsed",
-    "src/components/custom/serviceContainer/Sections.js~Sections#collapsed",
-    "member"
-  ],
-  [
-    "src/components/custom/servicecontainer/sections.js~sections#constructor",
-    "class/src/components/custom/serviceContainer/Sections.js~Sections.html#instance-constructor-constructor",
-    "src/components/custom/serviceContainer/Sections.js~Sections#constructor",
-    "method"
-  ],
-  [
-    "src/components/custom/servicecontainer/sections.js~sections#templatename",
-    "class/src/components/custom/serviceContainer/Sections.js~Sections.html#instance-get-templateName",
-    "src/components/custom/serviceContainer/Sections.js~Sections#templateName",
-    "member"
-  ],
-  [
-    "src/components/custom/servicecontainer/sections.js~sections.editform",
-    "class/src/components/custom/serviceContainer/Sections.js~Sections.html#static-member-editForm",
-    "src/components/custom/serviceContainer/Sections.js~Sections.editForm",
-    "member"
-  ],
-  [
-    "src/components/custom/servicecontainer/sections.js~sections.schema",
-    "class/src/components/custom/serviceContainer/Sections.js~Sections.html#static-method-schema",
-    "src/components/custom/serviceContainer/Sections.js~Sections.schema",
-    "method"
-  ],
-  [
     "src/components/custom/servicecontainer/servicecontainer.edit.data.js",
     "file/src/components/custom/serviceContainer/ServiceContainer.edit.data.js.html",
     "src/components/custom/serviceContainer/ServiceContainer.edit.data.js",
@@ -3880,48 +3850,6 @@ window.esdocSearchIndex = [
     "file/src/components/custom/serviceContainer/ServiceContainer.form.js.html",
     "src/components/custom/serviceContainer/ServiceContainer.form.js",
     "file"
-  ],
-  [
-    "src/components/custom/servicecontainer/slider.js",
-    "file/src/components/custom/serviceContainer/Slider.js.html",
-    "src/components/custom/serviceContainer/Slider.js",
-    "file"
-  ],
-  [
-    "src/components/custom/servicecontainer/slider.js~slider#attach",
-    "class/src/components/custom/serviceContainer/Slider.js~Slider.html#instance-method-attach",
-    "src/components/custom/serviceContainer/Slider.js~Slider#attach",
-    "method"
-  ],
-  [
-    "src/components/custom/servicecontainer/slider.js~slider#collapsed",
-    "class/src/components/custom/serviceContainer/Slider.js~Slider.html#instance-member-collapsed",
-    "src/components/custom/serviceContainer/Slider.js~Slider#collapsed",
-    "member"
-  ],
-  [
-    "src/components/custom/servicecontainer/slider.js~slider#constructor",
-    "class/src/components/custom/serviceContainer/Slider.js~Slider.html#instance-constructor-constructor",
-    "src/components/custom/serviceContainer/Slider.js~Slider#constructor",
-    "method"
-  ],
-  [
-    "src/components/custom/servicecontainer/slider.js~slider#templatename",
-    "class/src/components/custom/serviceContainer/Slider.js~Slider.html#instance-get-templateName",
-    "src/components/custom/serviceContainer/Slider.js~Slider#templateName",
-    "member"
-  ],
-  [
-    "src/components/custom/servicecontainer/slider.js~slider.editform",
-    "class/src/components/custom/serviceContainer/Slider.js~Slider.html#static-member-editForm",
-    "src/components/custom/serviceContainer/Slider.js~Slider.editForm",
-    "member"
-  ],
-  [
-    "src/components/custom/servicecontainer/slider.js~slider.schema",
-    "class/src/components/custom/serviceContainer/Slider.js~Slider.html#static-method-schema",
-    "src/components/custom/serviceContainer/Slider.js~Slider.schema",
-    "method"
   ],
   [
     "src/components/datagrid/datagrid.form.js",
