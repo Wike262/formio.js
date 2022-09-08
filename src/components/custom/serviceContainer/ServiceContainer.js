@@ -5,10 +5,10 @@ import editForm from './ServiceContainer.form';
 
 function createServiceContainerTemplate(ctx) {
   const mytrackerEvent = JSON.stringify({ event: ctx.component.mytracker_event, payload: ctx.component.mytracker_properties });
-
-  if (ctx.component.serviceImage) {
+  if (ctx.component.serviceImage || ctx.component.colorButton) {
     Object.assign(ctx.component.components[0], {
       serviceImage: ctx.component.serviceImage,
+      colorButton: ctx.component.colorButton,
     });
   }
   return `
@@ -54,21 +54,6 @@ export default class ServiceContainer extends panel {
     super(component, options, data);
     this.collapsed = !!this.component.collapsed;
     Templates.templates.bootstrap['ServiceContainer'] = { form: createServiceContainerTemplate };
-  }
-
-  attach(element) {
-    document.querySelector('.formio-component-ServiceContainer').classList.add('flex');
-    document.querySelectorAll('.builder-component')?.forEach((element) => element.classList.add('marginNone'));
-    document.querySelectorAll('.drag-container')?.forEach((element) => element.classList.add('paddingNone'));
-
-    if (
-      document.querySelector('.containerSlider') &&
-      document.querySelector('.containerSlider').lastElementChild.firstElementChild.role !== 'alert'
-    ) {
-      document.querySelector('.containerSlider').firstElementChild.classList.add('cover');
-      document.querySelector('.containerSlider').lastElementChild.classList.add('borderNone');
-    }
-    return super.attach(element);
   }
 }
 

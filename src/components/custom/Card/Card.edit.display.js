@@ -74,7 +74,7 @@ export default [
   },
   {
     id: 'textSetting',
-    weight: 2,
+    weight: 3,
     components: [
       {
         type: 'select',
@@ -118,26 +118,46 @@ export default [
     ],
   },
   {
-    type: 'input',
     label: 'Изображение',
-    key: 'cardImage',
-    input: true,
-    weight: 3,
-    placeholder: 'Ссылка...',
-    tooltip: 'Вставьте ссылку на изображение',
+    weight: 4,
+    components: [
+      {
+        id: 'customUploadImage',
+        type: 'input',
+        input: true,
+        key: 'cardImage',
+        customClass: 'uploaderInput',
+        placeholder: 'Ссылка...',
+      },
+      {
+        id: 'uploaderButton',
+        type: 'button',
+        customClass: 'inputButton',
+        action: 'custom',
+        label: 'Загрузить',
+      },
+      {
+        id: 'updateImageButton',
+        type: 'button',
+        action: 'custom',
+        changeEvent: 'click',
+        customClass: 'inputButton',
+        label: 'Обновить',
+      },
+    ],
   },
   {
     type: 'input',
-    label: 'Ссылка на webview',
+    label: 'Ссылка',
     key: 'cardWebview',
     input: true,
-    weight: 4,
+    weight: 5,
     placeholder: 'Ссылка...',
-    tooltip: 'Вставьте ссылку на webview',
+    tooltip: 'Вставьте ссылку',
   },
   {
     label: 'Уникальный идентификатор',
-    weight: 5,
+    weight: 6,
     tooltip: 'Вставьте уникальный идентификатор',
     components: [
       {
@@ -153,6 +173,7 @@ export default [
         id: 'createUUID',
         type: 'button',
         action: 'custom',
+        customClass: 'inputButton',
         label: 'Сгенерировать',
       },
     ],
@@ -163,7 +184,7 @@ export default [
     label: 'Копировать ссылку',
     key: 'deeplink',
     action: 'custom',
-    weight: 6,
+    weight: 7,
     tooltip: 'Копирование ссылки-deeplink',
   },
   {

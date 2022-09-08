@@ -60,14 +60,17 @@
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-custom-image">components/custom/Image</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/custom/Image/Image.js~Image.html">Image</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Image">Image</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-custom-picturewithdescription">components/custom/PictureWithDescription</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-PictureWithDescription">PictureWithDescription</a></span></span></li>
-<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-custom-section">components/custom/Section</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-SectionContainer">SectionContainer</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-custom-section">components/custom/Section</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/custom/Section/SectionContainer.js~SectionContainer.html">SectionContainer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-SectionContainer">SectionContainer</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-custom-separator">components/custom/Separator</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/custom/Separator/Separator.js~Separator.html">Separator</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Separator">Separator</a></span></span></li>
-<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-custom-text">components/custom/Text</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Text">Text</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-custom-text">components/custom/Text</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/custom/Text/Text.js~Text.html">Text</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Text">Text</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-custom-title">components/custom/Title</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Title">Title</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-custom-constants">components/custom/constants</a><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-fontSizeOptions">fontSizeOptions</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-fontWeightOptions">fontWeightOptions</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-custom-servicecontainer">components/custom/serviceContainer</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/custom/serviceContainer/Sections.js~Sections.html">Sections</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/custom/serviceContainer/ServiceContainer.js~ServiceContainer.html">ServiceContainer</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/custom/serviceContainer/Slider.js~Slider.html">Slider</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-ServiceContainer">ServiceContainer</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-datagrid">components/datagrid</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-DataGrid">DataGrid</a></span></span></li>
@@ -261,7 +264,7 @@ export default [
   },
   {
     id: &apos;textSetting&apos;,
-    weight: 2,
+    weight: 3,
     components: [
       {
         type: &apos;select&apos;,
@@ -305,26 +308,46 @@ export default [
     ],
   },
   {
-    type: &apos;input&apos;,
     label: &apos;&#x418;&#x437;&#x43E;&#x431;&#x440;&#x430;&#x436;&#x435;&#x43D;&#x438;&#x435;&apos;,
-    key: &apos;cardImage&apos;,
-    input: true,
-    weight: 3,
-    placeholder: &apos;&#x421;&#x441;&#x44B;&#x43B;&#x43A;&#x430;...&apos;,
-    tooltip: &apos;&#x412;&#x441;&#x442;&#x430;&#x432;&#x44C;&#x442;&#x435; &#x441;&#x441;&#x44B;&#x43B;&#x43A;&#x443; &#x43D;&#x430; &#x438;&#x437;&#x43E;&#x431;&#x440;&#x430;&#x436;&#x435;&#x43D;&#x438;&#x435;&apos;,
+    weight: 4,
+    components: [
+      {
+        id: &apos;customUploadImage&apos;,
+        type: &apos;input&apos;,
+        input: true,
+        key: &apos;cardImage&apos;,
+        customClass: &apos;uploaderInput&apos;,
+        placeholder: &apos;&#x421;&#x441;&#x44B;&#x43B;&#x43A;&#x430;...&apos;,
+      },
+      {
+        id: &apos;uploaderButton&apos;,
+        type: &apos;button&apos;,
+        customClass: &apos;inputButton&apos;,
+        action: &apos;custom&apos;,
+        label: &apos;&#x417;&#x430;&#x433;&#x440;&#x443;&#x437;&#x438;&#x442;&#x44C;&apos;,
+      },
+      {
+        id: &apos;updateImageButton&apos;,
+        type: &apos;button&apos;,
+        action: &apos;custom&apos;,
+        changeEvent: &apos;click&apos;,
+        customClass: &apos;inputButton&apos;,
+        label: &apos;&#x41E;&#x431;&#x43D;&#x43E;&#x432;&#x438;&#x442;&#x44C;&apos;,
+      },
+    ],
   },
   {
     type: &apos;input&apos;,
-    label: &apos;&#x421;&#x441;&#x44B;&#x43B;&#x43A;&#x430; &#x43D;&#x430; webview&apos;,
+    label: &apos;&#x421;&#x441;&#x44B;&#x43B;&#x43A;&#x430;&apos;,
     key: &apos;cardWebview&apos;,
     input: true,
-    weight: 4,
+    weight: 5,
     placeholder: &apos;&#x421;&#x441;&#x44B;&#x43B;&#x43A;&#x430;...&apos;,
-    tooltip: &apos;&#x412;&#x441;&#x442;&#x430;&#x432;&#x44C;&#x442;&#x435; &#x441;&#x441;&#x44B;&#x43B;&#x43A;&#x443; &#x43D;&#x430; webview&apos;,
+    tooltip: &apos;&#x412;&#x441;&#x442;&#x430;&#x432;&#x44C;&#x442;&#x435; &#x441;&#x441;&#x44B;&#x43B;&#x43A;&#x443;&apos;,
   },
   {
     label: &apos;&#x423;&#x43D;&#x438;&#x43A;&#x430;&#x43B;&#x44C;&#x43D;&#x44B;&#x439; &#x438;&#x434;&#x435;&#x43D;&#x442;&#x438;&#x444;&#x438;&#x43A;&#x430;&#x442;&#x43E;&#x440;&apos;,
-    weight: 5,
+    weight: 6,
     tooltip: &apos;&#x412;&#x441;&#x442;&#x430;&#x432;&#x44C;&#x442;&#x435; &#x443;&#x43D;&#x438;&#x43A;&#x430;&#x43B;&#x44C;&#x43D;&#x44B;&#x439; &#x438;&#x434;&#x435;&#x43D;&#x442;&#x438;&#x444;&#x438;&#x43A;&#x430;&#x442;&#x43E;&#x440;&apos;,
     components: [
       {
@@ -340,6 +363,7 @@ export default [
         id: &apos;createUUID&apos;,
         type: &apos;button&apos;,
         action: &apos;custom&apos;,
+        customClass: &apos;inputButton&apos;,
         label: &apos;&#x421;&#x433;&#x435;&#x43D;&#x435;&#x440;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x442;&#x44C;&apos;,
       },
     ],
@@ -350,7 +374,7 @@ export default [
     label: &apos;&#x41A;&#x43E;&#x43F;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x442;&#x44C; &#x441;&#x441;&#x44B;&#x43B;&#x43A;&#x443;&apos;,
     key: &apos;deeplink&apos;,
     action: &apos;custom&apos;,
-    weight: 6,
+    weight: 7,
     tooltip: &apos;&#x41A;&#x43E;&#x43F;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x43D;&#x438;&#x435; &#x441;&#x441;&#x44B;&#x43B;&#x43A;&#x438;-deeplink&apos;,
   },
   {

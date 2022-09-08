@@ -1,6 +1,6 @@
 {
-  "coverage": "6.25%",
-  "expectCount": 1023,
+  "coverage": "6.13%",
+  "expectCount": 1043,
   "actualCount": 64,
   "files": {
     "src/Embed.js": {
@@ -507,7 +507,7 @@
       ]
     },
     "src/components/custom/Image/Image.js": {
-      "expectCount": 7,
+      "expectCount": 6,
       "actualCount": 0,
       "undocumentLines": [
         4,
@@ -515,8 +515,7 @@
         7,
         13,
         23,
-        27,
-        33
+        27
       ]
     },
     "src/components/custom/PictureWithDescription/PictureWithDescription.form.js": {
@@ -531,6 +530,20 @@
       "actualCount": 0,
       "undocumentLines": [
         5
+      ]
+    },
+    "src/components/custom/Section/SectionContainer.js": {
+      "expectCount": 8,
+      "actualCount": 0,
+      "undocumentLines": [
+        6,
+        30,
+        31,
+        33,
+        35,
+        39,
+        43,
+        63
       ]
     },
     "src/components/custom/Separator/Separator.form.js": {
@@ -558,6 +571,18 @@
       "actualCount": 0,
       "undocumentLines": [
         4
+      ]
+    },
+    "src/components/custom/Text/Text.js": {
+      "expectCount": 6,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        5,
+        7,
+        13,
+        23,
+        27
       ]
     },
     "src/components/custom/Title/Title.form.js": {
@@ -597,16 +622,29 @@
         5
       ]
     },
-    "src/components/custom/serviceContainer/Slider.js": {
-      "expectCount": 7,
+    "src/components/custom/serviceContainer/ServiceContainer.js": {
+      "expectCount": 8,
       "actualCount": 0,
       "undocumentLines": [
         6,
-        32,
-        33,
+        21,
+        22,
+        24,
+        28,
+        43,
+        53,
+        55
+      ]
+    },
+    "src/components/custom/serviceContainer/Slider.js": {
+      "expectCount": 6,
+      "actualCount": 0,
+      "undocumentLines": [
+        6,
+        34,
         35,
-        39,
-        50,
+        37,
+        41,
         52
       ]
     },

@@ -29,18 +29,11 @@ export default class PictureWithCaption extends FieldComponent {
       this.component.textColor || '#FFFFFF;'
     };`;
 
-    return super.render(`<a class="picture__content" href=${this.component.picture__webview ?? '#'} data-mytracker=${mytrackerEvent}>
+    return super.render(`<a class="picture__content" href=${this.component.picture__link ?? '#'} data-mytracker=${mytrackerEvent}>
       <div class="picture__image" style="background-image: url(${this.component.picture__image})">
       <p class="picture__caption" style=${JSON.stringify(styleText)}> ${this.component.picture__caption ?? ''}</p>
       </div>
     </a>`);
-  }
-
-  attach(element) {
-    if (document.getElementById('textSetting')) {
-      document.getElementById('textSetting').firstElementChild.classList.add('d-inline-flex');
-    }
-    return super.attach(element);
   }
 }
 

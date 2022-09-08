@@ -60,14 +60,17 @@
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-custom-image">components/custom/Image</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/custom/Image/Image.js~Image.html">Image</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Image">Image</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-custom-picturewithdescription">components/custom/PictureWithDescription</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-PictureWithDescription">PictureWithDescription</a></span></span></li>
-<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-custom-section">components/custom/Section</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-SectionContainer">SectionContainer</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-custom-section">components/custom/Section</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/custom/Section/SectionContainer.js~SectionContainer.html">SectionContainer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-SectionContainer">SectionContainer</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-custom-separator">components/custom/Separator</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/custom/Separator/Separator.js~Separator.html">Separator</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Separator">Separator</a></span></span></li>
-<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-custom-text">components/custom/Text</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Text">Text</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-custom-text">components/custom/Text</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/custom/Text/Text.js~Text.html">Text</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Text">Text</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-custom-title">components/custom/Title</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Title">Title</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-custom-constants">components/custom/constants</a><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-fontSizeOptions">fontSizeOptions</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-fontWeightOptions">fontWeightOptions</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-custom-servicecontainer">components/custom/serviceContainer</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/custom/serviceContainer/Sections.js~Sections.html">Sections</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/custom/serviceContainer/ServiceContainer.js~ServiceContainer.html">ServiceContainer</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/custom/serviceContainer/Slider.js~Slider.html">Slider</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-ServiceContainer">ServiceContainer</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-datagrid">components/datagrid</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-DataGrid">DataGrid</a></span></span></li>
@@ -192,13 +195,16 @@ import editForm from &apos;./ServiceContainer.form&apos;;
 
 function createSliderTemplate(ctx) {
   return `
-    &lt;div ref=&quot;${ctx.nestedKey}&quot; class=&quot;containerSlider&quot;&gt;
+    &lt;div ref=&quot;${ctx.nestedKey}&quot; class=&quot;containerSlider&quot; id=&quot;containerSlider&quot;&gt;
+      ${ctx.children}
       &lt;div class=&quot;containerNavbar&quot;&gt;
-        &lt;img
-          src=&apos;https://test-gidapp.k8s-dev.gid.team/storage/public/c6bfd484-7a8e-43cd-b1ea-48570bff2301.png&apos;
-          alt=&apos;&#x41D;&#x430;&#x437;&#x430;&#x434;&apos;
-          class=&apos;backIcon&apos;
-        /&gt;
+       &lt;div class=${ctx.component.colorButton ? &apos;backIconWithBackground&apos; : &apos;backIcon&apos;}&gt;
+          &lt;img
+            src=&apos;https://test-gidapp.k8s-dev.gid.team/storage/public/c6bfd484-7a8e-43cd-b1ea-48570bff2301.png&apos;
+            alt=&apos;&#x41D;&#x430;&#x437;&#x430;&#x434;&apos;
+          /&gt;
+        &lt;/div&gt;
+
         &lt;div class=&apos;serviceName&apos;&gt;
           ${
     ctx.component.serviceImage
@@ -211,7 +217,6 @@ function createSliderTemplate(ctx) {
   }
         &lt;/div&gt;
       &lt;/div&gt;
-      ${ctx.children}
     &lt;/div&gt;
 `;
 }
@@ -229,14 +234,13 @@ export default class Slider extends panel {
       type: &apos;Slider&apos;,
       key: &apos;Slider&apos;,
       components: [],
-      input: false,
+      input: true,
       persistent: false,
     });
   }
 
   constructor(component, options, data) {
     super(component, options, data);
-    this.collapsed = !!this.component.collapsed;
     Templates.templates.bootstrap[&apos;Slider&apos;] = { form: createSliderTemplate };
   }
 }

@@ -5,13 +5,16 @@ import editForm from './ServiceContainer.form';
 
 function createSliderTemplate(ctx) {
   return `
-    <div ref="${ctx.nestedKey}" class="containerSlider">
+    <div ref="${ctx.nestedKey}" class="containerSlider" id="containerSlider">
+      ${ctx.children}
       <div class="containerNavbar">
-        <img
-          src='https://test-gidapp.k8s-dev.gid.team/storage/public/c6bfd484-7a8e-43cd-b1ea-48570bff2301.png'
-          alt='Назад'
-          class='backIcon'
-        />
+       <div class=${ctx.component.colorButton ? 'backIconWithBackground' : 'backIcon'}>
+          <img
+            src='https://test-gidapp.k8s-dev.gid.team/storage/public/c6bfd484-7a8e-43cd-b1ea-48570bff2301.png'
+            alt='Назад'
+          />
+        </div>
+
         <div class='serviceName'>
           ${
     ctx.component.serviceImage
@@ -24,7 +27,6 @@ function createSliderTemplate(ctx) {
   }
         </div>
       </div>
-      ${ctx.children}
     </div>
 `;
 }
@@ -42,14 +44,13 @@ export default class Slider extends panel {
       type: 'Slider',
       key: 'Slider',
       components: [],
-      input: false,
+      input: true,
       persistent: false,
     });
   }
 
   constructor(component, options, data) {
     super(component, options, data);
-    this.collapsed = !!this.component.collapsed;
     Templates.templates.bootstrap['Slider'] = { form: createSliderTemplate };
   }
 }

@@ -66,9 +66,11 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Separator">Separator</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-custom-text">components/custom/Text</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/custom/Text/Text.js~Text.html">Text</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Text">Text</a></span></span></li>
-<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-custom-title">components/custom/Title</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/custom/Title/Title.js~Title.html">Title</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Title">Title</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-custom-title">components/custom/Title</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Title">Title</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-custom-constants">components/custom/constants</a><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-fontSizeOptions">fontSizeOptions</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-fontWeightOptions">fontWeightOptions</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-custom-servicecontainer">components/custom/serviceContainer</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/custom/serviceContainer/Sections.js~Sections.html">Sections</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/custom/serviceContainer/ServiceContainer.js~ServiceContainer.html">ServiceContainer</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/custom/serviceContainer/Slider.js~Slider.html">Slider</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-ServiceContainer">ServiceContainer</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-datagrid">components/datagrid</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-DataGrid">DataGrid</a></span></span></li>
@@ -193,11 +195,13 @@ import nested from &apos;../../_classes/nested/NestedComponent&apos;;
 
 function createSectionContainerTemplate(ctx) {
   const mytrackerEvent = JSON.stringify({ event: ctx.component.mytracker_event, payload: ctx.component.mytracker_properties });
-
+  const styleTitle = `font-size: ${ctx.component.titleSize || 14}pt; font-weight: ${ctx.component.titleWeight || 700}; color:${
+    ctx.component.titleColor || &apos;#495671; margin: 0&apos;
+  };`;
   return `
     &lt;div class=&quot;accordion__item&quot; data-mytracker=${mytrackerEvent}&gt;
       &lt;div class=&quot;accordion__header&quot;&gt;
-        ${ctx.component.title}
+       &lt;p style=${JSON.stringify(styleTitle)}&gt;${ctx.component.title}&lt;/p&gt;
         &lt;i
           class=&quot;button-collapsing formio-collapse-icon button__collapsing ${ctx.iconClass(
     ctx.collapsed ? &apos;angle-down&apos; : &apos;angle-up&apos;
@@ -254,35 +258,6 @@ export default class SectionContainer extends panel {
       weight: 5,
       schema: SectionContainer.schema(),
     };
-  }
-
-  attach(element) {
-    if (document.querySelector(&apos;.accordion__header&apos;)) {
-      document.querySelectorAll(&apos;.accordion__header&apos;).forEach((element) =&gt; {
-        element.addEventListener(&apos;click&apos;, () =&gt; {
-          const elem = element.parentElement.querySelector(&apos;.accordion__body&apos;);
-          const hide = element.parentElement.querySelector(&apos;.accordion__body&apos;).classList.contains(&apos;hide&apos;);
-          const buttonCollapsing = element.querySelector(&apos;.button-collapsing&apos;);
-
-          if (hide) {
-            elem.classList.remove(&apos;hide&apos;);
-            this.removeClass(buttonCollapsing, &apos;fa-angle-down&apos;);
-            buttonCollapsing.classList.add(&apos;fa-angle-up&apos;);
-          }
-          else {
-            elem.classList.add(&apos;hide&apos;);
-            this.removeClass(buttonCollapsing, &apos;fa-angle-up&apos;);
-            buttonCollapsing.classList.add(&apos;fa-angle-down&apos;);
-          }
-          // this.component.collapsible
-          //   ? element.parentElement.querySelector(&apos;.accordion__body&apos;).classList.add(&apos;hide&apos;)
-          //   : this.removeClass(element.parentElement.querySelector(&apos;.accordion__body&apos;), &apos;hide&apos;);
-          // buttonCollapsing.classList.add(this.component.collapsible ? &apos;fa-angle-down&apos; : &apos;fa-angle-up&apos;);
-          // this.component.collapsible = !this.component.collapsible;
-        });
-      });
-    }
-    return super.attach(element);
   }
 }
 

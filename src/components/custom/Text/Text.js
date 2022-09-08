@@ -37,14 +37,6 @@ export default class Text extends field {
       ${this.component.text ? `<p class="text" style=${JSON.stringify(styleText)}>${this.component.text}</p>` : ''}
    `);
   }
-
-  attach(element) {
-    if (document.getElementById('titleSetting')) {
-      document.getElementById('titleSetting')?.firstElementChild?.classList.add('d-inline-flex');
-      document.getElementById('textSetting')?.firstElementChild?.classList.add('d-inline-flex');
-    }
-    return super.attach(element);
-  }
 }
 
 // Components.addComponent("text", Text);

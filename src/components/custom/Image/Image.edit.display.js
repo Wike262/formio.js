@@ -52,12 +52,32 @@ export default [
     ignore: true,
   },
   {
-    type: 'input',
     label: 'Изображение',
-    key: 'image',
-    input: true,
     weight: 1,
-    placeholder: 'Ссылка...',
-    tooltip: 'Вставьте ссылку на изображение',
+    components: [
+      {
+        id: 'customUploadImage',
+        type: 'input',
+        input: true,
+        key: 'image',
+        customClass: 'uploaderInput',
+        placeholder: 'Ссылка...',
+      },
+      {
+        id: 'uploaderButton',
+        type: 'button',
+        customClass: 'inputButton',
+        action: 'custom',
+        label: 'Загрузить',
+      },
+      {
+        id: 'updateImageButton',
+        type: 'button',
+        action: 'custom',
+        changeEvent: 'click',
+        customClass: 'inputButton',
+        label: 'Обновить',
+      },
+    ],
   },
 ];

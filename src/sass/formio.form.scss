@@ -1859,11 +1859,14 @@ span[role="link"] {
 .containerNavbar {
   width: 100%;
   height: 96px;
+  margin-top: 0;
+  position: absolute;
+  z-index: 1;
 }
 
 .containerSlider {
   width: 100%;
-  height: 370px;
+  height: 367px;
 }
 
 .serviceSections {
@@ -1871,24 +1874,23 @@ span[role="link"] {
   padding-top: 5px;
   padding-right: 10px;
   padding-left: 10px;
-  width: auto;
+  overflow: hidden;
   top: 359px;
   background: #FFFFFF;
   border-radius: 14px 14px 0px 0px;
-  min-height: 120px;
-  max-height: max-content;
+  min-height: 420px;
+  contain: content;
 }
 
 .container {
-  max-height: none;
-  width: unset;
-  min-height: 375px;
-  max-height: 700px;
-  padding: 0;
+  width: 100%;
+  min-height: 700px;
+  max-height: 800px;
+  overflow-y: scroll;
   background-color: #1f5c99;
   border: 0px;
   padding: 0;
-  overflow-y: auto;
+  position: sticky;
 }
 
 .serviceIcon {
@@ -1911,6 +1913,23 @@ span[role="link"] {
   padding: 15px;
 }
 
+.backIconWithBackground {
+  @extend .backIcon;
+  right: 0%;
+  top: 0%;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 16px;
+  bottom: 716px;
+  background: rgba(50, 53, 60, 0.6);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
 .marginNone {
   margin: 0;
 }
@@ -1930,14 +1949,60 @@ span[role="link"] {
 
 .flex {
   width: 375px;
+  overflow: hidden;
 }
 
 .formio-component-Sections {
   position: relative;
+  height: inherit;
 }
 
 .formio-component-card {
   margin: 15px 0;
+}
+
+.drag-container {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.no-drag-custom {
+  top: 50%;
+  width: 100%;
+}
+
+.drag-container-section {
+  height: 100%;
+  padding-top: 16px;
+  padding-right: 10px;
+}
+
+.position-absolute {
+  display: contents;
+}
+
+.custom-component-preview {
+  width: 375px;
+  min-height: 700px;
+  max-height: 800px;
+  margin: auto;
+  overflow-y: hidden;
+}
+
+.service-sections-preview {
+  position: absolute;
+  width: 100%;
+  margin: auto;
+}
+
+.formio-component-Sections-preview {
+  position: initial;
+}
+
+.padding-top-for-setting {
+  padding-top: 100px;
 }
 
 .image {
@@ -1966,15 +2031,13 @@ span[role="link"] {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   padding: 16px 40px;
   gap: 8px;
 
-  position: absolute;
   bottom: 0;
   width: 100%;
   height: 56px;
-  margin: 0 2px 0 2px;
 
   font-family: 'PT Root UI';
   font-style: normal;
@@ -1982,6 +2045,7 @@ span[role="link"] {
   font-size: 18px;
   line-height: 24px;
   text-align: center;
+  cursor: default;
 
   box-shadow: 0px 14px 64px rgba(98, 148, 170, 0.12);
   border-radius: 12px;
@@ -1993,11 +2057,13 @@ span[role="link"] {
 .primary__button {
   @extend .button;
   background: #3174F6;
+  cursor: default;
 }
 
 .white__button {
   @extend .button;
   background: #FFFFFF;
+  cursor: default;
 }
 
 .white__text {
@@ -2006,6 +2072,17 @@ span[role="link"] {
 
 .primary__text {
   color: #3174F6 !important;
+}
+
+.formio-component-customButton {
+  margin-bottom: 0;
+}
+
+.buttonPosition {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-right: 25px;
 }
 
 .title {

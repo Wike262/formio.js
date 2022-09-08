@@ -29,7 +29,7 @@ export default class Card extends FieldComponent {
       this.component.titleColor || '#1B2C4E'
     };`;
 
-    const styleText = `font-size: ${this.component.textSize || 18}pt; font-weight: ${this.component.textWeight || 500}; color:${
+    const styleText = `font-size: ${this.component.textSize || 12}pt; font-weight: ${this.component.textWeight || 700}; color:${
       this.component.textColor || '#1B2C4E'
     };`;
 

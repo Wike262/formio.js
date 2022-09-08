@@ -26,12 +26,8 @@ export default class Image extends field {
 
   render() {
     return super.render(`
-       ${this.component.image ? `<image class="image" src="${this.component.image}" /> ` : ''}
+       ${this.component.image ? `<img class="image" src=${this.component.image} /> ` : ''}
     `);
-  }
-
-  attach(element) {
-    return super.attach(element);
   }
 }
 
