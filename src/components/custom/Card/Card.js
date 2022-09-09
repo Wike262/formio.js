@@ -23,7 +23,10 @@ export default class Card extends FieldComponent {
   };
 
   render() {
-    const mytrackerEvent = JSON.stringify({ event: this.component.mytracker_event, payload: this.component.mytracker_properties });
+    const mytrackerEvent = JSON.stringify({
+      event: this.component.mytracker_event,
+      payload: this.component.mytracker_properties
+    });
 
     const styleTitle = `font-size: ${this.component.titleSize || 14}pt; font-weight: ${this.component.titleWeight || 700}; color:${
       this.component.titleColor || '#1B2C4E'

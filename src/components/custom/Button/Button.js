@@ -26,9 +26,10 @@ export default class Button extends field {
 
   render() {
     const text = this.component.text ?? '';
+    const mytrackerEvent = JSON.stringify({ event: this.component.mytracker_event, payload: this.component.mytracker_properties });
 
     return super.render(`
-      <div class=${this.component.colorButton ? 'primary__button' : 'white__button'}>
+      <div  data-mytracker=${mytrackerEvent} class=${this.component.colorButton ? 'primary__button' : 'white__button'}>
         ${
       this.component.link
         ? `<a href=${this.component.link} class="${this.component.colorButton ? 'white__text' : 'primary__text'}">
@@ -38,6 +39,20 @@ export default class Button extends field {
     }
 
       </div>`);
+  }
+
+  attach(element) {
+    element.classList.add('buttonPosition');
+    const buttons = Array.from(element.parentElement.querySelectorAll('.buttonPosition'));
+    if (buttons.length > 1) {
+      const buttonLength = 56;
+      buttons.map((button, index) => {
+        if (index + 1 !== buttons.length) {
+          button.style.marginBottom = `${buttonLength * (buttons.length - index - 1)}px`;
+        }
+      });
+    }
+    return super.attach(element);
   }
 }
 

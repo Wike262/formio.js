@@ -1776,6 +1776,14 @@ span[role="link"] {
   margin-top: 4px;
 }
 
+.card__text_header {
+  @extend .card__text;
+  font-size: 14px;
+  color: #1b2c4e;
+  margin-bottom: 8px;
+  margin-top: 4px;
+}
+
 .card__description {
   display: flex;
   flex-direction: column;
@@ -1786,6 +1794,26 @@ span[role="link"] {
   text-decoration: none;
 }
 
+.customInput {
+  width: 100%;
+}
+
+.inputButton {
+  margin: 0 0 0 5px;
+}
+
+.uploaderInput {
+  width: 100%;
+}
+
+.inputWithButton {
+  display: inline-flex;
+  width: 100%;
+}
+
+.formio-dialog {
+  z-index: 10;
+}
 
 .picture__image {
   position: relative;
@@ -1799,7 +1827,7 @@ span[role="link"] {
 }
 
 .picture__caption {
-  font-family: "RootUI";
+  font-family: 'RootUI';
   font-size: 24px;
   font-weight: 400;
   line-height: 1.5;
@@ -1822,7 +1850,6 @@ span[role="link"] {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 20px;
 
   color: #495671;
   width: 100%;
@@ -2020,11 +2047,27 @@ span[role="link"] {
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
-  line-height: 28px;
   word-wrap: break-word;
+
   display: flex;
   align-items: center;
+
   color: #1B2C4E;
+}
+
+.textTitle {
+  font-family: 'PT Root UI';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  word-wrap: break-word;
+
+  color: #1B2C4E;
+  opacity: 0.6;
+  padding-bottom: 12px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 .button {
@@ -2090,6 +2133,6 @@ span[role="link"] {
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
-  line-height: 32px;
+
   color: #1B2C4E;
 }

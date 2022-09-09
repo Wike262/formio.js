@@ -1,3 +1,5 @@
+export const deeplinkService = 'ru.gid.app://service/form/';
+
 export const fontWeightOptions = [
   { label: '100', value: 100 },
   { label: '200', value: 200 },

@@ -25,10 +25,6 @@ export default class Separator extends FieldComponent {
   render() {
     return super.render("<hr class='separator'/>");
   }
-
-  attach(element) {
-    return super.attach(element);
-  }
 }
 
 // Components.addComponent('separator', Separator);
