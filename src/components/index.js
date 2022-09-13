@@ -54,7 +54,7 @@ import Slider from './custom/serviceContainer/Slider';
 import separator from './custom/Separator/Separator';
 import Text from './custom/Text/Text';
 import Image from './custom/Image/Image';
-import Button from './custom/Button/Button';
+import CustomButton from './custom/Button/Button';
 import Title from './custom/Title/Title';
 
 export default {
@@ -62,7 +62,7 @@ export default {
   base: Component,
   component: Component,
   componentmodal: ComponentModal,
- // button: ButtonComponent,
+  button: ButtonComponent,
   checkbox: CheckBoxComponent,
   columns: ColumnsComponent,
   container: ContainerComponent,
@@ -116,5 +116,5 @@ export default {
   text: Text,
   image: Image,
   title: Title,
-  button: Button,
+  customButton: CustomButton,
 };
