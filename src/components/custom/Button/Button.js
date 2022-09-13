@@ -40,20 +40,6 @@ export default class Button extends field {
 
       </div>`);
   }
-
-  attach(element) {
-    element.classList.add('buttonPosition');
-    const buttons = Array.from(element.parentElement.querySelectorAll('.buttonPosition'));
-    if (buttons.length > 1) {
-      const buttonLength = 56;
-      buttons.map((button, index) => {
-        if (index + 1 !== buttons.length) {
-          button.style.marginBottom = `${buttonLength * (buttons.length - index - 1)}px`;
-        }
-      });
-    }
-    return super.attach(element);
-  }
 }
 
 // Components.addComponent('button', Button);

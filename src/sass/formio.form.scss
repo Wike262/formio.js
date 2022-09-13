@@ -1760,20 +1760,12 @@ span[role="link"] {
 
 .card__text {
   word-wrap: break-word;
-  font-family: 'PT Root UI';
+  font-family: "PT Root UI";
   font-size: 12px;
   font-weight: 700;
   line-height: 16px;
   color: rgba(27, 44, 78, 0.6);
   margin: 0;
-}
-
-.card__text_header {
-  @extend .card__text;
-  font-size: 14px;
-  color: #1B2C4E;
-  margin-bottom: 8px;
-  margin-top: 4px;
 }
 
 .card__text_header {
@@ -1889,6 +1881,7 @@ span[role="link"] {
   margin-top: 0;
   position: absolute;
   z-index: 1;
+  top: 0;
 }
 
 .containerSlider {
@@ -1956,6 +1949,44 @@ span[role="link"] {
   justify-content: center;
   padding: 0;
 }
+
+.drag-container-section {
+  height: 100%;
+  padding-top: 16px;
+  padding-right: 10px;
+}
+
+.custom-component-preview {
+  width: 375px;
+  min-height: 700px;
+  max-height: 800px;
+  margin: auto;
+  overflow-y: hidden;
+}
+
+.service-sections-preview {
+  position: absolute;
+  width: 100%;
+  margin: auto;
+}
+
+.formio-component-Sections-preview {
+  position: initial;
+}
+
+.sliderSettingsButtons {
+  padding-top: 100px;
+}
+.choices__list--dropdown {
+  overflow-y: auto;
+  height: 60px;
+}
+
+.choices__list--dropdown .choices__list {
+  overflow-y: hidden;
+  max-height: none;
+}
+
 
 .marginNone {
   margin: 0;
@@ -2127,6 +2158,7 @@ span[role="link"] {
   width: 100%;
   padding-right: 25px;
 }
+
 
 .title {
   font-family: 'PT Root UI';

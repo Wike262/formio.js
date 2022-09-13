@@ -6,7 +6,7 @@ import editForm from './ServiceContainer.form';
 function createSliderTemplate(ctx) {
   return `
     <div ref="${ctx.nestedKey}" class="containerSlider" id="containerSlider">
-      ${ctx.children}
+     ${ctx.children}
       <div class="containerNavbar">
        <div class=${ctx.component.colorButton ? 'backIconWithBackground' : 'backIcon'}>
           <img

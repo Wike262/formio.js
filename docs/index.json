@@ -9925,7 +9925,7 @@
     "__docId__": 542,
     "kind": "file",
     "name": "src/components/custom/Section/SectionContainer.js",
-    "content": "import Templates from '../../../templates/Templates';\nimport editForm from './SectionContainer.form';\nimport panel from '../../panel/Panel';\nimport nested from '../../_classes/nested/NestedComponent';\n\nfunction createSectionContainerTemplate(ctx) {\n  const mytrackerEvent = JSON.stringify({ event: ctx.component.mytracker_event, payload: ctx.component.mytracker_properties });\n  const styleTitle = `font-size: ${ctx.component.titleSize || 14}pt; font-weight: ${ctx.component.titleWeight || 700}; color:${\n    ctx.component.titleColor || '#495671; margin: 0'\n  };`;\n  return `\n    <div class=\"accordion__item\" data-mytracker=${mytrackerEvent}>\n      <div class=\"accordion__header\">\n       <p style=${JSON.stringify(styleTitle)}>${ctx.component.title}</p>\n        <i\n          class=\"button-collapsing formio-collapse-icon button__collapsing ${ctx.iconClass(\n    ctx.collapsed ? 'angle-down' : 'angle-up'\n  )}\" data-title=\"Collapse Panel\" id=\"collapsing\"></i>\n      </div>\n      <div\n        class=\"accordion__body ${ctx.collapsed ? 'hide' : ''}\"\n        ref=\"${ctx.nestedKey}\"\n      >\n        ${ctx.children}\n      </div>\n    </div>\n`;\n}\n\nexport default class SectionContainer extends panel {\n  static editForm = editForm;\n\n  constructor(component, options, data) {\n    super(component, options, data);\n    this.collapsed = !!this.component.collapsed;\n    Templates.templates.bootstrap['SectionContainer'] = { form: createSectionContainerTemplate };\n  }\n\n  get templateName() {\n    return 'SectionContainer';\n  }\n\n  static schema(...extend) {\n    return nested.schema(\n      {\n        label: 'Контейнер раздела',\n        type: 'SectionContainer',\n        key: 'SectionContainer',\n        title: 'Раздел',\n        theme: 'default',\n        breadcrumb: 'default',\n        components: [],\n        clearOnHide: false,\n        input: false,\n        tableView: false,\n        persistent: false,\n        collapsible: true,\n      },\n      ...extend\n    );\n  }\n\n  static get builderInfo() {\n    return {\n      title: 'Раздел',\n      icon: 'list-alt',\n      group: 'components',\n      weight: 5,\n      schema: SectionContainer.schema(),\n    };\n  }\n}\n\n// Components.addComponent('SectionContainer', SectionContainer);\n",
+    "content": "import Templates from '../../../templates/Templates';\nimport editForm from './SectionContainer.form';\nimport panel from '../../panel/Panel';\nimport nested from '../../_classes/nested/NestedComponent';\n\nfunction createSectionContainerTemplate(ctx) {\n  const mytrackerEvent = JSON.stringify({ event: ctx.component.mytracker_event, payload: ctx.component.mytracker_properties });\n  const styleTitle = `font-size: ${ctx.component.titleSize || 14}px; font-weight: ${ctx.component.titleWeight || 700}; color:${\n    ctx.component.titleColor || '#495671; margin: 0'\n  };`;\n  return `\n    <div class=\"accordion__item\" data-mytracker=${mytrackerEvent}>\n      <div class=\"accordion__header\">\n       <p style=${JSON.stringify(styleTitle)}>${ctx.component.title}</p>\n        <i\n          class=\"button-collapsing formio-collapse-icon button__collapsing ${ctx.iconClass(\n    ctx.collapsed ? 'angle-down' : 'angle-up'\n  )}\" data-title=\"Collapse Panel\" id=\"collapsing\"></i>\n      </div>\n      <div\n        class=\"accordion__body ${ctx.collapsed ? 'hide' : ''}\"\n        ref=\"${ctx.nestedKey}\"\n      >\n        ${ctx.children}\n      </div>\n    </div>\n`;\n}\n\nexport default class SectionContainer extends panel {\n  static editForm = editForm;\n\n  constructor(component, options, data) {\n    super(component, options, data);\n    this.collapsed = !!this.component.collapsed;\n    Templates.templates.bootstrap['SectionContainer'] = { form: createSectionContainerTemplate };\n  }\n\n  get templateName() {\n    return 'SectionContainer';\n  }\n\n  static schema(...extend) {\n    return nested.schema(\n      {\n        label: 'Контейнер раздела',\n        type: 'SectionContainer',\n        key: 'SectionContainer',\n        title: 'Раздел',\n        theme: 'default',\n        breadcrumb: 'default',\n        components: [],\n        clearOnHide: false,\n        input: false,\n        tableView: false,\n        persistent: false,\n        collapsible: true,\n      },\n      ...extend\n    );\n  }\n\n  static get builderInfo() {\n    return {\n      title: 'Раздел',\n      icon: 'list-alt',\n      group: 'components',\n      weight: 5,\n      schema: SectionContainer.schema(),\n    };\n  }\n}\n\n// Components.addComponent('SectionContainer', SectionContainer);\n",
     "static": true,
     "longname": "/Users/fussygeekey/Wilix/formio.js/src/components/custom/Section/SectionContainer.js",
     "access": "public",
@@ -10942,7 +10942,7 @@
     "__docId__": 599,
     "kind": "file",
     "name": "src/components/custom/serviceContainer/ServiceContainer.js",
-    "content": "import Templates from '../../../templates/Templates';\nimport nested from '../../_classes/nested/NestedComponent';\nimport panel from '../../panel/Panel';\nimport editForm from './ServiceContainer.form';\n\nfunction createServiceContainerTemplate(ctx) {\n  const mytrackerEvent = JSON.stringify({ event: ctx.component.mytracker_event, payload: ctx.component.mytracker_properties });\n  if (ctx.component.serviceImage || ctx.component.colorButton) {\n    Object.assign(ctx.component.components[0], {\n      serviceImage: ctx.component.serviceImage,\n      colorButton: ctx.component.colorButton,\n    });\n  }\n  return `\n  <div class=\"container\" ref=\"${ctx.nestedKey}\" data-mytracker=${mytrackerEvent}>\n    ${ctx.children}\n  </div>\n`;\n}\n\nexport default class ServiceContainer extends panel {\n  static editForm = editForm;\n\n  get templateName() {\n    return 'ServiceContainer';\n  }\n\n  static schema() {\n    return nested.schema({\n      label: 'Контейнер сервиса',\n      type: 'ServiceContainer',\n      key: 'ServiceContainer',\n      customClass: 'container',\n      components: [\n        { type: 'Slider', key: 'Slider', components: [] },\n        { type: 'Sections', key: 'Section', components: [] },\n      ],\n      input: false,\n      persistent: false,\n    });\n  }\n\n  static get builderInfo() {\n    return {\n      title: 'Сервис',\n      icon: 'th-large',\n      group: 'components',\n      weight: 4,\n      schema: ServiceContainer.schema(),\n    };\n  }\n\n  constructor(component, options, data) {\n    super(component, options, data);\n    this.collapsed = !!this.component.collapsed;\n    Templates.templates.bootstrap['ServiceContainer'] = { form: createServiceContainerTemplate };\n  }\n}\n\n// Components.addComponent('ServiceContainer', ServiceContainer);\n",
+    "content": "import Templates from '../../../templates/Templates';\nimport nested from '../../_classes/nested/NestedComponent';\nimport panel from '../../panel/Panel';\nimport editForm from './ServiceContainer.form';\n\nfunction createServiceContainerTemplate(ctx) {\n  const mytrackerEvent = JSON.stringify({ event: ctx.component.mytracker_event, payload: ctx.component.mytracker_properties });\n\n  if (ctx.component.serviceImage || ctx.component.colorButton) {\n    Object.assign(ctx.component.components[0], {\n      serviceImage: ctx.component.serviceImage,\n      colorButton: ctx.component.colorButton,\n    });\n  }\n\n  return `\n  <div class=\"container\" ref=\"${ctx.nestedKey}\" data-mytracker=${mytrackerEvent}>\n    ${ctx.children}\n  </div>\n`;\n}\n\nexport default class ServiceContainer extends panel {\n  static editForm = editForm;\n\n  get templateName() {\n    return 'ServiceContainer';\n  }\n\n  static schema() {\n    return nested.schema({\n      label: 'Контейнер сервиса',\n      type: 'ServiceContainer',\n      key: 'ServiceContainer',\n      customClass: 'container',\n      components: [\n        { type: 'Slider', key: 'Slider', components: [] },\n        { type: 'Sections', key: 'Section', components: [] },\n      ],\n      input: false,\n      persistent: false,\n    });\n  }\n\n  static get builderInfo() {\n    return {\n      title: 'Сервис',\n      icon: 'th-large',\n      group: 'components',\n      weight: 4,\n      schema: ServiceContainer.schema(),\n    };\n  }\n\n  constructor(component, options, data) {\n    super(component, options, data);\n    this.collapsed = !!this.component.collapsed;\n    Templates.templates.bootstrap['ServiceContainer'] = { form: createServiceContainerTemplate };\n  }\n}\n\n// Components.addComponent('ServiceContainer', ServiceContainer);\n",
     "static": true,
     "longname": "/Users/fussygeekey/Wilix/formio.js/src/components/custom/serviceContainer/ServiceContainer.js",
     "access": "public",
@@ -10992,7 +10992,7 @@
     "importPath": "formiojs/src/components/custom/serviceContainer/ServiceContainer.js",
     "importStyle": "ServiceContainer",
     "description": null,
-    "lineNumber": 21,
+    "lineNumber": 23,
     "undocument": true,
     "interface": false,
     "extends": [
@@ -11008,7 +11008,7 @@
     "longname": "src/components/custom/serviceContainer/ServiceContainer.js~ServiceContainer.editForm",
     "access": "public",
     "description": null,
-    "lineNumber": 22,
+    "lineNumber": 24,
     "undocument": true,
     "type": {
       "types": [
@@ -11027,7 +11027,7 @@
     "longname": "src/components/custom/serviceContainer/ServiceContainer.js~ServiceContainer#templateName",
     "access": "public",
     "description": null,
-    "lineNumber": 24,
+    "lineNumber": 26,
     "undocument": true,
     "type": {
       "types": [
@@ -11046,7 +11046,7 @@
     "longname": "src/components/custom/serviceContainer/ServiceContainer.js~ServiceContainer.schema",
     "access": "public",
     "description": null,
-    "lineNumber": 28,
+    "lineNumber": 30,
     "undocument": true,
     "params": [],
     "return": {
@@ -11066,7 +11066,7 @@
     "longname": "src/components/custom/serviceContainer/ServiceContainer.js~ServiceContainer.builderInfo",
     "access": "public",
     "description": null,
-    "lineNumber": 43,
+    "lineNumber": 45,
     "undocument": true,
     "type": {
       "types": [
@@ -11085,7 +11085,7 @@
     "longname": "src/components/custom/serviceContainer/ServiceContainer.js~ServiceContainer#constructor",
     "access": "public",
     "description": null,
-    "lineNumber": 53,
+    "lineNumber": 55,
     "undocument": true
   },
   {
@@ -11097,7 +11097,7 @@
     "longname": "src/components/custom/serviceContainer/ServiceContainer.js~ServiceContainer#collapsed",
     "access": "public",
     "description": null,
-    "lineNumber": 55,
+    "lineNumber": 57,
     "undocument": true,
     "type": {
       "types": [
@@ -11109,7 +11109,7 @@
     "__docId__": 608,
     "kind": "file",
     "name": "src/components/custom/serviceContainer/Slider.js",
-    "content": "import Templates from '../../../templates/Templates';\nimport nested from '../../_classes/nested/NestedComponent';\nimport panel from '../../panel/Panel';\nimport editForm from './ServiceContainer.form';\n\nfunction createSliderTemplate(ctx) {\n  return `\n    <div ref=\"${ctx.nestedKey}\" class=\"containerSlider\" id=\"containerSlider\">\n      ${ctx.children}\n      <div class=\"containerNavbar\">\n       <div class=${ctx.component.colorButton ? 'backIconWithBackground' : 'backIcon'}>\n          <img\n            src='https://test-gidapp.k8s-dev.gid.team/storage/public/c6bfd484-7a8e-43cd-b1ea-48570bff2301.png'\n            alt='Назад'\n          />\n        </div>\n\n        <div class='serviceName'>\n          ${\n    ctx.component.serviceImage\n      ? `<img\n            class='serviceIcon'\n            alt='serviceName'\n            src=${ctx.component.serviceImage}\n          />`\n      : ''\n  }\n        </div>\n      </div>\n    </div>\n`;\n}\n\nexport default class Slider extends panel {\n  static editForm = editForm;\n\n  get templateName() {\n    return 'Slider';\n  }\n\n  static schema() {\n    return nested.schema({\n      label: 'Контейнер сервиса',\n      type: 'Slider',\n      key: 'Slider',\n      components: [],\n      input: true,\n      persistent: false,\n    });\n  }\n\n  constructor(component, options, data) {\n    super(component, options, data);\n    Templates.templates.bootstrap['Slider'] = { form: createSliderTemplate };\n  }\n}\n\n// Components.addComponent(\"Slider\", Slider);\n",
+    "content": "import Templates from '../../../templates/Templates';\nimport nested from '../../_classes/nested/NestedComponent';\nimport panel from '../../panel/Panel';\nimport editForm from './ServiceContainer.form';\n\nfunction createSliderTemplate(ctx) {\n  return `\n    <div ref=\"${ctx.nestedKey}\" class=\"containerSlider\" id=\"containerSlider\">\n     ${ctx.children}\n      <div class=\"containerNavbar\">\n       <div class=${ctx.component.colorButton ? 'backIconWithBackground' : 'backIcon'}>\n          <img\n            src='https://test-gidapp.k8s-dev.gid.team/storage/public/c6bfd484-7a8e-43cd-b1ea-48570bff2301.png'\n            alt='Назад'\n          />\n        </div>\n\n        <div class='serviceName'>\n          ${\n    ctx.component.serviceImage\n      ? `<img\n            class='serviceIcon'\n            alt='serviceName'\n            src=${ctx.component.serviceImage}\n          />`\n      : ''\n  }\n        </div>\n      </div>\n    </div>\n`;\n}\n\nexport default class Slider extends panel {\n  static editForm = editForm;\n\n  get templateName() {\n    return 'Slider';\n  }\n\n  static schema() {\n    return nested.schema({\n      label: 'Контейнер сервиса',\n      type: 'Slider',\n      key: 'Slider',\n      components: [],\n      input: true,\n      persistent: false,\n    });\n  }\n\n  constructor(component, options, data) {\n    super(component, options, data);\n    Templates.templates.bootstrap['Slider'] = { form: createSliderTemplate };\n  }\n}\n\n// Components.addComponent(\"Slider\", Slider);\n",
     "static": true,
     "longname": "/Users/fussygeekey/Wilix/formio.js/src/components/custom/serviceContainer/Slider.js",
     "access": "public",

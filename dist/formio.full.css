@@ -4029,13 +4029,6 @@ span[role=link] {
 
 .card__text_header {
   font-size: 14px;
-  color: #1B2C4E;
-  margin-bottom: 8px;
-  margin-top: 4px;
-}
-
-.card__text_header {
-  font-size: 14px;
   color: #1b2c4e;
   margin-bottom: 8px;
   margin-top: 4px;
@@ -4145,6 +4138,7 @@ span[role=link] {
   margin-top: 0;
   position: absolute;
   z-index: 1;
+  top: 0;
 }
 
 .containerSlider {
@@ -4210,6 +4204,44 @@ span[role=link] {
   align-items: center;
   justify-content: center;
   padding: 0;
+}
+
+.drag-container-section {
+  height: 100%;
+  padding-top: 16px;
+  padding-right: 10px;
+}
+
+.custom-component-preview {
+  width: 375px;
+  min-height: 700px;
+  max-height: 800px;
+  margin: auto;
+  overflow-y: hidden;
+}
+
+.service-sections-preview {
+  position: absolute;
+  width: 100%;
+  margin: auto;
+}
+
+.formio-component-Sections-preview {
+  position: initial;
+}
+
+.sliderSettingsButtons {
+  padding-top: 100px;
+}
+
+.choices__list--dropdown {
+  overflow-y: auto;
+  height: 60px;
+}
+
+.choices__list--dropdown .choices__list {
+  overflow-y: hidden;
+  max-height: none;
 }
 
 .marginNone {

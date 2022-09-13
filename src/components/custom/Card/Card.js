@@ -28,11 +28,11 @@ export default class Card extends FieldComponent {
       payload: this.component.mytracker_properties
     });
 
-    const styleTitle = `font-size: ${this.component.titleSize || 14}pt; font-weight: ${this.component.titleWeight || 700}; color:${
+    const styleTitle = `font-size: ${this.component.titleSize || 14}px; font-weight: ${this.component.titleWeight || 700}; color:${
       this.component.titleColor || '#1B2C4E'
     };`;
 
-    const styleText = `font-size: ${this.component.textSize || 12}pt; font-weight: ${this.component.textWeight || 700}; color:${
+    const styleText = `font-size: ${this.component.textSize || 12}px; font-weight: ${this.component.textWeight || 700}; color:${
       this.component.textColor || '#1B2C4E'
     };`;
 

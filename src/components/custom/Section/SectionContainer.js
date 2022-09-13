@@ -5,7 +5,7 @@ import nested from '../../_classes/nested/NestedComponent';
 
 function createSectionContainerTemplate(ctx) {
   const mytrackerEvent = JSON.stringify({ event: ctx.component.mytracker_event, payload: ctx.component.mytracker_properties });
-  const styleTitle = `font-size: ${ctx.component.titleSize || 14}pt; font-weight: ${ctx.component.titleWeight || 700}; color:${
+  const styleTitle = `font-size: ${ctx.component.titleSize || 14}px; font-weight: ${ctx.component.titleWeight || 700}; color:${
     ctx.component.titleColor || '#495671; margin: 0'
   };`;
   return `

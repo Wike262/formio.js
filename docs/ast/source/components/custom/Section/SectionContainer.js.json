@@ -1197,8 +1197,8 @@
                           }
                         },
                         "value": {
-                          "raw": "pt; font-weight: ",
-                          "cooked": "pt; font-weight: "
+                          "raw": "px; font-weight: ",
+                          "cooked": "px; font-weight: "
                         },
                         "tail": false
                       },
@@ -5929,7 +5929,7 @@
         "binop": null,
         "updateContext": null
       },
-      "value": "pt; font-weight: ",
+      "value": "px; font-weight: ",
       "start": 442,
       "end": 459,
       "loc": {
