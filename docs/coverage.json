@@ -1,6 +1,6 @@
 {
-  "coverage": "6.1%",
-  "expectCount": 1049,
+  "coverage": "6.09%",
+  "expectCount": 1050,
   "actualCount": 64,
   "files": {
     "src/Embed.js": {
@@ -582,6 +582,13 @@
         13,
         23,
         27
+      ]
+    },
+    "src/components/custom/TextLink/TextLink.form.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        4
       ]
     },
     "src/components/custom/Title/Title.form.js": {

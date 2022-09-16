@@ -618,6 +618,12 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "formiojs/src/components/custom/textlink/textlink.form.js~textlink",
+    "function/index.html#static-function-TextLink",
+    "<span>TextLink</span> <span class=\"search-result-import-path\">formiojs/src/components/custom/TextLink/TextLink.form.js</span>",
+    "function"
+  ],
+  [
     "formiojs/src/components/time/time.form.js~time",
     "function/index.html#static-function-Time",
     "<span>Time</span> <span class=\"search-result-import-path\">formiojs/src/components/time/Time.form.js</span>",
@@ -3772,6 +3778,18 @@ window.esdocSearchIndex = [
     "class/src/components/custom/Text/Text.js~Text.html#static-method-schema",
     "src/components/custom/Text/Text.js~Text.schema",
     "method"
+  ],
+  [
+    "src/components/custom/textlink/textlink.edit.display.js",
+    "file/src/components/custom/TextLink/TextLink.edit.display.js.html",
+    "src/components/custom/TextLink/TextLink.edit.display.js",
+    "file"
+  ],
+  [
+    "src/components/custom/textlink/textlink.form.js",
+    "file/src/components/custom/TextLink/TextLink.form.js.html",
+    "src/components/custom/TextLink/TextLink.form.js",
+    "file"
   ],
   [
     "src/components/custom/title/title.edit.display.js",
