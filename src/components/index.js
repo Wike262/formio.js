@@ -56,6 +56,7 @@ import Text from './custom/Text/Text';
 import Image from './custom/Image/Image';
 import CustomButton from './custom/Button/Button';
 import Title from './custom/Title/Title';
+import TextLink from './custom/TextLink/TextLink';
 
 export default {
   address: AddressComponent,
@@ -117,4 +118,5 @@ export default {
   image: Image,
   title: Title,
   customButton: CustomButton,
+  textLink: TextLink,
 };

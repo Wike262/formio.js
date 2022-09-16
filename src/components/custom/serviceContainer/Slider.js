@@ -10,7 +10,7 @@ function createSliderTemplate(ctx) {
       <div class="containerNavbar">
        <div class=${ctx.component.colorButton ? 'backIconWithBackground' : 'backIcon'}>
           <img
-            src='https://test-gidapp.k8s-dev.gid.team/storage/public/c6bfd484-7a8e-43cd-b1ea-48570bff2301.png'
+            src='https://app.gid.ru/storage/public/4968e579-b051-49fb-b0f3-ecc4af4057ae.png'
             alt='Назад'
           />
         </div>
